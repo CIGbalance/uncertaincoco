@@ -1,0 +1,73 @@
+\hypertarget{index_Introduction}{}\section{Introduction}\label{index_Introduction}
+T\+O\+DO stuff on what this does\hypertarget{index_install}{}\section{Installation}\label{index_install}
+\hypertarget{index_rec}{}\subsection{Requirements}\label{index_rec}
+
+\begin{DoxyItemize}
+\item Install gbea Benchmark \href{https://github.com/TheHedgeify/coco/tree/rw-new-suite}{\tt https\+://github.\+com/\+The\+Hedgeify/coco/tree/rw-\/new-\/suite}
+\item make and cmake
+\item boost
+\item clone repository (git clone \href{mailto:git@bitbucket.org}{\tt git@bitbucket.\+org}\+:The\+Hedgeify/final.\+git)
+\end{DoxyItemize}\hypertarget{index_inst_shark}{}\subsection{Install shark}\label{index_inst_shark}
+
+\begin{DoxyCode}
+1 cd \{root\_dir\}/final/src/
+2 unzip Shark-3.1.0.zip (choose option [N] when asked about replacing files)
+3 cd Shark-3.1.0
+4 mkdir build
+5 cmake ../
+6 make shark
+\end{DoxyCode}
+\hypertarget{index_inst_eigen}{}\subsection{Setup Eigen}\label{index_inst_eigen}
+
+\begin{DoxyCode}
+1 cd \{root\_dir\}/final/src/
+2 unzip eigen-eigen-5a0156e40feb.zip 
+3 cd eigen-eigen-5a0156e40feb
+4 mkdir build (generates FindEigen files for gp library)
+5 cmake ../
+6 export EIGEN3\_INCLUDE\_DIR=\{root\_dir\}/final/src/eigen-eigen-5a0156e40feb
+7 export Eigen3\_DIR=\{root\_dir\}/eigen-eigen-5a0156e40feb/build
+\end{DoxyCode}
+\hypertarget{index_inst_gp}{}\subsection{Install libgp}\label{index_inst_gp}
+
+\begin{DoxyCode}
+1 cd \{root\_dir\}/final/src/libgp-master
+2 mkdir build
+3 cmake ../
+4 make gp
+\end{DoxyCode}
+\hypertarget{index_inst_exp}{}\subsection{Install experiments}\label{index_inst_exp}
+
+\begin{DoxyCode}
+1 cd \{root\_dir\}/final/src/shark\_version
+2 mkdir build
+3 cmake ../src
+4 make ExampleExperiment
+\end{DoxyCode}
+\hypertarget{index_lido}{}\subsection{Li\+D\+O setup}\label{index_lido}
+Li\+DO Software modules (loaded in $\sim$/.bashrc)
+\begin{DoxyItemize}
+\item python/2.\+7.\+11
+\item binutils/2.\+25
+\item gcc/5.\+4.\+0
+\item boost/1.\+59.\+0
+\item cmake/3.\+5.\+2
+\end{DoxyItemize}
+
+Li\+DO compiler always automatically chooses old gcc. Specifically set compiler\+: 
+\begin{DoxyCode}
+1 export CC=/sysdata/shared/sfw/gcc/5.4.0-static-gmp-mpfr-mpc-isl/bin/gcc
+2 export CXX=/sysdata/shared/sfw/gcc/5.4.0-static-gmp-mpfr-mpc-isl/bin/gcc
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+1 for host in $(qstat -1natu volz | grep -v " Q " | grep volz |awk '\{print $NF\}' | tr '+' '\(\backslash\)n' | sort -u); do
+       echo -n "$host: "; ssh $host uptime; done
+2 for host in $(qstat -1natu volz | sed -n -e '/\(\backslash\)bvolz\(\backslash\)b.* R / \{ s/^.* \(\backslash\)([^ ]*$\(\backslash\))/\(\backslash\)1/; p; \}' | tr '+' '\(\backslash\)n' |
+       sort -u); do echo "$host: "; ssh $host ps -u volz -fL; echo; done
+\end{DoxyCode}
+\hypertarget{index_Usage}{}\section{Usage}\label{index_Usage}
+T\+O\+DO\hypertarget{index_Tests}{}\section{Tests}\label{index_Tests}
+T\+O\+DO 

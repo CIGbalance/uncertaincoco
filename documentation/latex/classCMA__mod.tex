@@ -1,0 +1,85 @@
+\hypertarget{classCMA__mod}{}\section{C\+M\+A\+\_\+mod Class Reference}
+\label{classCMA__mod}\index{C\+M\+A\+\_\+mod@{C\+M\+A\+\_\+mod}}
+
+
+Inheritance diagram for C\+M\+A\+\_\+mod\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classCMA__mod__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+M\+A\+\_\+mod\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classCMA__mod__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classAbstractOptimizer}{Abstract\+Optimizer}$<$ Real\+Vector, \hyperlink{classdouble}{double}, Result\+Set$<$ Real\+Vector, \hyperlink{classdouble}{double} $>$ $>$ {\bfseries base\+\_\+type}\hypertarget{classAbstractPreselecter_a9d56c27fc2428c60a99dea0504717794}{}\label{classAbstractPreselecter_a9d56c27fc2428c60a99dea0504717794}
+
+\item 
+typedef base\+\_\+type\+::\+Objective\+Function\+Type {\bfseries Objective\+Function\+Type}\hypertarget{classAbstractPreselecter_ae3b0b31dee2296bb9ab385b80ac6a27e}{}\label{classAbstractPreselecter_ae3b0b31dee2296bb9ab385b80ac6a27e}
+
+\item 
+typedef base\+\_\+type\+::\+Search\+Point\+Type {\bfseries Search\+Point\+Type}\hypertarget{classAbstractPreselecter_a0b3b8c0fcb55a3f75337939d1cae182e}{}\label{classAbstractPreselecter_a0b3b8c0fcb55a3f75337939d1cae182e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+H\+A\+R\+K\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+Y\+M\+B\+OL {\bfseries C\+M\+A\+\_\+mod} (Default\+Rng\+Type \&rng=Rng\+::global\+Rng)\hypertarget{classCMA__mod_a27765c8375abcebf17de89314b78ff64}{}\label{classCMA__mod_a27765c8375abcebf17de89314b78ff64}
+
+\item 
+std\+::string \hyperlink{classCMA__mod_a2c55518c5d07f444591cd35e9e3fb680}{name} () const \hypertarget{classCMA__mod_a2c55518c5d07f444591cd35e9e3fb680}{}\label{classCMA__mod_a2c55518c5d07f444591cd35e9e3fb680}
+
+\begin{DoxyCompactList}\small\item\em From I\+Nameable\+: return the class name. \end{DoxyCompactList}\item 
+virtual S\+H\+A\+R\+K\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+Y\+M\+B\+OL void {\bfseries init} (C\+M\+A\+::\+Objective\+Function\+Type \&function)\hypertarget{classCMA__mod_a5fd27e36fcb8dc7c51f20d262c672c88}{}\label{classCMA__mod_a5fd27e36fcb8dc7c51f20d262c672c88}
+
+\item 
+virtual S\+H\+A\+R\+K\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+Y\+M\+B\+OL void {\bfseries init} (C\+M\+A\+::\+Objective\+Function\+Type \&function, C\+M\+A\+::\+Search\+Point\+Type const \&p)\hypertarget{classCMA__mod_a53be322b38fb29694a692af865ce0342}{}\label{classCMA__mod_a53be322b38fb29694a692af865ce0342}
+
+\item 
+virtual S\+H\+A\+R\+K\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+Y\+M\+B\+OL void {\bfseries init} (C\+M\+A\+::\+Objective\+Function\+Type \&function, C\+M\+A\+::\+Search\+Point\+Type const \&initial\+Search\+Point, std\+::size\+\_\+t lambda, std\+::size\+\_\+t mu, std\+::size\+\_\+t lambda\+\_\+ps, \hyperlink{classdouble}{double} initial\+Sigma, const boost\+::optional$<$ Real\+Matrix $>$ \&initial\+Covariance\+Matrix=boost\+::optional$<$ Real\+Matrix $>$())\hypertarget{classCMA__mod_a0d95993f0ba098a4925f462332d4eeba}{}\label{classCMA__mod_a0d95993f0ba098a4925f462332d4eeba}
+
+\item 
+virtual S\+H\+A\+R\+K\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+Y\+M\+B\+OL void {\bfseries init} (C\+M\+A\+::\+Objective\+Function\+Type \&function, C\+M\+A\+::\+Search\+Point\+Type const \&initial\+Search\+Point, std\+::size\+\_\+t lambda, std\+::size\+\_\+t mu, \hyperlink{classdouble}{double} initial\+Sigma, const boost\+::optional$<$ Real\+Matrix $>$ \&initial\+Covariance\+Matrix=boost\+::optional$<$ Real\+Matrix $>$())\hypertarget{classCMA__mod_a0e4b8c0acb6ab7d92aef8ce1285cd6fc}{}\label{classCMA__mod_a0e4b8c0acb6ab7d92aef8ce1285cd6fc}
+
+\item 
+void {\bfseries step\+\_\+presel} (C\+M\+A\+::\+Objective\+Function\+Type const \&function, C\+M\+A\+::\+Objective\+Function\+Type const \&function\+\_\+pred)\hypertarget{classCMA__mod_a24e3aad56ca13d46a1b95c1843cc5ec5}{}\label{classCMA__mod_a24e3aad56ca13d46a1b95c1843cc5ec5}
+
+\item 
+void {\bfseries set\+Lambda\+Ps} (std\+::size\+\_\+t lambda\+Ps)\hypertarget{classCMA__mod_a7986d1467e8232683d1dada6e7b285ec}{}\label{classCMA__mod_a7986d1467e8232683d1dada6e7b285ec}
+
+\item 
+std\+::size\+\_\+t {\bfseries lambda\+Ps} () const \hypertarget{classCMA__mod_a6a20d40dad3af506abd042ff1f16bc34}{}\label{classCMA__mod_a6a20d40dad3af506abd042ff1f16bc34}
+
+\item 
+virtual void {\bfseries step\+\_\+presel} (Objective\+Function\+Type const \&function, Objective\+Function\+Type const \&function\+\_\+pred)=0\hypertarget{classAbstractPreselecter_ac7bd0dac8d7eaf85319524ee6d80f52d}{}\label{classAbstractPreselecter_ac7bd0dac8d7eaf85319524ee6d80f52d}
+
+\item 
+virtual void {\bfseries init} (Objective\+Function\+Type \&function)=0\hypertarget{classAbstractPreselecter_ac9283e597dc5d633b1f7ce959881dbb8}{}\label{classAbstractPreselecter_ac9283e597dc5d633b1f7ce959881dbb8}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::size\+\_\+t {\bfseries suggest\+Ps\+Lambda} (std\+::size\+\_\+t lambda)\hypertarget{classCMA__mod_a98b8aab7fa69327207d124b5525deddf}{}\label{classCMA__mod_a98b8aab7fa69327207d124b5525deddf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+H\+A\+R\+K\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+S\+Y\+M\+B\+OL std\+::vector$<$ Individual\+Type $>$ {\bfseries generate\+Offspring} (std\+::size\+\_\+t lambda) const \hypertarget{classCMA__mod_a8db4d68c7665ef05903a900097109a38}{}\label{classCMA__mod_a8db4d68c7665ef05903a900097109a38}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+M\+A\+\_\+mod.\+h\end{DoxyCompactItemize}

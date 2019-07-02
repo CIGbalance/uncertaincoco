@@ -1,0 +1,36 @@
+\hypertarget{structUncertainSort}{}\section{Uncertain\+Sort$<$ Fitness\+Type, Chromosome $>$ Struct Template Reference}
+\label{structUncertainSort}\index{Uncertain\+Sort$<$ Fitness\+Type, Chromosome $>$@{Uncertain\+Sort$<$ Fitness\+Type, Chromosome $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Individual $>$ }\\void \hyperlink{structUncertainSort_ada1340e5214158ccc3628a5917241fea}{true\+Sort} (std\+::vector$<$ Individual $>$ \&pop)
+\begin{DoxyCompactList}\small\item\em Executes the algorithm. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Individual $>$ }\\void {\bfseries operator()} (std\+::vector$<$ Individual $>$ \&pop, Selection\+Strategy strategy, \hyperlink{classdouble}{double} alpha=-\/1)\hypertarget{structUncertainSort_ae33af56e4f022a5e143641e46cefafda}{}\label{structUncertainSort_ae33af56e4f022a5e143641e46cefafda}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Uncertain\+Sort@{Uncertain\+Sort}!true\+Sort@{true\+Sort}}
+\index{true\+Sort@{true\+Sort}!Uncertain\+Sort@{Uncertain\+Sort}}
+\subsubsection[{\texorpdfstring{true\+Sort(std\+::vector$<$ Individual $>$ \&pop)}{trueSort(std::vector< Individual > &pop)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Fitness\+Type, class Chromosome = Real\+Vector$>$ template$<$class Individual $>$ void {\bf Uncertain\+Sort}$<$ Fitness\+Type, Chromosome $>$\+::true\+Sort (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ Individual $>$ \&}]{pop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structUncertainSort_ada1340e5214158ccc3628a5917241fea}{}\label{structUncertainSort_ada1340e5214158ccc3628a5917241fea}
+
+
+Executes the algorithm. 
+
+Afterwards every individual is assigned a rank by pop\mbox{[}i\mbox{]}.rank() = fron\+Number. The front of dominating points has the value 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pop} & \mbox{[}in,out\mbox{]} Population to subdivide into fronts of non-\/dominated individuals. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Uncertain\+Sort.\+h\end{DoxyCompactItemize}

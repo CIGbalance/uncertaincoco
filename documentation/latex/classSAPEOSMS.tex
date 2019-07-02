@@ -1,0 +1,94 @@
+\hypertarget{classSAPEOSMS}{}\section{S\+A\+P\+E\+O\+S\+MS Class Reference}
+\label{classSAPEOSMS}\index{S\+A\+P\+E\+O\+S\+MS@{S\+A\+P\+E\+O\+S\+MS}}
+
+
+Inheritance diagram for S\+A\+P\+E\+O\+S\+MS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classSAPEOSMS__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+A\+P\+E\+O\+S\+MS\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSAPEOSMS__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ Real\+Vector $>$ {\bfseries Individual\+Type}\hypertarget{classSAPEOSMS_a0b8e726bd43a3ed09470f73571dc079a}{}\label{classSAPEOSMS_a0b8e726bd43a3ed09470f73571dc079a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+A\+P\+E\+O\+S\+MS} (Default\+Rng\+Type \&rng=Rng\+::global\+Rng)\hypertarget{classSAPEOSMS_abc76923accdbed46008f69724194d118}{}\label{classSAPEOSMS_abc76923accdbed46008f69724194d118}
+
+\item 
+\hyperlink{classdouble}{double} {\bfseries crossover\+Probability} () const \hypertarget{classSAPEOSMS_ac3a8972c9c4bc2e655a0c78c99a21c91}{}\label{classSAPEOSMS_ac3a8972c9c4bc2e655a0c78c99a21c91}
+
+\item 
+\hyperlink{classdouble}{double} {\bfseries nm} () const \hypertarget{classSAPEOSMS_a28f1d3803d546896d2feb44b05e38e24}{}\label{classSAPEOSMS_a28f1d3803d546896d2feb44b05e38e24}
+
+\item 
+\hyperlink{classdouble}{double} {\bfseries nc} () const \hypertarget{classSAPEOSMS_a97b4b0e4dd7727ba8c7dfcde295cce55}{}\label{classSAPEOSMS_a97b4b0e4dd7727ba8c7dfcde295cce55}
+
+\item 
+unsigned \hyperlink{classint}{int} {\bfseries mu} () const \hypertarget{classSAPEOSMS_a193c261f69f5992bc7632c6bb0495fb7}{}\label{classSAPEOSMS_a193c261f69f5992bc7632c6bb0495fb7}
+
+\item 
+unsigned \hyperlink{classint}{int} \& {\bfseries mu} ()\hypertarget{classSAPEOSMS_aa6dcfe84609f38dfdb5f644f85053842}{}\label{classSAPEOSMS_aa6dcfe84609f38dfdb5f644f85053842}
+
+\item 
+std\+::string {\bfseries name} () const \hypertarget{classSAPEOSMS_ac27f25c0cb4749b7f3a9ab343ff19ca6}{}\label{classSAPEOSMS_ac27f25c0cb4749b7f3a9ab343ff19ca6}
+
+\item 
+void {\bfseries init} (\hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} \&function, std\+::string folder, Selection\+Strategy strat, \hyperlink{classdouble}{double} alpha=-\/1)\hypertarget{classSAPEOSMS_aeb9b033919873de6c9a40f51046c347a}{}\label{classSAPEOSMS_aeb9b033919873de6c9a40f51046c347a}
+
+\item 
+virtual void {\bfseries step} (\hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} const \&function)\hypertarget{classSAPEOSMS_adbf6e80fa8987a6e961e1b7a6fc5fd5f}{}\label{classSAPEOSMS_adbf6e80fa8987a6e961e1b7a6fc5fd5f}
+
+\item 
+void {\bfseries step} (Objective\+Function\+Type const \&function)\hypertarget{classSAPEOSMS_ae712a2fa3e483add19ca9e8b3a21149b}{}\label{classSAPEOSMS_ae712a2fa3e483add19ca9e8b3a21149b}
+
+\item 
+void {\bfseries init} (Objective\+Function\+Type \&function, std\+::vector$<$ Search\+Point\+Type $>$ const \&initial\+Search\+Points)\hypertarget{classSAPEOSMS_a342280ef2f829999f0074189974e8600}{}\label{classSAPEOSMS_a342280ef2f829999f0074189974e8600}
+
+\item 
+void {\bfseries last\+Step} (\hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} const \&function)\hypertarget{classSAPEOSMS_a97a98afcb691d3a2fa94839694ab869b}{}\label{classSAPEOSMS_a97a98afcb691d3a2fa94839694ab869b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries init} (\hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} \&function)\hypertarget{classSAPEOSMS_a613a18393c100f32ef29dd20558d228b}{}\label{classSAPEOSMS_a613a18393c100f32ef29dd20558d228b}
+
+\item 
+void {\bfseries do\+Init} (Real\+Vector const \&lower\+Bounds, Real\+Vector const \&upper\+Bounds, std\+::size\+\_\+t mu, \hyperlink{classdouble}{double} nm, \hyperlink{classdouble}{double} nc, \hyperlink{classdouble}{double} crossover\+\_\+prob, \hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} \&function)\hypertarget{classSAPEOSMS_a1733dcc6ae21d1d62e95a3a4a1d94f5a}{}\label{classSAPEOSMS_a1733dcc6ae21d1d62e95a3a4a1d94f5a}
+
+\item 
+void {\bfseries update\+Population} (std\+::vector$<$ \hyperlink{classUncertainIndividual}{Individual\+Type} $>$ const \&offspring, \hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} const \&function)\hypertarget{classSAPEOSMS_a41b7c12930189080490230081378577e}{}\label{classSAPEOSMS_a41b7c12930189080490230081378577e}
+
+\item 
+std\+::vector$<$ \hyperlink{classUncertainIndividual}{Individual\+Type} $>$ {\bfseries generate\+Offspring} () const \hypertarget{classSAPEOSMS_ab826e0ba937791680630dddeeae331cd}{}\label{classSAPEOSMS_ab826e0ba937791680630dddeeae331cd}
+
+\item 
+Real\+Vector {\bfseries create\+Offspring} (std\+::vector$<$ \hyperlink{classUncertainIndividual}{Individual\+Type} $>$\+::const\+\_\+iterator begin, std\+::vector$<$ \hyperlink{classUncertainIndividual}{Individual\+Type} $>$\+::const\+\_\+iterator end) const \hypertarget{classSAPEOSMS_acc17d4f3aaad0a36939d83999bb356d5}{}\label{classSAPEOSMS_acc17d4f3aaad0a36939d83999bb356d5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classUncertainIndividual}{Individual\+Type} $>$ \hyperlink{classSAPEOSMS_aa51fa3edcebaec4f6b2550d7103a0243}{m\+\_\+parents}\hypertarget{classSAPEOSMS_aa51fa3edcebaec4f6b2550d7103a0243}{}\label{classSAPEOSMS_aa51fa3edcebaec4f6b2550d7103a0243}
+
+\begin{DoxyCompactList}\small\item\em Population of size $\mu + 1$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+A\+P\+E\+O\+S\+M\+S.\+h\end{DoxyCompactItemize}

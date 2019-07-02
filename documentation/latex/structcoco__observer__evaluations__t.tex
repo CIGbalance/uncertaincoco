@@ -1,0 +1,60 @@
+\hypertarget{structcoco__observer__evaluations__t}{}\section{coco\+\_\+observer\+\_\+evaluations\+\_\+t Struct Reference}
+\label{structcoco__observer__evaluations__t}\index{coco\+\_\+observer\+\_\+evaluations\+\_\+t@{coco\+\_\+observer\+\_\+evaluations\+\_\+t}}
+
+
+The type for triggers based on numbers of evaluations.  
+
+
+
+
+Collaboration diagram for coco\+\_\+observer\+\_\+evaluations\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{structcoco__observer__evaluations__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_a9582e7e638c6bbf6375feaad790bee94}{value1}\hypertarget{structcoco__observer__evaluations__t_a9582e7e638c6bbf6375feaad790bee94}{}\label{structcoco__observer__evaluations__t_a9582e7e638c6bbf6375feaad790bee94}
+
+\begin{DoxyCompactList}\small\item\em The next value for the first trigger. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_afb8689351378690fd392da14127b408c}{exponent1}\hypertarget{structcoco__observer__evaluations__t_afb8689351378690fd392da14127b408c}{}\label{structcoco__observer__evaluations__t_afb8689351378690fd392da14127b408c}
+
+\begin{DoxyCompactList}\small\item\em Exponent used to compute the first trigger. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_a9f58c511563d2f2f802e6a09b3de8161}{number\+\_\+of\+\_\+triggers}\hypertarget{structcoco__observer__evaluations__t_a9f58c511563d2f2f802e6a09b3de8161}{}\label{structcoco__observer__evaluations__t_a9f58c511563d2f2f802e6a09b3de8161}
+
+\begin{DoxyCompactList}\small\item\em Number of target triggers between 10$\ast$$\ast$i and 10$\ast$$\ast$(i+1) for any i. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_a718f500df0c6db9e576f4287bcaeb5c9}{value2}\hypertarget{structcoco__observer__evaluations__t_a718f500df0c6db9e576f4287bcaeb5c9}{}\label{structcoco__observer__evaluations__t_a718f500df0c6db9e576f4287bcaeb5c9}
+
+\begin{DoxyCompactList}\small\item\em The next value for the second trigger. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_a98cd613eb45762debda22da8065209f6}{exponent2}\hypertarget{structcoco__observer__evaluations__t_a98cd613eb45762debda22da8065209f6}{}\label{structcoco__observer__evaluations__t_a98cd613eb45762debda22da8065209f6}
+
+\begin{DoxyCompactList}\small\item\em Exponent used to compute the second trigger. \end{DoxyCompactList}\item 
+size\+\_\+t $\ast$ \hyperlink{structcoco__observer__evaluations__t_af0caf973c6563427ef6065fffa139e6c}{base\+\_\+evaluations}\hypertarget{structcoco__observer__evaluations__t_af0caf973c6563427ef6065fffa139e6c}{}\label{structcoco__observer__evaluations__t_af0caf973c6563427ef6065fffa139e6c}
+
+\begin{DoxyCompactList}\small\item\em The base evaluation numbers used to compute the actual evaluation numbers that trigger logging. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_a9065ef4b0edd1d653a3a675ae9b16c57}{base\+\_\+count}\hypertarget{structcoco__observer__evaluations__t_a9065ef4b0edd1d653a3a675ae9b16c57}{}\label{structcoco__observer__evaluations__t_a9065ef4b0edd1d653a3a675ae9b16c57}
+
+\begin{DoxyCompactList}\small\item\em The number of base evaluations. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_a6c99d253b00b0ef7dd73bec5e909ea88}{base\+\_\+index}\hypertarget{structcoco__observer__evaluations__t_a6c99d253b00b0ef7dd73bec5e909ea88}{}\label{structcoco__observer__evaluations__t_a6c99d253b00b0ef7dd73bec5e909ea88}
+
+\begin{DoxyCompactList}\small\item\em The next index of the base evaluations. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__evaluations__t_aaaa856ff5822f179a6200d4a210d2c8e}{dimension}\hypertarget{structcoco__observer__evaluations__t_aaaa856ff5822f179a6200d4a210d2c8e}{}\label{structcoco__observer__evaluations__t_aaaa856ff5822f179a6200d4a210d2c8e}
+
+\begin{DoxyCompactList}\small\item\em Dimension used in the calculation of the first trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The type for triggers based on numbers of evaluations. 
+
+The numbers of evaluations that trigger logging are any of the two\+:
+\begin{DoxyItemize}
+\item every 10$\ast$$\ast$(exponent1/number\+\_\+of\+\_\+triggers) for exponent1 $>$= 0
+\item every base\+\_\+evaluation $\ast$ dimension $\ast$ (10$\ast$$\ast$exponent2) for exponent2 $>$= 0 
+\end{DoxyItemize}
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+c\end{DoxyCompactItemize}

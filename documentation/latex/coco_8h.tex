@@ -1,0 +1,1050 @@
+\hypertarget{coco_8h}{}\section{/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.h File Reference}
+\label{coco_8h}\index{/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+h@{/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+h}}
+
+
+All public C\+O\+CO functions, constants and variables are defined in this file.  
+
+
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$float.\+h$>$}\\*
+Include dependency graph for coco.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{coco_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{coco_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{coco_8h_a8abfcc76130f3f991d124dd22d7e69bc}{N\+AN}~8.\+8888e88\hypertarget{coco_8h_a8abfcc76130f3f991d124dd22d7e69bc}{}\label{coco_8h_a8abfcc76130f3f991d124dd22d7e69bc}
+
+\begin{DoxyCompactList}\small\item\em Definition of N\+AN to be used only if undefined by the included headers. \end{DoxyCompactList}\item 
+\#define \hyperlink{coco_8h_a2e1baae9134e580910322362dc23290e}{isnan}(x)~(0)\hypertarget{coco_8h_a2e1baae9134e580910322362dc23290e}{}\label{coco_8h_a2e1baae9134e580910322362dc23290e}
+
+\begin{DoxyCompactList}\small\item\em Definition of isnan to be used only if undefined by the included headers. \end{DoxyCompactList}\item 
+\#define \hyperlink{coco_8h_a956e2723d559858d08644ac99146e910}{I\+N\+F\+I\+N\+I\+TY}~1e22\hypertarget{coco_8h_a956e2723d559858d08644ac99146e910}{}\label{coco_8h_a956e2723d559858d08644ac99146e910}
+
+\begin{DoxyCompactList}\small\item\em Definition of I\+N\+F\+I\+N\+I\+TY to be used only if undefined by the included headers. \end{DoxyCompactList}\item 
+\#define \hyperlink{coco_8h_a2a266c767456556e5c0da234b602b18b}{isinf}(x)~(0)\hypertarget{coco_8h_a2a266c767456556e5c0da234b602b18b}{}\label{coco_8h_a2a266c767456556e5c0da234b602b18b}
+
+\begin{DoxyCompactList}\small\item\em Definition of isinf to be used only if undefined by the included headers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+s} \hyperlink{coco_8h_a408ba01b98c78bf5be3df36562d99478}{coco\+\_\+problem\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The C\+O\+CO problem type. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+s} \hyperlink{coco_8h_aa66be09e930304a945a3ff7dd06977f8}{coco\+\_\+suite\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The C\+O\+CO suite type. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+s} \hyperlink{coco_8h_a0c54e2a90a2a95a6ce541d66f507cfa5}{coco\+\_\+observer\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The C\+O\+CO observer type. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+s} \hyperlink{coco_8h_a526f33938345bc196c28cc9ffae0053d}{coco\+\_\+archive\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The C\+O\+CO archive type. \end{DoxyCompactList}\item 
+typedef struct \hyperlink{structcoco__random__state__s}{coco\+\_\+random\+\_\+state\+\_\+s} \hyperlink{coco_8h_a45a22cef946f1d9df64f8538a1c5b136}{coco\+\_\+random\+\_\+state\+\_\+t}
+\begin{DoxyCompactList}\small\item\em The C\+O\+CO random state type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647a}{coco\+\_\+log\+\_\+level\+\_\+type\+\_\+e} \{ \\*
+{\bfseries C\+O\+C\+O\+\_\+\+E\+R\+R\+OR}, 
+{\bfseries C\+O\+C\+O\+\_\+\+W\+A\+R\+N\+I\+NG}, 
+{\bfseries C\+O\+C\+O\+\_\+\+I\+N\+FO}, 
+{\bfseries C\+O\+C\+O\+\_\+\+D\+E\+B\+UG}, 
+\\*
+\hyperlink{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aaef734697922d549a06ebaedbd5e58af6}{C\+O\+C\+O\+\_\+\+E\+R\+R\+OR}, 
+\hyperlink{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aa3bb4f1309e41173292e0bf8f83b11f2f}{C\+O\+C\+O\+\_\+\+W\+A\+R\+N\+I\+NG}, 
+\hyperlink{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aa31c8cf7bf4d921ee5c68a536428645b2}{C\+O\+C\+O\+\_\+\+I\+N\+FO}, 
+\hyperlink{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aae4b0046dcb763b3a47ee21cbfde5285f}{C\+O\+C\+O\+\_\+\+D\+E\+B\+UG}
+ \}\begin{DoxyCompactList}\small\item\em Logging level type. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}{\bf Methods regarding C\+O\+CO suite}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$ \hyperlink{coco_8h_ac78e0456818c46c178c4cde012732acd}{coco\+\_\+suite} (const char $\ast$suite\+\_\+name, const char $\ast$suite\+\_\+instance, const char $\ast$suite\+\_\+options)
+\begin{DoxyCompactList}\small\item\em Constructs a C\+O\+CO suite. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_adbb63c0ca4af2e1a86b78e58e9f2d352}{coco\+\_\+suite\+\_\+free} (\hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite)\hypertarget{coco_8h_adbb63c0ca4af2e1a86b78e58e9f2d352}{}\label{coco_8h_adbb63c0ca4af2e1a86b78e58e9f2d352}
+
+\begin{DoxyCompactList}\small\item\em Frees the given suite. \end{DoxyCompactList}\item 
+\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$ \hyperlink{coco_8h_a422cee3f06f4b2524234102f75306fe7}{coco\+\_\+suite\+\_\+get\+\_\+next\+\_\+problem} (\hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, \hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+t} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Returns the next (observed) problem of the suite or N\+U\+LL if there is no next problem left. \end{DoxyCompactList}\item 
+\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$ \hyperlink{coco_8h_a8456ba2ae830c1e4c15d39922ec18d18}{coco\+\_\+suite\+\_\+get\+\_\+problem} (\hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, const size\+\_\+t problem\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Returns the problem of the suite defined by problem\+\_\+index. \end{DoxyCompactList}\item 
+\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$ \hyperlink{coco_8h_a4dc45ab5f19defa0b1498eac64714a02}{coco\+\_\+suite\+\_\+get\+\_\+problem\+\_\+by\+\_\+function\+\_\+dimension\+\_\+instance} (\hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, const size\+\_\+t function, const size\+\_\+t dimension, const size\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Returns the first problem of the suite defined by function, dimension and instance numbers. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_a3e34e34ffc1d99f1e9247426151741c5}{coco\+\_\+suite\+\_\+get\+\_\+number\+\_\+of\+\_\+problems} (const \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite)
+\begin{DoxyCompactList}\small\item\em Returns the number of problems in the given suite. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_a348c0b075d764eb9f4c71d49a701a12b}{coco\+\_\+suite\+\_\+get\+\_\+function\+\_\+from\+\_\+function\+\_\+index} (const \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, const size\+\_\+t function\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Returns the function number in the suite in position function\+\_\+idx (counting from 0). \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_ab7bae708066f72308be1c14760db200d}{coco\+\_\+suite\+\_\+get\+\_\+dimension\+\_\+from\+\_\+dimension\+\_\+index} (const \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, const size\+\_\+t dimension\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Returns the dimension number in the suite in position dimension\+\_\+idx (counting from 0). \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_ae5b76b849d2474e3c0067b35e7f89fb0}{coco\+\_\+suite\+\_\+get\+\_\+instance\+\_\+from\+\_\+instance\+\_\+index} (const \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, const size\+\_\+t instance\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Returns the instance number in the suite in position instance\+\_\+idx (counting from 0). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Encoding/decoding problem index}\par
+{\em General schema for encoding/decoding a problem index. Note that the index depends on the number of instances a suite is defined with (it should be called a suite-\/instance-\/depending index...). Also, while functions, instances and dimensions start from 1, function\+\_\+idx, instance\+\_\+idx and dimension\+\_\+idx as well as suite\+\_\+dep\+\_\+index start from 0!
+
+Showing an example with 2 dimensions (2, 3), 5 instances (6, 7, 8, 9, 10) and 2 functions (1, 2)\+:
+
+\begin{DoxyVerb}index | instance | function | dimension
+------+----------+----------+-----------
+    0 |        6 |        1 |         2
+    1 |        7 |        1 |         2
+    2 |        8 |        1 |         2
+    3 |        9 |        1 |         2
+    4 |       10 |        1 |         2
+    5 |        6 |        2 |         2
+    6 |        7 |        2 |         2
+    7 |        8 |        2 |         2
+    8 |        9 |        2 |         2
+    9 |       10 |        2 |         2
+   10 |        6 |        1 |         3
+   11 |        7 |        1 |         3
+   12 |        8 |        1 |         3
+   13 |        9 |        1 |         3
+   14 |       10 |        1 |         3
+   15 |        6 |        2 |         2
+   16 |        7 |        2 |         3
+   17 |        8 |        2 |         3
+   18 |        9 |        2 |         3
+   19 |       10 |        2 |         3
+
+index | instance_idx | function_idx | dimension_idx
+------+--------------+--------------+---------------
+    0 |            0 |            0 |             0
+    1 |            1 |            0 |             0
+    2 |            2 |            0 |             0
+    3 |            3 |            0 |             0
+    4 |            4 |            0 |             0
+    5 |            0 |            1 |             0
+    6 |            1 |            1 |             0
+    7 |            2 |            1 |             0
+    8 |            3 |            1 |             0
+    9 |            4 |            1 |             0
+   10 |            0 |            0 |             1
+   11 |            1 |            0 |             1
+   12 |            2 |            0 |             1
+   13 |            3 |            0 |             1
+   14 |            4 |            0 |             1
+   15 |            0 |            1 |             1
+   16 |            1 |            1 |             1
+   17 |            2 |            1 |             1
+   18 |            3 |            1 |             1
+   19 |            4 |            1 |             1
+\end{DoxyVerb}
+ }\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{coco_8h_a56279a2384ad7255d0cc459c2d707284}{coco\+\_\+suite\+\_\+encode\+\_\+problem\+\_\+index} (const \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, const size\+\_\+t function\+\_\+idx, const size\+\_\+t dimension\+\_\+idx, const size\+\_\+t instance\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Computes the index of the problem in the suite that corresponds to the given function, dimension and instance indices. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_afba31042ce1fc719ad2b55e334bc56f2}{coco\+\_\+suite\+\_\+decode\+\_\+problem\+\_\+index} (const \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$suite, const size\+\_\+t problem\+\_\+index, size\+\_\+t $\ast$function\+\_\+idx, size\+\_\+t $\ast$dimension\+\_\+idx, size\+\_\+t $\ast$instance\+\_\+idx)
+\begin{DoxyCompactList}\small\item\em Computes the function, dimension and instance indexes of the problem with problem\+\_\+index in the given suite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Methods regarding C\+O\+CO observer}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+t} $\ast$ \hyperlink{coco_8h_a361c69537741748f54b41d5b66d00a0b}{coco\+\_\+observer} (const char $\ast$observer\+\_\+name, const char $\ast$options)
+\begin{DoxyCompactList}\small\item\em Constructs a C\+O\+CO observer. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_a01a11a7c64e03eb432eb8f13fceec0de}{coco\+\_\+observer\+\_\+free} (\hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+t} $\ast$observer)\hypertarget{coco_8h_a01a11a7c64e03eb432eb8f13fceec0de}{}\label{coco_8h_a01a11a7c64e03eb432eb8f13fceec0de}
+
+\begin{DoxyCompactList}\small\item\em Frees the given observer. \end{DoxyCompactList}\item 
+\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$ \hyperlink{coco_8h_af894effafadb5f75ecd3bb75843f8a3e}{coco\+\_\+problem\+\_\+add\+\_\+observer} (\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem, \hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+t} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Adds an observer to the given problem. \end{DoxyCompactList}\item 
+\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$ \hyperlink{coco_8h_aac58e5039567090d6303b81f58532213}{coco\+\_\+problem\+\_\+remove\+\_\+observer} (\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem, \hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+t} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Removes an observer from the given problem. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{coco_8h_a07949a7fb4551fc0d4c5df1c0b47d591}{coco\+\_\+observer\+\_\+get\+\_\+result\+\_\+folder} (const \hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+t} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Returns result folder name, where logger output is written. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Methods regarding C\+O\+CO problem}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{coco_8h_aabbc02b57084ab069c37e1c27426b95c}{coco\+\_\+evaluate\+\_\+function} (\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem, const \hyperlink{classdouble}{double} $\ast$x, \hyperlink{classdouble}{double} $\ast$y)
+\begin{DoxyCompactList}\small\item\em Evaluates the problem function in point x and save the result in y. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_ab5cce904e394349ec1be1bcdc35967fa}{coco\+\_\+evaluate\+\_\+constraint} (\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem, const \hyperlink{classdouble}{double} $\ast$x, \hyperlink{classdouble}{double} $\ast$y)
+\begin{DoxyCompactList}\small\item\em Evaluates the problem constraints in point x and save the result in y. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_afd76a19eddd49fb78c22563390437df2}{coco\+\_\+recommend\+\_\+solution} (\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem, const \hyperlink{classdouble}{double} $\ast$x)
+\begin{DoxyCompactList}\small\item\em Recommends a solution as the current best guesses to the problem. Not implemented yet. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_aacae3076ddc2814d1b1df2cf307c4b2c}{coco\+\_\+problem\+\_\+free} (\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_aacae3076ddc2814d1b1df2cf307c4b2c}{}\label{coco_8h_aacae3076ddc2814d1b1df2cf307c4b2c}
+
+\begin{DoxyCompactList}\small\item\em Frees the given problem. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{coco_8h_a3fbb83591242a6767d3ca5bbe8597321}{coco\+\_\+problem\+\_\+get\+\_\+name} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em Returns the name of the problem. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{coco_8h_a7d31b340e2f1290191965d8411608ea4}{coco\+\_\+problem\+\_\+get\+\_\+id} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em Returns the ID of the problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_a0dabf3e4f5630d08077530a1341f13ab}{coco\+\_\+problem\+\_\+get\+\_\+dimension} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_a0dabf3e4f5630d08077530a1341f13ab}{}\label{coco_8h_a0dabf3e4f5630d08077530a1341f13ab}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of variables i.\+e. the dimension of the problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_ab0d1fcc7f592c283f1e67cde2afeb60a}{coco\+\_\+problem\+\_\+get\+\_\+number\+\_\+of\+\_\+objectives} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_ab0d1fcc7f592c283f1e67cde2afeb60a}{}\label{coco_8h_ab0d1fcc7f592c283f1e67cde2afeb60a}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of objectives of the problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_ad5c7b0889170a105671a14c8383fbb22}{coco\+\_\+problem\+\_\+get\+\_\+number\+\_\+of\+\_\+constraints} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_ad5c7b0889170a105671a14c8383fbb22}{}\label{coco_8h_ad5c7b0889170a105671a14c8383fbb22}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of constraints of the problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_a6ad88cdba2ffd15847346d594974067f}{coco\+\_\+problem\+\_\+get\+\_\+evaluations} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_a6ad88cdba2ffd15847346d594974067f}{}\label{coco_8h_a6ad88cdba2ffd15847346d594974067f}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of objective function evaluations done on the problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_afdc28e83d0da0f08f82a087c36b0683e}{coco\+\_\+problem\+\_\+get\+\_\+evaluations\+\_\+constraints} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_afdc28e83d0da0f08f82a087c36b0683e}{}\label{coco_8h_afdc28e83d0da0f08f82a087c36b0683e}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of constraint function evaluations done on the problem. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{coco_8h_a1164d85fd641ca48046b943344ae9069}{coco\+\_\+problem\+\_\+final\+\_\+target\+\_\+hit} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em Returns 1 if the final target was hit, 0 otherwise. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{coco_8h_a7295173033f50d6409c85cdc2b1d6989}{coco\+\_\+problem\+\_\+get\+\_\+best\+\_\+observed\+\_\+fvalue1} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)
+\begin{DoxyCompactList}\small\item\em Returns the best observed value for the first objective. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{coco_8h_af2be61eb801d900b9ba1cf45a79ea236}{depreciated\+\_\+coco\+\_\+problem\+\_\+get\+\_\+final\+\_\+target\+\_\+fvalue1} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_af2be61eb801d900b9ba1cf45a79ea236}{}\label{coco_8h_af2be61eb801d900b9ba1cf45a79ea236}
+
+\begin{DoxyCompactList}\small\item\em Returns the target value for the first objective. \end{DoxyCompactList}\item 
+const \hyperlink{classdouble}{double} $\ast$ \hyperlink{coco_8h_a4ea6c067adfa866b0179329fe9b7c458}{coco\+\_\+problem\+\_\+get\+\_\+smallest\+\_\+values\+\_\+of\+\_\+interest} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_a4ea6c067adfa866b0179329fe9b7c458}{}\label{coco_8h_a4ea6c067adfa866b0179329fe9b7c458}
+
+\begin{DoxyCompactList}\small\item\em Returns a vector of size \textquotesingle{}dimension\textquotesingle{} with lower bounds of the region of interest in the decision space. \end{DoxyCompactList}\item 
+const \hyperlink{classdouble}{double} $\ast$ \hyperlink{coco_8h_a29c89e039494ae8b4f8e520cba1eb154}{coco\+\_\+problem\+\_\+get\+\_\+largest\+\_\+values\+\_\+of\+\_\+interest} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_a29c89e039494ae8b4f8e520cba1eb154}{}\label{coco_8h_a29c89e039494ae8b4f8e520cba1eb154}
+
+\begin{DoxyCompactList}\small\item\em Returns a vector of size \textquotesingle{}dimension\textquotesingle{} with upper bounds of the region of interest in the decision space. \end{DoxyCompactList}\item 
+const \hyperlink{classdouble}{double} $\ast$ \hyperlink{coco_8h_ab63d4ff2d2318f34575fbb9ace9c7d64}{coco\+\_\+problem\+\_\+get\+\_\+largest\+\_\+fvalues\+\_\+of\+\_\+interest} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_ab63d4ff2d2318f34575fbb9ace9c7d64}{}\label{coco_8h_ab63d4ff2d2318f34575fbb9ace9c7d64}
+
+\begin{DoxyCompactList}\small\item\em For multi-\/objective problems, returns a vector of largest values of interest in each objective. Currently, this equals the nadir point. For single-\/objective problems it raises an error. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_abab668e00fbf089cf887324ee83d7b20}{coco\+\_\+problem\+\_\+get\+\_\+suite\+\_\+dep\+\_\+index} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem)\hypertarget{coco_8h_abab668e00fbf089cf887324ee83d7b20}{}\label{coco_8h_abab668e00fbf089cf887324ee83d7b20}
+
+\begin{DoxyCompactList}\small\item\em Returns the problem\+\_\+index of the problem in its current suite. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_ac5a44845acfadd7c5cccb9900a566b32}{coco\+\_\+problem\+\_\+get\+\_\+initial\+\_\+solution} (const \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem, \hyperlink{classdouble}{double} $\ast$initial\+\_\+solution)
+\begin{DoxyCompactList}\small\item\em Returns an initial solution, i.\+e. a feasible variable setting, to the problem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Methods regarding random numbers}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcoco__random__state__s}{coco\+\_\+random\+\_\+state\+\_\+t} $\ast$ \hyperlink{coco_8h_af1eec26188c49daa70532b3822bffeae}{coco\+\_\+random\+\_\+new} (uint32\+\_\+t seed)\hypertarget{coco_8h_af1eec26188c49daa70532b3822bffeae}{}\label{coco_8h_af1eec26188c49daa70532b3822bffeae}
+
+\begin{DoxyCompactList}\small\item\em Creates and returns a new random number state using the given seed. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_a40f389e6e4263a0680b8c8b62e307d39}{coco\+\_\+random\+\_\+free} (\hyperlink{structcoco__random__state__s}{coco\+\_\+random\+\_\+state\+\_\+t} $\ast$state)\hypertarget{coco_8h_a40f389e6e4263a0680b8c8b62e307d39}{}\label{coco_8h_a40f389e6e4263a0680b8c8b62e307d39}
+
+\begin{DoxyCompactList}\small\item\em Frees all memory associated with the random state. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{coco_8h_ab24243b4a151ff353436a243331e8a2a}{coco\+\_\+random\+\_\+uniform} (\hyperlink{structcoco__random__state__s}{coco\+\_\+random\+\_\+state\+\_\+t} $\ast$state)\hypertarget{coco_8h_ab24243b4a151ff353436a243331e8a2a}{}\label{coco_8h_ab24243b4a151ff353436a243331e8a2a}
+
+\begin{DoxyCompactList}\small\item\em Returns one uniform \mbox{[}0, 1) random value from the random number generator associated with the given state. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{coco_8h_a6344ee786bf0f08e540343bd1e70babf}{coco\+\_\+random\+\_\+normal} (\hyperlink{structcoco__random__state__s}{coco\+\_\+random\+\_\+state\+\_\+t} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Generates an approximately normal random number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Methods managing memory}\par
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{coco_8h_aa1b016a6e67c46c20410b1daa959737b}{coco\+\_\+allocate\+\_\+memory} (const size\+\_\+t size)\hypertarget{coco_8h_aa1b016a6e67c46c20410b1daa959737b}{}\label{coco_8h_aa1b016a6e67c46c20410b1daa959737b}
+
+\begin{DoxyCompactList}\small\item\em Safe memory allocation that either succeeds or triggers a coco\+\_\+error. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{coco_8h_a195f0611b2babbe1a95ce4677c259ee9}{coco\+\_\+allocate\+\_\+vector} (const size\+\_\+t size)\hypertarget{coco_8h_a195f0611b2babbe1a95ce4677c259ee9}{}\label{coco_8h_a195f0611b2babbe1a95ce4677c259ee9}
+
+\begin{DoxyCompactList}\small\item\em Safe memory allocation for a vector of doubles that either succeeds or triggers a coco\+\_\+error. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_a8542ff7c23ec7a8e64487a50232db26f}{coco\+\_\+free\+\_\+memory} (void $\ast$data)\hypertarget{coco_8h_a8542ff7c23ec7a8e64487a50232db26f}{}\label{coco_8h_a8542ff7c23ec7a8e64487a50232db26f}
+
+\begin{DoxyCompactList}\small\item\em Frees the allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Methods regarding C\+O\+CO messages}\par
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{coco_8h_a6191daa0f616cacdea2ae3de985d9487}{coco\+\_\+error} (const char $\ast$message,...)\hypertarget{coco_8h_a6191daa0f616cacdea2ae3de985d9487}{}\label{coco_8h_a6191daa0f616cacdea2ae3de985d9487}
+
+\begin{DoxyCompactList}\small\item\em Signals a fatal error. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_adb3189475b296249e802e13ba412d504}{coco\+\_\+warning} (const char $\ast$message,...)\hypertarget{coco_8h_adb3189475b296249e802e13ba412d504}{}\label{coco_8h_adb3189475b296249e802e13ba412d504}
+
+\begin{DoxyCompactList}\small\item\em Warns about error conditions. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_a25461e3167b8b68602e6407efdcf52bc}{coco\+\_\+info} (const char $\ast$message,...)\hypertarget{coco_8h_a25461e3167b8b68602e6407efdcf52bc}{}\label{coco_8h_a25461e3167b8b68602e6407efdcf52bc}
+
+\begin{DoxyCompactList}\small\item\em Outputs some information. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_afec5912278d4a6317f25468f20e9fd11}{coco\+\_\+info\+\_\+partial} (const char $\ast$message,...)
+\begin{DoxyCompactList}\small\item\em Prints only the given message without any prefix and new line. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_ab7c6d1e119e3b8c647da24f6f609c40f}{coco\+\_\+debug} (const char $\ast$message,...)\hypertarget{coco_8h_ab7c6d1e119e3b8c647da24f6f609c40f}{}\label{coco_8h_ab7c6d1e119e3b8c647da24f6f609c40f}
+
+\begin{DoxyCompactList}\small\item\em Outputs detailed information usually used for debugging. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{coco_8h_a8baacecb66a862689885d4e26ac26f62}{coco\+\_\+set\+\_\+log\+\_\+level} (const char $\ast$level)
+\begin{DoxyCompactList}\small\item\em Sets the C\+O\+CO log level to the given value and returns the previous value of the log level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Methods regarding C\+O\+CO archives and log files (used when pre-\/processing MO data)}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+t} $\ast$ \hyperlink{coco_8h_a70a55c00ed89c32eed64e39a9c96f571}{coco\+\_\+archive} (const char $\ast$suite\+\_\+name, const size\+\_\+t function, const size\+\_\+t dimension, const size\+\_\+t instance)
+\begin{DoxyCompactList}\small\item\em Constructs a C\+O\+CO archive. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{coco_8h_a98ced861776caf6b4f71a2e207499478}{coco\+\_\+archive\+\_\+add\+\_\+solution} (\hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+t} $\ast$archive, const \hyperlink{classdouble}{double} y1, const \hyperlink{classdouble}{double} y2, const char $\ast$text)\hypertarget{coco_8h_a98ced861776caf6b4f71a2e207499478}{}\label{coco_8h_a98ced861776caf6b4f71a2e207499478}
+
+\begin{DoxyCompactList}\small\item\em Adds a solution with objectives (y1, y2) to the archive if none of the existing solutions in the archive dominates it. In this case, returns 1, otherwise the archive is not updated and the method returns 0. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{coco_8h_a206f7af9532f011ce826090acdc9ecd9}{coco\+\_\+archive\+\_\+get\+\_\+number\+\_\+of\+\_\+solutions} (\hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+t} $\ast$archive)\hypertarget{coco_8h_a206f7af9532f011ce826090acdc9ecd9}{}\label{coco_8h_a206f7af9532f011ce826090acdc9ecd9}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of (non-\/dominated) solutions in the archive (computed first, if needed). \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{coco_8h_a68ecf2f3843ca6f6759833e2c5b1263a}{coco\+\_\+archive\+\_\+get\+\_\+hypervolume} (\hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+t} $\ast$archive)\hypertarget{coco_8h_a68ecf2f3843ca6f6759833e2c5b1263a}{}\label{coco_8h_a68ecf2f3843ca6f6759833e2c5b1263a}
+
+\begin{DoxyCompactList}\small\item\em Returns the hypervolume of the archive (computed first, if needed). \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{coco_8h_a05a274f0dc46374146d8f43090a9a41f}{coco\+\_\+archive\+\_\+get\+\_\+next\+\_\+solution\+\_\+text} (\hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+t} $\ast$archive)\hypertarget{coco_8h_a05a274f0dc46374146d8f43090a9a41f}{}\label{coco_8h_a05a274f0dc46374146d8f43090a9a41f}
+
+\begin{DoxyCompactList}\small\item\em Returns the text of the next (non-\/dominated) solution in the archive and \char`\"{}\char`\"{} when there are no solutions left. The first two solutions are always the extreme ones. \end{DoxyCompactList}\item 
+void \hyperlink{coco_8h_a372f41b24a5a18bd61074094d90777fd}{coco\+\_\+archive\+\_\+free} (\hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+t} $\ast$archive)\hypertarget{coco_8h_a372f41b24a5a18bd61074094d90777fd}{}\label{coco_8h_a372f41b24a5a18bd61074094d90777fd}
+
+\begin{DoxyCompactList}\small\item\em Frees the archive. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{coco_8h_a2cf82d26b0e461bfa2aa4f6f8c69f7e3}{coco\+\_\+logger\+\_\+biobj\+\_\+feed\+\_\+solution} (\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$problem, const size\+\_\+t evaluation, const \hyperlink{classdouble}{double} $\ast$y)
+\begin{DoxyCompactList}\small\item\em Feeds the solution to the bi-\/objective logger for logger output reconstruction purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Other useful methods}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{coco_8h_af079b44546733c5be1cd68e38a2b06fc}{coco\+\_\+remove\+\_\+directory} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Removes the given directory and all its contents. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{coco_8h_a2e7d3eb2f53f177bc923d91c819f5229}{coco\+\_\+strdupf} (const char $\ast$str,...)
+\begin{DoxyCompactList}\small\item\em Formatted string duplication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Variables}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+static const char \hyperlink{coco_8h_a8be59288c776dfa2e3a5f9e4fa67463f}{coco\+\_\+version} \mbox{[}32\mbox{]} = \char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em C\+O\+CO\textquotesingle{}s version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classdouble}{double} \hyperlink{coco_8h_a973742d29d384e21661bda90875ccf39}{coco\+\_\+pi} = 3.\+14159265358979323846\hypertarget{coco_8h_a973742d29d384e21661bda90875ccf39}{}\label{coco_8h_a973742d29d384e21661bda90875ccf39}
+
+\begin{DoxyCompactList}\small\item\em C\+O\+CO\textquotesingle{}s own pi constant. Simplifies the case, when the value of pi changes. \end{DoxyCompactList}\item 
+static const \hyperlink{classdouble}{double} {\bfseries coco\+\_\+two\+\_\+pi} = 2.\+0 $\ast$ 3.\+14159265358979323846\hypertarget{coco_8h_ad13e23673e37cc257befd3695c218304}{}\label{coco_8h_ad13e23673e37cc257befd3695c218304}
+
+\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+All public C\+O\+CO functions, constants and variables are defined in this file. 
+
+It is the authoritative reference, if any function deviates from the documented behavior it is considered a bug. See the function definitions for their detailed descriptions. 
+
+\subsection{Typedef Documentation}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+archive\+\_\+t@{coco\+\_\+archive\+\_\+t}}
+\index{coco\+\_\+archive\+\_\+t@{coco\+\_\+archive\+\_\+t}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+archive\+\_\+t}{coco_archive_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf coco\+\_\+archive\+\_\+s} {\bf coco\+\_\+archive\+\_\+t}}\hypertarget{coco_8h_a526f33938345bc196c28cc9ffae0053d}{}\label{coco_8h_a526f33938345bc196c28cc9ffae0053d}
+
+
+The C\+O\+CO archive type. 
+
+See \hyperlink{structcoco__archive__s}{coco\+\_\+archive\+\_\+s} for more information on its fields. \index{coco.\+h@{coco.\+h}!coco\+\_\+observer\+\_\+t@{coco\+\_\+observer\+\_\+t}}
+\index{coco\+\_\+observer\+\_\+t@{coco\+\_\+observer\+\_\+t}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+observer\+\_\+t}{coco_observer_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf coco\+\_\+observer\+\_\+s} {\bf coco\+\_\+observer\+\_\+t}}\hypertarget{coco_8h_a0c54e2a90a2a95a6ce541d66f507cfa5}{}\label{coco_8h_a0c54e2a90a2a95a6ce541d66f507cfa5}
+
+
+The C\+O\+CO observer type. 
+
+See \hyperlink{structcoco__observer__s}{coco\+\_\+observer\+\_\+s} for more information on its fields. \index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+t@{coco\+\_\+problem\+\_\+t}}
+\index{coco\+\_\+problem\+\_\+t@{coco\+\_\+problem\+\_\+t}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+t}{coco_problem_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf coco\+\_\+problem\+\_\+s} {\bf coco\+\_\+problem\+\_\+t}}\hypertarget{coco_8h_a408ba01b98c78bf5be3df36562d99478}{}\label{coco_8h_a408ba01b98c78bf5be3df36562d99478}
+
+
+The C\+O\+CO problem type. 
+
+See \hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+s} for more information on its fields. \index{coco.\+h@{coco.\+h}!coco\+\_\+random\+\_\+state\+\_\+t@{coco\+\_\+random\+\_\+state\+\_\+t}}
+\index{coco\+\_\+random\+\_\+state\+\_\+t@{coco\+\_\+random\+\_\+state\+\_\+t}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+random\+\_\+state\+\_\+t}{coco_random_state_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf coco\+\_\+random\+\_\+state\+\_\+s} {\bf coco\+\_\+random\+\_\+state\+\_\+t}}\hypertarget{coco_8h_a45a22cef946f1d9df64f8538a1c5b136}{}\label{coco_8h_a45a22cef946f1d9df64f8538a1c5b136}
+
+
+The C\+O\+CO random state type. 
+
+See \hyperlink{structcoco__random__state__s}{coco\+\_\+random\+\_\+state\+\_\+s} for more information on its fields. \index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+t@{coco\+\_\+suite\+\_\+t}}
+\index{coco\+\_\+suite\+\_\+t@{coco\+\_\+suite\+\_\+t}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+t}{coco_suite_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf coco\+\_\+suite\+\_\+s} {\bf coco\+\_\+suite\+\_\+t}}\hypertarget{coco_8h_aa66be09e930304a945a3ff7dd06977f8}{}\label{coco_8h_aa66be09e930304a945a3ff7dd06977f8}
+
+
+The C\+O\+CO suite type. 
+
+See \hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+s} for more information on its fields. 
+
+\subsection{Enumeration Type Documentation}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+log\+\_\+level\+\_\+type\+\_\+e@{coco\+\_\+log\+\_\+level\+\_\+type\+\_\+e}}
+\index{coco\+\_\+log\+\_\+level\+\_\+type\+\_\+e@{coco\+\_\+log\+\_\+level\+\_\+type\+\_\+e}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+log\+\_\+level\+\_\+type\+\_\+e}{coco_log_level_type_e}}]{\setlength{\rightskip}{0pt plus 5cm}enum coco\+\_\+log\+\_\+level\+\_\+type\+\_\+e}\hypertarget{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647a}{}\label{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647a}
+
+
+Logging level type. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+O\+C\+O\+\_\+\+E\+R\+R\+OR@{C\+O\+C\+O\+\_\+\+E\+R\+R\+OR}!coco.\+h@{coco.\+h}}\index{coco.\+h@{coco.\+h}!C\+O\+C\+O\+\_\+\+E\+R\+R\+OR@{C\+O\+C\+O\+\_\+\+E\+R\+R\+OR}}\item[{\em 
+C\+O\+C\+O\+\_\+\+E\+R\+R\+OR\hypertarget{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aaef734697922d549a06ebaedbd5e58af6}{}\label{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aaef734697922d549a06ebaedbd5e58af6}
+}]only error messages are output \index{C\+O\+C\+O\+\_\+\+W\+A\+R\+N\+I\+NG@{C\+O\+C\+O\+\_\+\+W\+A\+R\+N\+I\+NG}!coco.\+h@{coco.\+h}}\index{coco.\+h@{coco.\+h}!C\+O\+C\+O\+\_\+\+W\+A\+R\+N\+I\+NG@{C\+O\+C\+O\+\_\+\+W\+A\+R\+N\+I\+NG}}\item[{\em 
+C\+O\+C\+O\+\_\+\+W\+A\+R\+N\+I\+NG\hypertarget{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aa3bb4f1309e41173292e0bf8f83b11f2f}{}\label{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aa3bb4f1309e41173292e0bf8f83b11f2f}
+}]error and warning messages are output \index{C\+O\+C\+O\+\_\+\+I\+N\+FO@{C\+O\+C\+O\+\_\+\+I\+N\+FO}!coco.\+h@{coco.\+h}}\index{coco.\+h@{coco.\+h}!C\+O\+C\+O\+\_\+\+I\+N\+FO@{C\+O\+C\+O\+\_\+\+I\+N\+FO}}\item[{\em 
+C\+O\+C\+O\+\_\+\+I\+N\+FO\hypertarget{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aa31c8cf7bf4d921ee5c68a536428645b2}{}\label{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aa31c8cf7bf4d921ee5c68a536428645b2}
+}]error, warning and info messages are output \index{C\+O\+C\+O\+\_\+\+D\+E\+B\+UG@{C\+O\+C\+O\+\_\+\+D\+E\+B\+UG}!coco.\+h@{coco.\+h}}\index{coco.\+h@{coco.\+h}!C\+O\+C\+O\+\_\+\+D\+E\+B\+UG@{C\+O\+C\+O\+\_\+\+D\+E\+B\+UG}}\item[{\em 
+C\+O\+C\+O\+\_\+\+D\+E\+B\+UG\hypertarget{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aae4b0046dcb763b3a47ee21cbfde5285f}{}\label{coco_8h_a91ec58921a2cd0ccb3d2d3aff43f647aae4b0046dcb763b3a47ee21cbfde5285f}
+}]error, warning, info and debug messages are output \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+archive@{coco\+\_\+archive}}
+\index{coco\+\_\+archive@{coco\+\_\+archive}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+archive(const char $\ast$suite\+\_\+name, const size\+\_\+t function, const size\+\_\+t dimension, const size\+\_\+t instance)}{coco_archive(const char *suite_name, const size_t function, const size_t dimension, const size_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+archive\+\_\+t}$\ast$ coco\+\_\+archive (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{suite\+\_\+name, }
+\item[{const size\+\_\+t}]{function, }
+\item[{const size\+\_\+t}]{dimension, }
+\item[{const size\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a70a55c00ed89c32eed64e39a9c96f571}{}\label{coco_8h_a70a55c00ed89c32eed64e39a9c96f571}
+
+
+Constructs a C\+O\+CO archive. 
+
+The archive always contains the two extreme solutions \index{coco.\+h@{coco.\+h}!coco\+\_\+evaluate\+\_\+constraint@{coco\+\_\+evaluate\+\_\+constraint}}
+\index{coco\+\_\+evaluate\+\_\+constraint@{coco\+\_\+evaluate\+\_\+constraint}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+evaluate\+\_\+constraint(coco\+\_\+problem\+\_\+t $\ast$problem, const double $\ast$x, double $\ast$y)}{coco_evaluate_constraint(coco_problem_t *problem, const double *x, double *y)}}]{\setlength{\rightskip}{0pt plus 5cm}void coco\+\_\+evaluate\+\_\+constraint (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem, }
+\item[{const {\bf double} $\ast$}]{x, }
+\item[{{\bf double} $\ast$}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_ab5cce904e394349ec1be1bcdc35967fa}{}\label{coco_8h_ab5cce904e394349ec1be1bcdc35967fa}
+
+
+Evaluates the problem constraints in point x and save the result in y. 
+
+Evaluates the problem constraint.
+
+\begin{DoxyNote}{Note}
+Both x and y must point to correctly sized allocated memory regions.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em problem} & The given C\+O\+CO problem. \\
+\hline
+{\em x} & The decision vector. \\
+\hline
+{\em y} & The vector of constraints that is the result of the evaluation. \\
+\hline
+\end{DoxyParams}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+evaluate\+\_\+function@{coco\+\_\+evaluate\+\_\+function}}
+\index{coco\+\_\+evaluate\+\_\+function@{coco\+\_\+evaluate\+\_\+function}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+evaluate\+\_\+function(coco\+\_\+problem\+\_\+t $\ast$problem, const double $\ast$x, double $\ast$y)}{coco_evaluate_function(coco_problem_t *problem, const double *x, double *y)}}]{\setlength{\rightskip}{0pt plus 5cm}void coco\+\_\+evaluate\+\_\+function (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem, }
+\item[{const {\bf double} $\ast$}]{x, }
+\item[{{\bf double} $\ast$}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_aabbc02b57084ab069c37e1c27426b95c}{}\label{coco_8h_aabbc02b57084ab069c37e1c27426b95c}
+
+
+Evaluates the problem function in point x and save the result in y. 
+
+Evaluates the problem function, increases the number of evaluations and updates the best observed value and the best observed evaluation number.
+
+\begin{DoxyNote}{Note}
+Both x and y must point to correctly sized allocated memory regions.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em problem} & The given C\+O\+CO problem. \\
+\hline
+{\em x} & The decision vector. \\
+\hline
+{\em y} & The objective vector that is the result of the evaluation (in single-\/objective problems only the first vector item is being set). \\
+\hline
+\end{DoxyParams}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+info\+\_\+partial@{coco\+\_\+info\+\_\+partial}}
+\index{coco\+\_\+info\+\_\+partial@{coco\+\_\+info\+\_\+partial}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+info\+\_\+partial(const char $\ast$message,...)}{coco_info_partial(const char *message,...)}}]{\setlength{\rightskip}{0pt plus 5cm}void coco\+\_\+info\+\_\+partial (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_afec5912278d4a6317f25468f20e9fd11}{}\label{coco_8h_afec5912278d4a6317f25468f20e9fd11}
+
+
+Prints only the given message without any prefix and new line. 
+
+A function similar to coco\+\_\+info but producing no additional text than the given message.
+
+The output is only produced if coco\+\_\+log\+\_\+level $>$= C\+O\+C\+O\+\_\+\+I\+N\+FO.
+
+A function similar to coco\+\_\+info but producing no additional text than the given message.
+
+The output is only produced if coco\+\_\+log\+\_\+level $>$= C\+O\+C\+O\+\_\+\+I\+N\+FO.
+
+A function similar to coco\+\_\+info that prints only the given message without any prefix and without adding a new line. \index{coco.\+h@{coco.\+h}!coco\+\_\+logger\+\_\+biobj\+\_\+feed\+\_\+solution@{coco\+\_\+logger\+\_\+biobj\+\_\+feed\+\_\+solution}}
+\index{coco\+\_\+logger\+\_\+biobj\+\_\+feed\+\_\+solution@{coco\+\_\+logger\+\_\+biobj\+\_\+feed\+\_\+solution}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+logger\+\_\+biobj\+\_\+feed\+\_\+solution(coco\+\_\+problem\+\_\+t $\ast$problem, const size\+\_\+t evaluation, const double $\ast$y)}{coco_logger_biobj_feed_solution(coco_problem_t *problem, const size_t evaluation, const double *y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} coco\+\_\+logger\+\_\+biobj\+\_\+feed\+\_\+solution (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem, }
+\item[{const size\+\_\+t}]{evaluation, }
+\item[{const {\bf double} $\ast$}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a2cf82d26b0e461bfa2aa4f6f8c69f7e3}{}\label{coco_8h_a2cf82d26b0e461bfa2aa4f6f8c69f7e3}
+
+
+Feeds the solution to the bi-\/objective logger for logger output reconstruction purposes. 
+
+Sets the number of evaluations, adds the objective vector to the archive and outputs information according to observer options (but does not output the archive).
+
+\begin{DoxyNote}{Note}
+Vector y must point to a correctly sized allocated memory region and the given evaluation number must be larger than the existing one.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em problem} & The given C\+O\+CO problem. \\
+\hline
+{\em evaluation} & The number of evaluations. \\
+\hline
+{\em y} & The objective vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if archive was updated was done and 0 otherwise. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+observer@{coco\+\_\+observer}}
+\index{coco\+\_\+observer@{coco\+\_\+observer}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+observer(const char $\ast$observer\+\_\+name, const char $\ast$options)}{coco_observer(const char *observer_name, const char *options)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+observer\+\_\+t}$\ast$ coco\+\_\+observer (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{observer\+\_\+name, }
+\item[{const char $\ast$}]{options}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a361c69537741748f54b41d5b66d00a0b}{}\label{coco_8h_a361c69537741748f54b41d5b66d00a0b}
+
+
+Constructs a C\+O\+CO observer. 
+
+Currently, three observers are supported\+:
+\begin{DoxyItemize}
+\item \char`\"{}bbob\char`\"{} is the observer for single-\/objective (both noisy and noiseless) problems with known optima, which creates $\ast$.info, $\ast$.dat, $\ast$.tdat and $\ast$.rdat files and logs the distance to the optimum.
+\item \char`\"{}bbob-\/biobj\char`\"{} is the observer for bi-\/objective problems, which creates $\ast$.info, $\ast$.dat and $\ast$.tdat files for the given indicators, as well as an archive folder with $\ast$.adat files containing nondominated solutions.
+\item \char`\"{}toy\char`\"{} is a simple observer that logs when a target has been hit.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer\+\_\+name} & A string containing the name of the observer. Currently supported observer names are \char`\"{}bbob\char`\"{}, \char`\"{}bbob-\/biobj\char`\"{}, \char`\"{}toy\char`\"{}. Strings \char`\"{}no\+\_\+observer\char`\"{}, \char`\"{}\char`\"{} or N\+U\+LL return N\+U\+LL. \\
+\hline
+{\em observer\+\_\+options} & A string of pairs \char`\"{}key\+: value\char`\"{} used to pass the options to the observer. Some observer options are general, while others are specific to some observers. Here we list only the general options, see observer\+\_\+bbob, observer\+\_\+biobj and observer\+\_\+toy for options of the specific observers.
+\begin{DoxyItemize}
+\item \char`\"{}result\+\_\+folder\+: N\+A\+M\+E\char`\"{} determines the folder within the \char`\"{}exdata\char`\"{} folder into which the results will be output. If the folder with the given name already exists, first N\+A\+M\+E\+\_\+001 will be tried, then N\+A\+M\+E\+\_\+002 and so on. The default value is \char`\"{}default\char`\"{}.
+\item \char`\"{}algorithm\+\_\+name\+: N\+A\+M\+E\char`\"{}, where N\+A\+ME is a short name of the algorithm that will be used in plots (no spaces are allowed). The default value is \char`\"{}\+A\+L\+G\char`\"{}.
+\item \char`\"{}algorithm\+\_\+info\+: S\+T\+R\+I\+N\+G\char`\"{} stores the description of the algorithm. If it contains spaces, it must be surrounded by double quotes. The default value is \char`\"{}\char`\"{} (no description).
+\item \char`\"{}number\+\_\+target\+\_\+triggers\+: V\+A\+L\+U\+E\char`\"{} defines the number of targets between each 10$\ast$$\ast$i and 10$\ast$$\ast$(i+1) (equally spaced in the logarithmic scale) that trigger logging. The default value is 100.
+\item \char`\"{}target\+\_\+precision\+: V\+A\+L\+U\+E\char`\"{} defines the precision used for targets (there are no targets for abs(values) $<$ target\+\_\+precision). The default value is 1e-\/8.
+\item \char`\"{}number\+\_\+evaluation\+\_\+triggers\+: V\+A\+L\+U\+E\char`\"{} defines the number of evaluations to be logged between each 10$\ast$$\ast$i and 10$\ast$$\ast$(i+1). The default value is 20.
+\item \char`\"{}base\+\_\+evaluation\+\_\+triggers\+: V\+A\+L\+U\+E\+S\char`\"{} defines the base evaluations used to produce an additional evaluation-\/based logging. The numbers of evaluations that trigger logging are every base\+\_\+evaluation $\ast$ dimension $\ast$ (10$\ast$$\ast$i). For example, if base\+\_\+evaluation\+\_\+triggers = \char`\"{}1,2,5\char`\"{}, the logger will be triggered by evaluations dim$\ast$1, dim$\ast$2, dim$\ast$5, 10$\ast$dim$\ast$1, 10$\ast$dim$\ast$2, 10$\ast$dim$\ast$5, 100$\ast$dim$\ast$1, 100$\ast$dim$\ast$2, 100$\ast$dim$\ast$5, ... The default value is \char`\"{}1,2,5\char`\"{}.
+\item \char`\"{}precision\+\_\+x\+: V\+A\+L\+U\+E\char`\"{} defines the precision used when outputting variables and corresponds to the number of digits to be printed after the decimal point. The default value is 8.
+\item \char`\"{}precision\+\_\+f\+: V\+A\+L\+U\+E\char`\"{} defines the precision used when outputting f values and corresponds to the number of digits to be printed after the decimal point. The default value is 15.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed observer object or N\+U\+LL if observer\+\_\+name equals N\+U\+LL, \char`\"{}\char`\"{} or \char`\"{}no\+\_\+observer\char`\"{}. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+observer\+\_\+get\+\_\+result\+\_\+folder@{coco\+\_\+observer\+\_\+get\+\_\+result\+\_\+folder}}
+\index{coco\+\_\+observer\+\_\+get\+\_\+result\+\_\+folder@{coco\+\_\+observer\+\_\+get\+\_\+result\+\_\+folder}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+observer\+\_\+get\+\_\+result\+\_\+folder(const coco\+\_\+observer\+\_\+t $\ast$observer)}{coco_observer_get_result_folder(const coco_observer_t *observer)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ coco\+\_\+observer\+\_\+get\+\_\+result\+\_\+folder (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+observer\+\_\+t} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a07949a7fb4551fc0d4c5df1c0b47d591}{}\label{coco_8h_a07949a7fb4551fc0d4c5df1c0b47d591}
+
+
+Returns result folder name, where logger output is written. 
+
+Get the result folder name, which is a unique folder name constructed from the result\+\_\+folder option.
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The C\+O\+CO observer, whose logger may be wrapping a problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result folder name, where the logger writes its output. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+add\+\_\+observer@{coco\+\_\+problem\+\_\+add\+\_\+observer}}
+\index{coco\+\_\+problem\+\_\+add\+\_\+observer@{coco\+\_\+problem\+\_\+add\+\_\+observer}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+add\+\_\+observer(coco\+\_\+problem\+\_\+t $\ast$problem, coco\+\_\+observer\+\_\+t $\ast$observer)}{coco_problem_add_observer(coco_problem_t *problem, coco_observer_t *observer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+problem\+\_\+t}$\ast$ coco\+\_\+problem\+\_\+add\+\_\+observer (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem, }
+\item[{{\bf coco\+\_\+observer\+\_\+t} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_af894effafadb5f75ecd3bb75843f8a3e}{}\label{coco_8h_af894effafadb5f75ecd3bb75843f8a3e}
+
+
+Adds an observer to the given problem. 
+
+Wraps the observer\textquotesingle{}s logger around the problem if the observer is not N\+U\+LL and invokes the initialization of this logger.
+
+
+\begin{DoxyParams}{Parameters}
+{\em problem} & The given C\+O\+CO problem. \\
+\hline
+{\em observer} & The C\+O\+CO observer, whose logger will wrap the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The observed problem in the form of a new C\+O\+CO problem instance or the same problem if the observer is N\+U\+LL. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+final\+\_\+target\+\_\+hit@{coco\+\_\+problem\+\_\+final\+\_\+target\+\_\+hit}}
+\index{coco\+\_\+problem\+\_\+final\+\_\+target\+\_\+hit@{coco\+\_\+problem\+\_\+final\+\_\+target\+\_\+hit}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+final\+\_\+target\+\_\+hit(const coco\+\_\+problem\+\_\+t $\ast$problem)}{coco_problem_final_target_hit(const coco_problem_t *problem)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} coco\+\_\+problem\+\_\+final\+\_\+target\+\_\+hit (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a1164d85fd641ca48046b943344ae9069}{}\label{coco_8h_a1164d85fd641ca48046b943344ae9069}
+
+
+Returns 1 if the final target was hit, 0 otherwise. 
+
+\begin{DoxyNote}{Note}
+Can be used to prevent unnecessary burning of C\+PU time. 
+\end{DoxyNote}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+get\+\_\+best\+\_\+observed\+\_\+fvalue1@{coco\+\_\+problem\+\_\+get\+\_\+best\+\_\+observed\+\_\+fvalue1}}
+\index{coco\+\_\+problem\+\_\+get\+\_\+best\+\_\+observed\+\_\+fvalue1@{coco\+\_\+problem\+\_\+get\+\_\+best\+\_\+observed\+\_\+fvalue1}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+get\+\_\+best\+\_\+observed\+\_\+fvalue1(const coco\+\_\+problem\+\_\+t $\ast$problem)}{coco_problem_get_best_observed_fvalue1(const coco_problem_t *problem)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf double} coco\+\_\+problem\+\_\+get\+\_\+best\+\_\+observed\+\_\+fvalue1 (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a7295173033f50d6409c85cdc2b1d6989}{}\label{coco_8h_a7295173033f50d6409c85cdc2b1d6989}
+
+
+Returns the best observed value for the first objective. 
+
+\begin{DoxyNote}{Note}
+Tentative... 
+\end{DoxyNote}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+get\+\_\+id@{coco\+\_\+problem\+\_\+get\+\_\+id}}
+\index{coco\+\_\+problem\+\_\+get\+\_\+id@{coco\+\_\+problem\+\_\+get\+\_\+id}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+get\+\_\+id(const coco\+\_\+problem\+\_\+t $\ast$problem)}{coco_problem_get_id(const coco_problem_t *problem)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ coco\+\_\+problem\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a7d31b340e2f1290191965d8411608ea4}{}\label{coco_8h_a7d31b340e2f1290191965d8411608ea4}
+
+
+Returns the ID of the problem. 
+
+The ID is guaranteed to contain only characters in the set \mbox{[}a-\/z0-\/9\+\_\+-\/\mbox{]}. It should therefore be safe to use it to construct filenames or other identifiers.
+
+Each problem ID should be unique within each benchmark suite.
+
+\begin{DoxyNote}{Note}
+Do not modify the returned string! If you free the problem, the returned pointer becomes invalid. When in doubt, use coco\+\_\+strdup() on the returned value. 
+\end{DoxyNote}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+get\+\_\+initial\+\_\+solution@{coco\+\_\+problem\+\_\+get\+\_\+initial\+\_\+solution}}
+\index{coco\+\_\+problem\+\_\+get\+\_\+initial\+\_\+solution@{coco\+\_\+problem\+\_\+get\+\_\+initial\+\_\+solution}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+get\+\_\+initial\+\_\+solution(const coco\+\_\+problem\+\_\+t $\ast$problem, double $\ast$initial\+\_\+solution)}{coco_problem_get_initial_solution(const coco_problem_t *problem, double *initial_solution)}}]{\setlength{\rightskip}{0pt plus 5cm}void coco\+\_\+problem\+\_\+get\+\_\+initial\+\_\+solution (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem, }
+\item[{{\bf double} $\ast$}]{initial\+\_\+solution}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_ac5a44845acfadd7c5cccb9900a566b32}{}\label{coco_8h_ac5a44845acfadd7c5cccb9900a566b32}
+
+
+Returns an initial solution, i.\+e. a feasible variable setting, to the problem. 
+
+Copies problem-\/$>$initial\+\_\+solution into initial\+\_\+solution if not null, otherwise the center of the problem\textquotesingle{}s region of interest is the initial solution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em problem} & The given C\+O\+CO problem. \\
+\hline
+{\em initial\+\_\+solution} & The pointer to the initial solution being set by this method. \\
+\hline
+\end{DoxyParams}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+get\+\_\+name@{coco\+\_\+problem\+\_\+get\+\_\+name}}
+\index{coco\+\_\+problem\+\_\+get\+\_\+name@{coco\+\_\+problem\+\_\+get\+\_\+name}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+get\+\_\+name(const coco\+\_\+problem\+\_\+t $\ast$problem)}{coco_problem_get_name(const coco_problem_t *problem)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ coco\+\_\+problem\+\_\+get\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a3fbb83591242a6767d3ca5bbe8597321}{}\label{coco_8h_a3fbb83591242a6767d3ca5bbe8597321}
+
+
+Returns the name of the problem. 
+
+\begin{DoxyNote}{Note}
+Do not modify the returned string! If you free the problem, the returned pointer becomes invalid. When in doubt, use coco\+\_\+strdup() on the returned value. 
+\end{DoxyNote}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+problem\+\_\+remove\+\_\+observer@{coco\+\_\+problem\+\_\+remove\+\_\+observer}}
+\index{coco\+\_\+problem\+\_\+remove\+\_\+observer@{coco\+\_\+problem\+\_\+remove\+\_\+observer}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+problem\+\_\+remove\+\_\+observer(coco\+\_\+problem\+\_\+t $\ast$problem, coco\+\_\+observer\+\_\+t $\ast$observer)}{coco_problem_remove_observer(coco_problem_t *problem, coco_observer_t *observer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+problem\+\_\+t}$\ast$ coco\+\_\+problem\+\_\+remove\+\_\+observer (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem, }
+\item[{{\bf coco\+\_\+observer\+\_\+t} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_aac58e5039567090d6303b81f58532213}{}\label{coco_8h_aac58e5039567090d6303b81f58532213}
+
+
+Removes an observer from the given problem. 
+
+Frees the observer\textquotesingle{}s logger and returns the inner problem.
+
+
+\begin{DoxyParams}{Parameters}
+{\em problem} & The observed C\+O\+CO problem. \\
+\hline
+{\em observer} & The C\+O\+CO observer, whose logger was wrapping the problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The unobserved problem as a pointer to the inner problem or the same problem if the problem was not observed. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+random\+\_\+normal@{coco\+\_\+random\+\_\+normal}}
+\index{coco\+\_\+random\+\_\+normal@{coco\+\_\+random\+\_\+normal}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+random\+\_\+normal(coco\+\_\+random\+\_\+state\+\_\+t $\ast$state)}{coco_random_normal(coco_random_state_t *state)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf double} coco\+\_\+random\+\_\+normal (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+random\+\_\+state\+\_\+t} $\ast$}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a6344ee786bf0f08e540343bd1e70babf}{}\label{coco_8h_a6344ee786bf0f08e540343bd1e70babf}
+
+
+Generates an approximately normal random number. 
+
+Instead of using the (expensive) polar method, we may cheat and abuse the central limit theorem. The sum of 12 uniform random values has mean 6, variance 1 and is approximately normal. Subtract 6 and you get an approximately N(0, 1) random number. \index{coco.\+h@{coco.\+h}!coco\+\_\+recommend\+\_\+solution@{coco\+\_\+recommend\+\_\+solution}}
+\index{coco\+\_\+recommend\+\_\+solution@{coco\+\_\+recommend\+\_\+solution}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+recommend\+\_\+solution(coco\+\_\+problem\+\_\+t $\ast$problem, const double $\ast$x)}{coco_recommend_solution(coco_problem_t *problem, const double *x)}}]{\setlength{\rightskip}{0pt plus 5cm}void coco\+\_\+recommend\+\_\+solution (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+problem\+\_\+t} $\ast$}]{problem, }
+\item[{const {\bf double} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_afd76a19eddd49fb78c22563390437df2}{}\label{coco_8h_afd76a19eddd49fb78c22563390437df2}
+
+
+Recommends a solution as the current best guesses to the problem. Not implemented yet. 
+
+Evaluates and logs the given solution (as the coco\+\_\+evaluate\+\_\+function), but does not return the evaluated value.
+
+\begin{DoxyNote}{Note}
+None of the observers implements this function yet! 
+
+x must point to a correctly sized allocated memory region.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em problem} & The given C\+O\+CO problem. \\
+\hline
+{\em x} & The decision vector. \\
+\hline
+\end{DoxyParams}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+remove\+\_\+directory@{coco\+\_\+remove\+\_\+directory}}
+\index{coco\+\_\+remove\+\_\+directory@{coco\+\_\+remove\+\_\+directory}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+remove\+\_\+directory(const char $\ast$path)}{coco_remove_directory(const char *path)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} coco\+\_\+remove\+\_\+directory (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_af079b44546733c5be1cd68e38a2b06fc}{}\label{coco_8h_af079b44546733c5be1cd68e38a2b06fc}
+
+
+Removes the given directory and all its contents. 
+
+The method should work across different platforms/compilers.
+
+The path to the directory
+
+\begin{DoxyReturn}{Returns}
+0 on successful completion, and -\/1 on error. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+set\+\_\+log\+\_\+level@{coco\+\_\+set\+\_\+log\+\_\+level}}
+\index{coco\+\_\+set\+\_\+log\+\_\+level@{coco\+\_\+set\+\_\+log\+\_\+level}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+set\+\_\+log\+\_\+level(const char $\ast$level)}{coco_set_log_level(const char *level)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ coco\+\_\+set\+\_\+log\+\_\+level (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{level}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a8baacecb66a862689885d4e26ac26f62}{}\label{coco_8h_a8baacecb66a862689885d4e26ac26f62}
+
+
+Sets the C\+O\+CO log level to the given value and returns the previous value of the log level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+level} & Denotes the level of information given to the user through the standard output and error streams. Can take on the values\+:
+\begin{DoxyItemize}
+\item \char`\"{}error\char`\"{} (only error messages are output),
+\item \char`\"{}warning\char`\"{} (only error and warning messages are output),
+\item \char`\"{}info\char`\"{} (only error, warning and info messages are output) and
+\item \char`\"{}debug\char`\"{} (all messages are output).
+\item \char`\"{}\char`\"{} does not set a new value The default value is info.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The previous coco\+\_\+log\+\_\+level value as an immutable string. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+strdupf@{coco\+\_\+strdupf}}
+\index{coco\+\_\+strdupf@{coco\+\_\+strdupf}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+strdupf(const char $\ast$str,...)}{coco_strdupf(const char *str,...)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ coco\+\_\+strdupf (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a2e7d3eb2f53f177bc923d91c819f5229}{}\label{coco_8h_a2e7d3eb2f53f177bc923d91c819f5229}
+
+
+Formatted string duplication. 
+
+Optional arguments are used like in sprintf. \index{coco.\+h@{coco.\+h}!coco\+\_\+suite@{coco\+\_\+suite}}
+\index{coco\+\_\+suite@{coco\+\_\+suite}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite(const char $\ast$suite\+\_\+name, const char $\ast$suite\+\_\+instance, const char $\ast$suite\+\_\+options)}{coco_suite(const char *suite_name, const char *suite_instance, const char *suite_options)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+suite\+\_\+t}$\ast$ coco\+\_\+suite (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{suite\+\_\+name, }
+\item[{const char $\ast$}]{suite\+\_\+instance, }
+\item[{const char $\ast$}]{suite\+\_\+options}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_ac78e0456818c46c178c4cde012732acd}{}\label{coco_8h_ac78e0456818c46c178c4cde012732acd}
+
+
+Constructs a C\+O\+CO suite. 
+
+Currently, six suites are supported\+:
+\begin{DoxyItemize}
+\item \char`\"{}bbob\char`\"{} contains 24 \href{http://coco.lri.fr/downloads/download15.03/bbobdocfunctions.pdf}{\tt single-\/objective functions} in 6 dimensions (2, 3, 5, 10, 20, 40)
+\item \char`\"{}bbob-\/biobj\char`\"{} contains 55 \href{http://numbbo.github.io/coco-doc/bbob-biobj/functions}{\tt bi-\/objective functions} in 6 dimensions (2, 3, 5, 10, 20, 40)
+\item \char`\"{}bbob-\/biobj-\/ext\char`\"{} as an extension of \char`\"{}bbob-\/biobj\char`\"{} contains 92 \href{http://numbbo.github.io/coco-doc/bbob-biobj/functions}{\tt bi-\/objective functions} in 6 dimensions (2, 3, 5, 10, 20, 40)
+\item \char`\"{}bbob-\/largescale\char`\"{} contains 24 \href{http://coco.lri.fr/downloads/download15.03/bbobdocfunctions.pdf}{\tt single-\/objective functions} in 6 large dimensions (40, 80, 160, 320, 640, 1280)
+\item \char`\"{}bbob-\/constrained\char`\"{} contains 48 linearly-\/constrained problems, which are combinations of 8 single objective functions with 6 different numbers of linear constraints (1, 2, 10, dimension/2, dimension-\/1, dimension+1), in 6 dimensions (2, 3, 5, 10, 20, 40).
+\item \char`\"{}toy\char`\"{} contains 6 \href{http://coco.lri.fr/downloads/download15.03/bbobdocfunctions.pdf}{\tt single-\/objective functions} in 5 dimensions (2, 3, 5, 10, 20)
+\end{DoxyItemize}
+
+Only the suite\+\_\+name parameter needs to be non-\/empty. The suite\+\_\+instance and suite\+\_\+options can be \char`\"{}\char`\"{} or N\+U\+LL. In this case, default values are taken (default instances of a suite are those used in the last year and the suite is not filtered by default).
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite\+\_\+name} & A string containing the name of the suite. Currently supported suite names are \char`\"{}bbob\char`\"{}, \char`\"{}bbob-\/biobj\char`\"{}, \char`\"{}bbob-\/biobj-\/ext\char`\"{}, \char`\"{}bbob-\/largescale\char`\"{}, \char`\"{}bbob-\/constrained\char`\"{}, and \char`\"{}toy\char`\"{}. \\
+\hline
+{\em suite\+\_\+instance} & A string used for defining the suite instances. Two ways are supported\+:
+\begin{DoxyItemize}
+\item \char`\"{}year\+: Y\+E\+A\+R\char`\"{}, where Y\+E\+AR is the year of the B\+B\+OB workshop, includes the instances (to be) used in that year\textquotesingle{}s workshop;
+\item \char`\"{}instances\+: V\+A\+L\+U\+E\+S\char`\"{}, where V\+A\+L\+U\+ES are instance numbers from 1 on written as a comma-\/separated list or a range m-\/n. 
+\end{DoxyItemize}\\
+\hline
+{\em suite\+\_\+options} & A string of pairs \char`\"{}key\+: value\char`\"{} used to filter the suite (especially useful for parallelizing the experiments). Supported options\+:
+\begin{DoxyItemize}
+\item \char`\"{}dimensions\+: L\+I\+S\+T\char`\"{}, where L\+I\+ST is the list of dimensions to keep in the suite (range-\/style syntax is not allowed here),
+\item \char`\"{}dimension\+\_\+indices\+: V\+A\+L\+U\+E\+S\char`\"{}, where V\+A\+L\+U\+ES is a list or a range of dimension indices (starting from 1) to keep in the suite, and
+\item \char`\"{}function\+\_\+indices\+: V\+A\+L\+U\+E\+S\char`\"{}, where V\+A\+L\+U\+ES is a list or a range of function indices (starting from 1) to keep in the suite, and
+\item \char`\"{}instance\+\_\+indices\+: V\+A\+L\+U\+E\+S\char`\"{}, where V\+A\+L\+U\+ES is a list or a range of instance indices (starting from 1) to keep in the suite.
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed suite object. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+decode\+\_\+problem\+\_\+index@{coco\+\_\+suite\+\_\+decode\+\_\+problem\+\_\+index}}
+\index{coco\+\_\+suite\+\_\+decode\+\_\+problem\+\_\+index@{coco\+\_\+suite\+\_\+decode\+\_\+problem\+\_\+index}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+decode\+\_\+problem\+\_\+index(const coco\+\_\+suite\+\_\+t $\ast$suite, const size\+\_\+t problem\+\_\+index, size\+\_\+t $\ast$function\+\_\+idx, size\+\_\+t $\ast$dimension\+\_\+idx, size\+\_\+t $\ast$instance\+\_\+idx)}{coco_suite_decode_problem_index(const coco_suite_t *suite, const size_t problem_index, size_t *function_idx, size_t *dimension_idx, size_t *instance_idx)}}]{\setlength{\rightskip}{0pt plus 5cm}void coco\+\_\+suite\+\_\+decode\+\_\+problem\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{const size\+\_\+t}]{problem\+\_\+index, }
+\item[{size\+\_\+t $\ast$}]{function\+\_\+idx, }
+\item[{size\+\_\+t $\ast$}]{dimension\+\_\+idx, }
+\item[{size\+\_\+t $\ast$}]{instance\+\_\+idx}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_afba31042ce1fc719ad2b55e334bc56f2}{}\label{coco_8h_afba31042ce1fc719ad2b55e334bc56f2}
+
+
+Computes the function, dimension and instance indexes of the problem with problem\+\_\+index in the given suite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The suite. \\
+\hline
+{\em problem\+\_\+index} & Index of the problem in the suite (starting with 0). \\
+\hline
+{\em function\+\_\+idx} & Pointer to the index of the function, which is set by this function. \\
+\hline
+{\em dimension\+\_\+idx} & Pointer to the index of the dimension, which is set by this function. \\
+\hline
+{\em instance\+\_\+idx} & Pointer to the index of the instance, which is set by this function. \\
+\hline
+\end{DoxyParams}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+encode\+\_\+problem\+\_\+index@{coco\+\_\+suite\+\_\+encode\+\_\+problem\+\_\+index}}
+\index{coco\+\_\+suite\+\_\+encode\+\_\+problem\+\_\+index@{coco\+\_\+suite\+\_\+encode\+\_\+problem\+\_\+index}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+encode\+\_\+problem\+\_\+index(const coco\+\_\+suite\+\_\+t $\ast$suite, const size\+\_\+t function\+\_\+idx, const size\+\_\+t dimension\+\_\+idx, const size\+\_\+t instance\+\_\+idx)}{coco_suite_encode_problem_index(const coco_suite_t *suite, const size_t function_idx, const size_t dimension_idx, const size_t instance_idx)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t coco\+\_\+suite\+\_\+encode\+\_\+problem\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{const size\+\_\+t}]{function\+\_\+idx, }
+\item[{const size\+\_\+t}]{dimension\+\_\+idx, }
+\item[{const size\+\_\+t}]{instance\+\_\+idx}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a56279a2384ad7255d0cc459c2d707284}{}\label{coco_8h_a56279a2384ad7255d0cc459c2d707284}
+
+
+Computes the index of the problem in the suite that corresponds to the given function, dimension and instance indices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The suite. \\
+\hline
+{\em function\+\_\+idx} & Index of the function (starting with 0). \\
+\hline
+{\em dimension\+\_\+idx} & Index of the dimension (starting with 0). \\
+\hline
+{\em instance\+\_\+idx} & Index of the insatnce (starting with 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The problem index in the suite computed from function\+\_\+idx, dimension\+\_\+idx and instance\+\_\+idx. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+get\+\_\+dimension\+\_\+from\+\_\+dimension\+\_\+index@{coco\+\_\+suite\+\_\+get\+\_\+dimension\+\_\+from\+\_\+dimension\+\_\+index}}
+\index{coco\+\_\+suite\+\_\+get\+\_\+dimension\+\_\+from\+\_\+dimension\+\_\+index@{coco\+\_\+suite\+\_\+get\+\_\+dimension\+\_\+from\+\_\+dimension\+\_\+index}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+get\+\_\+dimension\+\_\+from\+\_\+dimension\+\_\+index(const coco\+\_\+suite\+\_\+t $\ast$suite, const size\+\_\+t dimension\+\_\+idx)}{coco_suite_get_dimension_from_dimension_index(const coco_suite_t *suite, const size_t dimension_idx)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t coco\+\_\+suite\+\_\+get\+\_\+dimension\+\_\+from\+\_\+dimension\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{const size\+\_\+t}]{dimension\+\_\+idx}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_ab7bae708066f72308be1c14760db200d}{}\label{coco_8h_ab7bae708066f72308be1c14760db200d}
+
+
+Returns the dimension number in the suite in position dimension\+\_\+idx (counting from 0). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The given suite. \\
+\hline
+{\em dimension\+\_\+idx} & The index of the dimension in question (starting from 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dimension number in position dimension\+\_\+idx in the suite. If the dimension has been filtered out through suite\+\_\+options in the coco\+\_\+suite function, the result is 0. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+get\+\_\+function\+\_\+from\+\_\+function\+\_\+index@{coco\+\_\+suite\+\_\+get\+\_\+function\+\_\+from\+\_\+function\+\_\+index}}
+\index{coco\+\_\+suite\+\_\+get\+\_\+function\+\_\+from\+\_\+function\+\_\+index@{coco\+\_\+suite\+\_\+get\+\_\+function\+\_\+from\+\_\+function\+\_\+index}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+get\+\_\+function\+\_\+from\+\_\+function\+\_\+index(const coco\+\_\+suite\+\_\+t $\ast$suite, const size\+\_\+t function\+\_\+idx)}{coco_suite_get_function_from_function_index(const coco_suite_t *suite, const size_t function_idx)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t coco\+\_\+suite\+\_\+get\+\_\+function\+\_\+from\+\_\+function\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{const size\+\_\+t}]{function\+\_\+idx}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a348c0b075d764eb9f4c71d49a701a12b}{}\label{coco_8h_a348c0b075d764eb9f4c71d49a701a12b}
+
+
+Returns the function number in the suite in position function\+\_\+idx (counting from 0). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The given suite. \\
+\hline
+{\em function\+\_\+idx} & The index of the function in question (starting from 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function number in position function\+\_\+idx in the suite. If the function has been filtered out through suite\+\_\+options in the coco\+\_\+suite function, the result is 0. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+get\+\_\+instance\+\_\+from\+\_\+instance\+\_\+index@{coco\+\_\+suite\+\_\+get\+\_\+instance\+\_\+from\+\_\+instance\+\_\+index}}
+\index{coco\+\_\+suite\+\_\+get\+\_\+instance\+\_\+from\+\_\+instance\+\_\+index@{coco\+\_\+suite\+\_\+get\+\_\+instance\+\_\+from\+\_\+instance\+\_\+index}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+get\+\_\+instance\+\_\+from\+\_\+instance\+\_\+index(const coco\+\_\+suite\+\_\+t $\ast$suite, const size\+\_\+t instance\+\_\+idx)}{coco_suite_get_instance_from_instance_index(const coco_suite_t *suite, const size_t instance_idx)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t coco\+\_\+suite\+\_\+get\+\_\+instance\+\_\+from\+\_\+instance\+\_\+index (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{const size\+\_\+t}]{instance\+\_\+idx}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_ae5b76b849d2474e3c0067b35e7f89fb0}{}\label{coco_8h_ae5b76b849d2474e3c0067b35e7f89fb0}
+
+
+Returns the instance number in the suite in position instance\+\_\+idx (counting from 0). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The given suite. \\
+\hline
+{\em instance\+\_\+idx} & The index of the instance in question (starting from 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The instance number in position instance\+\_\+idx in the suite. If the instance has been filtered out through suite\+\_\+options in the coco\+\_\+suite function, the result is 0. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+get\+\_\+next\+\_\+problem@{coco\+\_\+suite\+\_\+get\+\_\+next\+\_\+problem}}
+\index{coco\+\_\+suite\+\_\+get\+\_\+next\+\_\+problem@{coco\+\_\+suite\+\_\+get\+\_\+next\+\_\+problem}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+get\+\_\+next\+\_\+problem(coco\+\_\+suite\+\_\+t $\ast$suite, coco\+\_\+observer\+\_\+t $\ast$observer)}{coco_suite_get_next_problem(coco_suite_t *suite, coco_observer_t *observer)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+problem\+\_\+t}$\ast$ coco\+\_\+suite\+\_\+get\+\_\+next\+\_\+problem (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{{\bf coco\+\_\+observer\+\_\+t} $\ast$}]{observer}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a422cee3f06f4b2524234102f75306fe7}{}\label{coco_8h_a422cee3f06f4b2524234102f75306fe7}
+
+
+Returns the next (observed) problem of the suite or N\+U\+LL if there is no next problem left. 
+
+Iterates through the suite first by instances, then by functions and finally by dimensions. The instances/functions/dimensions that have been filtered out using the suite\+\_\+options of the coco\+\_\+suite function are skipped. Outputs some information regarding the current place in the iteration. The returned problem is wrapped with the observer. If the observer is N\+U\+LL, the returned problem is unobserved.
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The given suite. \\
+\hline
+{\em observer} & The observer used to wrap the problem. If N\+U\+LL, the problem is returned unobserved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The next problem of the suite or N\+U\+LL if there is no next problem left. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+get\+\_\+number\+\_\+of\+\_\+problems@{coco\+\_\+suite\+\_\+get\+\_\+number\+\_\+of\+\_\+problems}}
+\index{coco\+\_\+suite\+\_\+get\+\_\+number\+\_\+of\+\_\+problems@{coco\+\_\+suite\+\_\+get\+\_\+number\+\_\+of\+\_\+problems}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+get\+\_\+number\+\_\+of\+\_\+problems(const coco\+\_\+suite\+\_\+t $\ast$suite)}{coco_suite_get_number_of_problems(const coco_suite_t *suite)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t coco\+\_\+suite\+\_\+get\+\_\+number\+\_\+of\+\_\+problems (
+\begin{DoxyParamCaption}
+\item[{const {\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a3e34e34ffc1d99f1e9247426151741c5}{}\label{coco_8h_a3e34e34ffc1d99f1e9247426151741c5}
+
+
+Returns the number of problems in the given suite. 
+
+The number of problems in the suite is computed as a product of the number of instances, number of functions and number of dimensions and therefore doesn\textquotesingle{}t account for any filtering done through the suite\+\_\+options parameter of the coco\+\_\+suite function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The given suite.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of problems in the suite. 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+get\+\_\+problem@{coco\+\_\+suite\+\_\+get\+\_\+problem}}
+\index{coco\+\_\+suite\+\_\+get\+\_\+problem@{coco\+\_\+suite\+\_\+get\+\_\+problem}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+get\+\_\+problem(coco\+\_\+suite\+\_\+t $\ast$suite, const size\+\_\+t problem\+\_\+index)}{coco_suite_get_problem(coco_suite_t *suite, const size_t problem_index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+problem\+\_\+t}$\ast$ coco\+\_\+suite\+\_\+get\+\_\+problem (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{const size\+\_\+t}]{problem\+\_\+index}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a8456ba2ae830c1e4c15d39922ec18d18}{}\label{coco_8h_a8456ba2ae830c1e4c15d39922ec18d18}
+
+
+Returns the problem of the suite defined by problem\+\_\+index. 
+
+Note that the problem\+\_\+index depends on the number of instances a suite is defined with.
+
+
+\begin{DoxyParams}{Parameters}
+{\em suite} & The given suite. \\
+\hline
+{\em problem\+\_\+index} & The index of the problem to be returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The problem of the suite defined by problem\+\_\+index (N\+U\+LL if this problem has been filtered out from the suite). 
+\end{DoxyReturn}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+suite\+\_\+get\+\_\+problem\+\_\+by\+\_\+function\+\_\+dimension\+\_\+instance@{coco\+\_\+suite\+\_\+get\+\_\+problem\+\_\+by\+\_\+function\+\_\+dimension\+\_\+instance}}
+\index{coco\+\_\+suite\+\_\+get\+\_\+problem\+\_\+by\+\_\+function\+\_\+dimension\+\_\+instance@{coco\+\_\+suite\+\_\+get\+\_\+problem\+\_\+by\+\_\+function\+\_\+dimension\+\_\+instance}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+suite\+\_\+get\+\_\+problem\+\_\+by\+\_\+function\+\_\+dimension\+\_\+instance(coco\+\_\+suite\+\_\+t $\ast$suite, const size\+\_\+t function, const size\+\_\+t dimension, const size\+\_\+t instance)}{coco_suite_get_problem_by_function_dimension_instance(coco_suite_t *suite, const size_t function, const size_t dimension, const size_t instance)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf coco\+\_\+problem\+\_\+t}$\ast$ coco\+\_\+suite\+\_\+get\+\_\+problem\+\_\+by\+\_\+function\+\_\+dimension\+\_\+instance (
+\begin{DoxyParamCaption}
+\item[{{\bf coco\+\_\+suite\+\_\+t} $\ast$}]{suite, }
+\item[{const size\+\_\+t}]{function, }
+\item[{const size\+\_\+t}]{dimension, }
+\item[{const size\+\_\+t}]{instance}
+\end{DoxyParamCaption}
+)}\hypertarget{coco_8h_a4dc45ab5f19defa0b1498eac64714a02}{}\label{coco_8h_a4dc45ab5f19defa0b1498eac64714a02}
+
+
+Returns the first problem of the suite defined by function, dimension and instance numbers. 
+
+\begin{DoxyNote}{Note}
+\+: While a suite can contain multiple problems with equal function, dimension and instance, this function always returns the first problem in the suite with the given function, dimension and instance values. If the given values don\textquotesingle{}t correspond to a problem, the function returns N\+U\+LL. 
+\end{DoxyNote}
+
+
+\subsection{Variable Documentation}
+\index{coco.\+h@{coco.\+h}!coco\+\_\+version@{coco\+\_\+version}}
+\index{coco\+\_\+version@{coco\+\_\+version}!coco.\+h@{coco.\+h}}
+\subsubsection[{\texorpdfstring{coco\+\_\+version}{coco_version}}]{\setlength{\rightskip}{0pt plus 5cm}const char coco\+\_\+version\mbox{[}32\mbox{]} = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{coco_8h_a8be59288c776dfa2e3a5f9e4fa67463f}{}\label{coco_8h_a8be59288c776dfa2e3a5f9e4fa67463f}
+
+
+C\+O\+CO\textquotesingle{}s version. 
+
+Automatically updated by do.\+py. 

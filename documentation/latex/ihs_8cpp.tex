@@ -1,0 +1,210 @@
+\hypertarget{ihs_8cpp}{}\section{ihs.\+cpp File Reference}
+\label{ihs_8cpp}\index{ihs.\+cpp@{ihs.\+cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include \char`\"{}ihs.\+h\char`\"{}}\\*
+Include dependency graph for ihs.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ihs_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ihs_8cpp_a0f66474c13206cee6d401b2d1a028cea}{I\+\_\+\+M\+AX}~2147483647
+\item 
+\#define \hyperlink{ihs_8cpp_a9e7f349969ece6e0a2c68f20b9ba2daa}{I\+N\+CX}~10
+\item 
+\#define \hyperlink{ihs_8cpp_a9e7f349969ece6e0a2c68f20b9ba2daa}{I\+N\+CX}~5
+\item 
+\#define \hyperlink{ihs_8cpp_ac1c7bc76dbfd8378fc96541a6243afd1}{T\+I\+M\+E\+\_\+\+S\+I\+ZE}~40
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ihs_8cpp_a2b2439bb10699f1aaa6e3c1154501730}{covariance} (\hyperlink{classint}{int} dim\+\_\+num, \hyperlink{classint}{int} n, \hyperlink{classint}{int} x\mbox{[}$\,$\mbox{]}, \hyperlink{classdouble}{double} \&average, \hyperlink{classdouble}{double} \&std, \hyperlink{classdouble}{double} \&covc)
+\item 
+\hyperlink{classint}{int} \hyperlink{ihs_8cpp_ad1f037290426d212df54116d0ad93e31}{get\+\_\+seed} ()
+\item 
+\hyperlink{classint}{int} \hyperlink{ihs_8cpp_a3b6bae638df4f3ae09e9da5bc139f526}{i4\+\_\+log\+\_\+10} (\hyperlink{classint}{int} i)
+\item 
+\hyperlink{classint}{int} \hyperlink{ihs_8cpp_adada889087a283713c69b70fcb82c833}{i4\+\_\+uniform\+\_\+ab} (\hyperlink{classint}{int} a, \hyperlink{classint}{int} b, \hyperlink{classint}{int} \&seed)
+\item 
+void \hyperlink{ihs_8cpp_afc0bc18ad4ca5da483b3d6c941ec609c}{i4mat\+\_\+transpose\+\_\+print} (\hyperlink{classint}{int} m, \hyperlink{classint}{int} n, \hyperlink{classint}{int} a\mbox{[}$\,$\mbox{]}, string title)
+\item 
+void \hyperlink{ihs_8cpp_ac18548e0c57591a03e126b12c9ceaea5}{i4mat\+\_\+transpose\+\_\+print\+\_\+some} (\hyperlink{classint}{int} m, \hyperlink{classint}{int} n, \hyperlink{classint}{int} a\mbox{[}$\,$\mbox{]}, \hyperlink{classint}{int} ilo, \hyperlink{classint}{int} jlo, \hyperlink{classint}{int} ihi, \hyperlink{classint}{int} jhi, string title)
+\item 
+\hyperlink{classint}{int} $\ast$ \hyperlink{ihs_8cpp_a370c2473ea8b59d56f30ea3c12118601}{ihs} (\hyperlink{classint}{int} dim\+\_\+num, \hyperlink{classint}{int} n, \hyperlink{classint}{int} d, \hyperlink{classint}{int} \&seed)
+\item 
+\hyperlink{classdouble}{double} \hyperlink{ihs_8cpp_a945ebb6e5a945a7b539750532e5e22f7}{r8\+\_\+uniform\+\_\+01} (\hyperlink{classint}{int} \&seed)
+\item 
+void \hyperlink{ihs_8cpp_ac5763ec081c29a89ade44cb1a656e233}{r8mat\+\_\+transpose\+\_\+print} (\hyperlink{classint}{int} m, \hyperlink{classint}{int} n, \hyperlink{classdouble}{double} a\mbox{[}$\,$\mbox{]}, string title)
+\item 
+void \hyperlink{ihs_8cpp_a55f46952f728f30781152504ab52b2e1}{r8mat\+\_\+transpose\+\_\+print\+\_\+some} (\hyperlink{classint}{int} m, \hyperlink{classint}{int} n, \hyperlink{classdouble}{double} a\mbox{[}$\,$\mbox{]}, \hyperlink{classint}{int} ilo, \hyperlink{classint}{int} jlo, \hyperlink{classint}{int} ihi, \hyperlink{classint}{int} jhi, string title)
+\item 
+void \hyperlink{ihs_8cpp_a85c584d7776aa94cb9122198f245629d}{r8mat\+\_\+write} (string output\+\_\+filename, \hyperlink{classint}{int} m, \hyperlink{classint}{int} n, \hyperlink{classdouble}{double} table\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{classdouble}{double} \hyperlink{ihs_8cpp_a0b2c44a9b9a7126a54c3b3d09a609b95}{r8vec\+\_\+average} (\hyperlink{classint}{int} n, \hyperlink{classdouble}{double} a\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{classdouble}{double} \hyperlink{ihs_8cpp_ac7b12d6c8966d7628748699372499cbd}{r8vec\+\_\+std} (\hyperlink{classint}{int} n, \hyperlink{classdouble}{double} a\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{ihs_8cpp_a2219d86aef2195ff323e8349d92abe86}{timestamp} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{ihs.\+cpp@{ihs.\+cpp}!I\+\_\+\+M\+AX@{I\+\_\+\+M\+AX}}
+\index{I\+\_\+\+M\+AX@{I\+\_\+\+M\+AX}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+\_\+\+M\+AX}{I_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+\_\+\+M\+AX~2147483647}\hypertarget{ihs_8cpp_a0f66474c13206cee6d401b2d1a028cea}{}\label{ihs_8cpp_a0f66474c13206cee6d401b2d1a028cea}
+\index{ihs.\+cpp@{ihs.\+cpp}!I\+N\+CX@{I\+N\+CX}}
+\index{I\+N\+CX@{I\+N\+CX}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+N\+CX}{INCX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+CX~10}\hypertarget{ihs_8cpp_a9e7f349969ece6e0a2c68f20b9ba2daa}{}\label{ihs_8cpp_a9e7f349969ece6e0a2c68f20b9ba2daa}
+\index{ihs.\+cpp@{ihs.\+cpp}!I\+N\+CX@{I\+N\+CX}}
+\index{I\+N\+CX@{I\+N\+CX}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+N\+CX}{INCX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+CX~5}\hypertarget{ihs_8cpp_a9e7f349969ece6e0a2c68f20b9ba2daa}{}\label{ihs_8cpp_a9e7f349969ece6e0a2c68f20b9ba2daa}
+\index{ihs.\+cpp@{ihs.\+cpp}!T\+I\+M\+E\+\_\+\+S\+I\+ZE@{T\+I\+M\+E\+\_\+\+S\+I\+ZE}}
+\index{T\+I\+M\+E\+\_\+\+S\+I\+ZE@{T\+I\+M\+E\+\_\+\+S\+I\+ZE}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+I\+M\+E\+\_\+\+S\+I\+ZE}{TIME_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+I\+M\+E\+\_\+\+S\+I\+ZE~40}\hypertarget{ihs_8cpp_ac1c7bc76dbfd8378fc96541a6243afd1}{}\label{ihs_8cpp_ac1c7bc76dbfd8378fc96541a6243afd1}
+
+
+\subsection{Function Documentation}
+\index{ihs.\+cpp@{ihs.\+cpp}!covariance@{covariance}}
+\index{covariance@{covariance}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{covariance(int dim\+\_\+num, int n, int x[], double \&average, double \&std, double \&covc)}{covariance(int dim_num, int n, int x[], double &average, double &std, double &covc)}}]{\setlength{\rightskip}{0pt plus 5cm}void covariance (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{dim\+\_\+num, }
+\item[{{\bf int}}]{n, }
+\item[{{\bf int}}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf double} \&}]{average, }
+\item[{{\bf double} \&}]{std, }
+\item[{{\bf double} \&}]{covc}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a2b2439bb10699f1aaa6e3c1154501730}{}\label{ihs_8cpp_a2b2439bb10699f1aaa6e3c1154501730}
+\index{ihs.\+cpp@{ihs.\+cpp}!get\+\_\+seed@{get\+\_\+seed}}
+\index{get\+\_\+seed@{get\+\_\+seed}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{get\+\_\+seed()}{get_seed()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} get\+\_\+seed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_ad1f037290426d212df54116d0ad93e31}{}\label{ihs_8cpp_ad1f037290426d212df54116d0ad93e31}
+\index{ihs.\+cpp@{ihs.\+cpp}!i4\+\_\+log\+\_\+10@{i4\+\_\+log\+\_\+10}}
+\index{i4\+\_\+log\+\_\+10@{i4\+\_\+log\+\_\+10}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{i4\+\_\+log\+\_\+10(int i)}{i4_log_10(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} i4\+\_\+log\+\_\+10 (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{i}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a3b6bae638df4f3ae09e9da5bc139f526}{}\label{ihs_8cpp_a3b6bae638df4f3ae09e9da5bc139f526}
+\index{ihs.\+cpp@{ihs.\+cpp}!i4\+\_\+uniform\+\_\+ab@{i4\+\_\+uniform\+\_\+ab}}
+\index{i4\+\_\+uniform\+\_\+ab@{i4\+\_\+uniform\+\_\+ab}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{i4\+\_\+uniform\+\_\+ab(int a, int b, int \&seed)}{i4_uniform_ab(int a, int b, int &seed)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int} i4\+\_\+uniform\+\_\+ab (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{a, }
+\item[{{\bf int}}]{b, }
+\item[{{\bf int} \&}]{seed}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_adada889087a283713c69b70fcb82c833}{}\label{ihs_8cpp_adada889087a283713c69b70fcb82c833}
+\index{ihs.\+cpp@{ihs.\+cpp}!i4mat\+\_\+transpose\+\_\+print@{i4mat\+\_\+transpose\+\_\+print}}
+\index{i4mat\+\_\+transpose\+\_\+print@{i4mat\+\_\+transpose\+\_\+print}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{i4mat\+\_\+transpose\+\_\+print(int m, int n, int a[], string title)}{i4mat_transpose_print(int m, int n, int a[], string title)}}]{\setlength{\rightskip}{0pt plus 5cm}void i4mat\+\_\+transpose\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{m, }
+\item[{{\bf int}}]{n, }
+\item[{{\bf int}}]{a\mbox{[}$\,$\mbox{]}, }
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_afc0bc18ad4ca5da483b3d6c941ec609c}{}\label{ihs_8cpp_afc0bc18ad4ca5da483b3d6c941ec609c}
+\index{ihs.\+cpp@{ihs.\+cpp}!i4mat\+\_\+transpose\+\_\+print\+\_\+some@{i4mat\+\_\+transpose\+\_\+print\+\_\+some}}
+\index{i4mat\+\_\+transpose\+\_\+print\+\_\+some@{i4mat\+\_\+transpose\+\_\+print\+\_\+some}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{i4mat\+\_\+transpose\+\_\+print\+\_\+some(int m, int n, int a[], int ilo, int jlo, int ihi, int jhi, string title)}{i4mat_transpose_print_some(int m, int n, int a[], int ilo, int jlo, int ihi, int jhi, string title)}}]{\setlength{\rightskip}{0pt plus 5cm}void i4mat\+\_\+transpose\+\_\+print\+\_\+some (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{m, }
+\item[{{\bf int}}]{n, }
+\item[{{\bf int}}]{a\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf int}}]{ilo, }
+\item[{{\bf int}}]{jlo, }
+\item[{{\bf int}}]{ihi, }
+\item[{{\bf int}}]{jhi, }
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_ac18548e0c57591a03e126b12c9ceaea5}{}\label{ihs_8cpp_ac18548e0c57591a03e126b12c9ceaea5}
+\index{ihs.\+cpp@{ihs.\+cpp}!ihs@{ihs}}
+\index{ihs@{ihs}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{ihs(int dim\+\_\+num, int n, int d, int \&seed)}{ihs(int dim_num, int n, int d, int &seed)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf int}$\ast$ ihs (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{dim\+\_\+num, }
+\item[{{\bf int}}]{n, }
+\item[{{\bf int}}]{d, }
+\item[{{\bf int} \&}]{seed}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a370c2473ea8b59d56f30ea3c12118601}{}\label{ihs_8cpp_a370c2473ea8b59d56f30ea3c12118601}
+\index{ihs.\+cpp@{ihs.\+cpp}!r8\+\_\+uniform\+\_\+01@{r8\+\_\+uniform\+\_\+01}}
+\index{r8\+\_\+uniform\+\_\+01@{r8\+\_\+uniform\+\_\+01}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{r8\+\_\+uniform\+\_\+01(int \&seed)}{r8_uniform_01(int &seed)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf double} r8\+\_\+uniform\+\_\+01 (
+\begin{DoxyParamCaption}
+\item[{{\bf int} \&}]{seed}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a945ebb6e5a945a7b539750532e5e22f7}{}\label{ihs_8cpp_a945ebb6e5a945a7b539750532e5e22f7}
+\index{ihs.\+cpp@{ihs.\+cpp}!r8mat\+\_\+transpose\+\_\+print@{r8mat\+\_\+transpose\+\_\+print}}
+\index{r8mat\+\_\+transpose\+\_\+print@{r8mat\+\_\+transpose\+\_\+print}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{r8mat\+\_\+transpose\+\_\+print(int m, int n, double a[], string title)}{r8mat_transpose_print(int m, int n, double a[], string title)}}]{\setlength{\rightskip}{0pt plus 5cm}void r8mat\+\_\+transpose\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{m, }
+\item[{{\bf int}}]{n, }
+\item[{{\bf double}}]{a\mbox{[}$\,$\mbox{]}, }
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_ac5763ec081c29a89ade44cb1a656e233}{}\label{ihs_8cpp_ac5763ec081c29a89ade44cb1a656e233}
+\index{ihs.\+cpp@{ihs.\+cpp}!r8mat\+\_\+transpose\+\_\+print\+\_\+some@{r8mat\+\_\+transpose\+\_\+print\+\_\+some}}
+\index{r8mat\+\_\+transpose\+\_\+print\+\_\+some@{r8mat\+\_\+transpose\+\_\+print\+\_\+some}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{r8mat\+\_\+transpose\+\_\+print\+\_\+some(int m, int n, double a[], int ilo, int jlo, int ihi, int jhi, string title)}{r8mat_transpose_print_some(int m, int n, double a[], int ilo, int jlo, int ihi, int jhi, string title)}}]{\setlength{\rightskip}{0pt plus 5cm}void r8mat\+\_\+transpose\+\_\+print\+\_\+some (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{m, }
+\item[{{\bf int}}]{n, }
+\item[{{\bf double}}]{a\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf int}}]{ilo, }
+\item[{{\bf int}}]{jlo, }
+\item[{{\bf int}}]{ihi, }
+\item[{{\bf int}}]{jhi, }
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a55f46952f728f30781152504ab52b2e1}{}\label{ihs_8cpp_a55f46952f728f30781152504ab52b2e1}
+\index{ihs.\+cpp@{ihs.\+cpp}!r8mat\+\_\+write@{r8mat\+\_\+write}}
+\index{r8mat\+\_\+write@{r8mat\+\_\+write}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{r8mat\+\_\+write(string output\+\_\+filename, int m, int n, double table[])}{r8mat_write(string output_filename, int m, int n, double table[])}}]{\setlength{\rightskip}{0pt plus 5cm}void r8mat\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{string}]{output\+\_\+filename, }
+\item[{{\bf int}}]{m, }
+\item[{{\bf int}}]{n, }
+\item[{{\bf double}}]{table\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a85c584d7776aa94cb9122198f245629d}{}\label{ihs_8cpp_a85c584d7776aa94cb9122198f245629d}
+\index{ihs.\+cpp@{ihs.\+cpp}!r8vec\+\_\+average@{r8vec\+\_\+average}}
+\index{r8vec\+\_\+average@{r8vec\+\_\+average}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{r8vec\+\_\+average(int n, double a[])}{r8vec_average(int n, double a[])}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf double} r8vec\+\_\+average (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{n, }
+\item[{{\bf double}}]{a\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a0b2c44a9b9a7126a54c3b3d09a609b95}{}\label{ihs_8cpp_a0b2c44a9b9a7126a54c3b3d09a609b95}
+\index{ihs.\+cpp@{ihs.\+cpp}!r8vec\+\_\+std@{r8vec\+\_\+std}}
+\index{r8vec\+\_\+std@{r8vec\+\_\+std}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{r8vec\+\_\+std(int n, double a[])}{r8vec_std(int n, double a[])}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf double} r8vec\+\_\+std (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{n, }
+\item[{{\bf double}}]{a\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_ac7b12d6c8966d7628748699372499cbd}{}\label{ihs_8cpp_ac7b12d6c8966d7628748699372499cbd}
+\index{ihs.\+cpp@{ihs.\+cpp}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!ihs.\+cpp@{ihs.\+cpp}}
+\subsubsection[{\texorpdfstring{timestamp()}{timestamp()}}]{\setlength{\rightskip}{0pt plus 5cm}void timestamp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ihs_8cpp_a2219d86aef2195ff323e8349d92abe86}{}\label{ihs_8cpp_a2219d86aef2195ff323e8349d92abe86}

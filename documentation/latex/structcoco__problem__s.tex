@@ -1,0 +1,122 @@
+\hypertarget{structcoco__problem__s}{}\section{coco\+\_\+problem\+\_\+s Struct Reference}
+\label{structcoco__problem__s}\index{coco\+\_\+problem\+\_\+s@{coco\+\_\+problem\+\_\+s}}
+
+
+The C\+O\+CO problem structure.  
+
+
+
+
+Collaboration diagram for coco\+\_\+problem\+\_\+s\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcoco__problem__s__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+coco\+\_\+evaluate\+\_\+function\+\_\+t \hyperlink{structcoco__problem__s_ac34034df9c3632ace97338666e38519f}{evaluate\+\_\+function}\hypertarget{structcoco__problem__s_ac34034df9c3632ace97338666e38519f}{}\label{structcoco__problem__s_ac34034df9c3632ace97338666e38519f}
+
+\begin{DoxyCompactList}\small\item\em The function for evaluating the problem. \end{DoxyCompactList}\item 
+coco\+\_\+evaluate\+\_\+function\+\_\+t \hyperlink{structcoco__problem__s_a6ee6671da42f3233b7a6e94cdc78c3ea}{evaluate\+\_\+constraint}\hypertarget{structcoco__problem__s_a6ee6671da42f3233b7a6e94cdc78c3ea}{}\label{structcoco__problem__s_a6ee6671da42f3233b7a6e94cdc78c3ea}
+
+\begin{DoxyCompactList}\small\item\em The function for evaluating the constraints. \end{DoxyCompactList}\item 
+coco\+\_\+evaluate\+\_\+function\+\_\+t \hyperlink{structcoco__problem__s_a193e32e7d05a9955a11cd83ed7f1b15c}{evaluate\+\_\+gradient}\hypertarget{structcoco__problem__s_a193e32e7d05a9955a11cd83ed7f1b15c}{}\label{structcoco__problem__s_a193e32e7d05a9955a11cd83ed7f1b15c}
+
+\begin{DoxyCompactList}\small\item\em The function for evaluating the constraints. \end{DoxyCompactList}\item 
+coco\+\_\+recommend\+\_\+function\+\_\+t \hyperlink{structcoco__problem__s_a8d05f236afe407722ff3d38fe190498a}{recommend\+\_\+solution}\hypertarget{structcoco__problem__s_a8d05f236afe407722ff3d38fe190498a}{}\label{structcoco__problem__s_a8d05f236afe407722ff3d38fe190498a}
+
+\begin{DoxyCompactList}\small\item\em The function for recommending a solution. \end{DoxyCompactList}\item 
+coco\+\_\+problem\+\_\+free\+\_\+function\+\_\+t \hyperlink{structcoco__problem__s_aef553afc0d07ae780ade0d12d061ff33}{problem\+\_\+free\+\_\+function}\hypertarget{structcoco__problem__s_aef553afc0d07ae780ade0d12d061ff33}{}\label{structcoco__problem__s_aef553afc0d07ae780ade0d12d061ff33}
+
+\begin{DoxyCompactList}\small\item\em The function for freeing this problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_afe459ff0b085d91aa3508a01a2093aca}{number\+\_\+of\+\_\+variables}\hypertarget{structcoco__problem__s_afe459ff0b085d91aa3508a01a2093aca}{}\label{structcoco__problem__s_afe459ff0b085d91aa3508a01a2093aca}
+
+\begin{DoxyCompactList}\small\item\em Number of variables expected by the function, i.\+e. problem dimension. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_a11621884788492371d54798fc432508b}{number\+\_\+of\+\_\+objectives}\hypertarget{structcoco__problem__s_a11621884788492371d54798fc432508b}{}\label{structcoco__problem__s_a11621884788492371d54798fc432508b}
+
+\begin{DoxyCompactList}\small\item\em Number of objectives. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_a767f2c6157c07cd28a0bad0bb6cf6915}{number\+\_\+of\+\_\+constraints}\hypertarget{structcoco__problem__s_a767f2c6157c07cd28a0bad0bb6cf6915}{}\label{structcoco__problem__s_a767f2c6157c07cd28a0bad0bb6cf6915}
+
+\begin{DoxyCompactList}\small\item\em Number of constraints. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__problem__s_ac8ee064f510932d0e6d6f8b2a4ddc3fa}{smallest\+\_\+values\+\_\+of\+\_\+interest}\hypertarget{structcoco__problem__s_ac8ee064f510932d0e6d6f8b2a4ddc3fa}{}\label{structcoco__problem__s_ac8ee064f510932d0e6d6f8b2a4ddc3fa}
+
+\begin{DoxyCompactList}\small\item\em The lower bounds of the R\+OI in the decision space. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__problem__s_a1d077fd9512d1af72943638c2d961358}{largest\+\_\+values\+\_\+of\+\_\+interest}\hypertarget{structcoco__problem__s_a1d077fd9512d1af72943638c2d961358}{}\label{structcoco__problem__s_a1d077fd9512d1af72943638c2d961358}
+
+\begin{DoxyCompactList}\small\item\em The upper bounds of the R\+OI in the decision space. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__problem__s_ab67b86443f3303ea0214599fabdaaa41}{initial\+\_\+solution}\hypertarget{structcoco__problem__s_ab67b86443f3303ea0214599fabdaaa41}{}\label{structcoco__problem__s_ab67b86443f3303ea0214599fabdaaa41}
+
+\begin{DoxyCompactList}\small\item\em Initial feasible solution. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__problem__s_a22829d33483b97e54612d532e2ffef9d}{best\+\_\+value}\hypertarget{structcoco__problem__s_a22829d33483b97e54612d532e2ffef9d}{}\label{structcoco__problem__s_a22829d33483b97e54612d532e2ffef9d}
+
+\begin{DoxyCompactList}\small\item\em Optimal (smallest) function value. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__problem__s_aa6800aa8240a8baf6faba199505a1ae3}{nadir\+\_\+value}\hypertarget{structcoco__problem__s_aa6800aa8240a8baf6faba199505a1ae3}{}\label{structcoco__problem__s_aa6800aa8240a8baf6faba199505a1ae3}
+
+\begin{DoxyCompactList}\small\item\em The nadir point (defined when number\+\_\+of\+\_\+objectives $>$ 1) \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__problem__s_a11f67fc5fbcc7ec1a31ff35d0bae7030}{best\+\_\+parameter}\hypertarget{structcoco__problem__s_a11f67fc5fbcc7ec1a31ff35d0bae7030}{}\label{structcoco__problem__s_a11f67fc5fbcc7ec1a31ff35d0bae7030}
+
+\begin{DoxyCompactList}\small\item\em Optimal decision vector (defined only when unique) \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__problem__s_a8f29372c73424cf97df131fa61d950e0}{problem\+\_\+name}\hypertarget{structcoco__problem__s_a8f29372c73424cf97df131fa61d950e0}{}\label{structcoco__problem__s_a8f29372c73424cf97df131fa61d950e0}
+
+\begin{DoxyCompactList}\small\item\em Problem name. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__problem__s_a9f6de79a0e0fb3e5db9ff742295971f7}{problem\+\_\+id}\hypertarget{structcoco__problem__s_a9f6de79a0e0fb3e5db9ff742295971f7}{}\label{structcoco__problem__s_a9f6de79a0e0fb3e5db9ff742295971f7}
+
+\begin{DoxyCompactList}\small\item\em Problem ID (unique in the containing suite) \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__problem__s_a3f5bb169e01decb2a4ceff87e49732a8}{problem\+\_\+type}\hypertarget{structcoco__problem__s_a3f5bb169e01decb2a4ceff87e49732a8}{}\label{structcoco__problem__s_a3f5bb169e01decb2a4ceff87e49732a8}
+
+\begin{DoxyCompactList}\small\item\em Problem type. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_aed74da3415da5eaa39f22ceca0aa32e7}{evaluations}\hypertarget{structcoco__problem__s_aed74da3415da5eaa39f22ceca0aa32e7}{}\label{structcoco__problem__s_aed74da3415da5eaa39f22ceca0aa32e7}
+
+\begin{DoxyCompactList}\small\item\em Number of objective function evaluations performed on the problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_ada0078e1b8f0ea97aa9fe3b879853a5c}{evaluations\+\_\+constraints}\hypertarget{structcoco__problem__s_ada0078e1b8f0ea97aa9fe3b879853a5c}{}\label{structcoco__problem__s_ada0078e1b8f0ea97aa9fe3b879853a5c}
+
+\begin{DoxyCompactList}\small\item\em Number of constraint function evaluations performed on the problem. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{structcoco__problem__s_ad6e44a22d8c396246622a49e940e4905}{final\+\_\+target\+\_\+delta} \mbox{[}1\mbox{]}\hypertarget{structcoco__problem__s_ad6e44a22d8c396246622a49e940e4905}{}\label{structcoco__problem__s_ad6e44a22d8c396246622a49e940e4905}
+
+\begin{DoxyCompactList}\small\item\em Final target delta. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{structcoco__problem__s_a60d58e8f5444b3743b31f04e3d46431f}{best\+\_\+observed\+\_\+fvalue} \mbox{[}1\mbox{]}\hypertarget{structcoco__problem__s_a60d58e8f5444b3743b31f04e3d46431f}{}\label{structcoco__problem__s_a60d58e8f5444b3743b31f04e3d46431f}
+
+\begin{DoxyCompactList}\small\item\em The best observed value so far. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_a4246b14180d4cb41a13a601d7a140406}{best\+\_\+observed\+\_\+evaluation} \mbox{[}1\mbox{]}\hypertarget{structcoco__problem__s_a4246b14180d4cb41a13a601d7a140406}{}\label{structcoco__problem__s_a4246b14180d4cb41a13a601d7a140406}
+
+\begin{DoxyCompactList}\small\item\em The evaluation when the best value so far was achieved. \end{DoxyCompactList}\item 
+\hyperlink{structcoco__suite__s}{coco\+\_\+suite\+\_\+t} $\ast$ \hyperlink{structcoco__problem__s_a550de4fd935ef65a5f2aaad1d52280da}{suite}\hypertarget{structcoco__problem__s_a550de4fd935ef65a5f2aaad1d52280da}{}\label{structcoco__problem__s_a550de4fd935ef65a5f2aaad1d52280da}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the containing suite (N\+U\+LL if not given) \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_a2961623a246424a540995405e56643ff}{suite\+\_\+dep\+\_\+index}\hypertarget{structcoco__problem__s_a2961623a246424a540995405e56643ff}{}\label{structcoco__problem__s_a2961623a246424a540995405e56643ff}
+
+\begin{DoxyCompactList}\small\item\em Suite-\/depending problem index (starting from 0) \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_a5c1ff17893542d5e20b9235b6a6b638e}{suite\+\_\+dep\+\_\+function}\hypertarget{structcoco__problem__s_a5c1ff17893542d5e20b9235b6a6b638e}{}\label{structcoco__problem__s_a5c1ff17893542d5e20b9235b6a6b638e}
+
+\begin{DoxyCompactList}\small\item\em Suite-\/depending function. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__problem__s_a89175e198bb75a4ec6a45b5fa37ead46}{suite\+\_\+dep\+\_\+instance}\hypertarget{structcoco__problem__s_a89175e198bb75a4ec6a45b5fa37ead46}{}\label{structcoco__problem__s_a89175e198bb75a4ec6a45b5fa37ead46}
+
+\begin{DoxyCompactList}\small\item\em Suite-\/depending instance. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{structcoco__problem__s_a194c38d671595149b8b60fcac03f7959}{data}
+\begin{DoxyCompactList}\small\item\em Pointer to a data instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The C\+O\+CO problem structure. 
+
+This is one of the main structures in C\+O\+CO. It contains information about a problem to be optimized. The problems can be wrapped around each other (similar to the onion layers) by means of the data field and the \hyperlink{structcoco__problem__transformed__data__t}{coco\+\_\+problem\+\_\+transformed\+\_\+data\+\_\+t} structure creating some kind of \char`\"{}object inheritance\char`\"{}. Even the logger is considered as just another coco\+\_\+problem instance wrapped around the original problem. 
+
+\subsection{Member Data Documentation}
+\index{coco\+\_\+problem\+\_\+s@{coco\+\_\+problem\+\_\+s}!data@{data}}
+\index{data@{data}!coco\+\_\+problem\+\_\+s@{coco\+\_\+problem\+\_\+s}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ coco\+\_\+problem\+\_\+s\+::data}\hypertarget{structcoco__problem__s_a194c38d671595149b8b60fcac03f7959}{}\label{structcoco__problem__s_a194c38d671595149b8b60fcac03f7959}
+
+
+Pointer to a data instance. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structcoco__problem__transformed__data__t}{coco\+\_\+problem\+\_\+transformed\+\_\+data\+\_\+t} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+c\end{DoxyCompactItemize}

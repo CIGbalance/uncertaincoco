@@ -1,0 +1,74 @@
+\hypertarget{structcoco__observer__s}{}\section{coco\+\_\+observer\+\_\+s Struct Reference}
+\label{structcoco__observer__s}\index{coco\+\_\+observer\+\_\+s@{coco\+\_\+observer\+\_\+s}}
+
+
+The C\+O\+CO observer structure.  
+
+
+
+
+Collaboration diagram for coco\+\_\+observer\+\_\+s\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcoco__observer__s__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{structcoco__observer__s_ae9302ff3b1451269f12f518274b6518a}{is\+\_\+active}\hypertarget{structcoco__observer__s_ae9302ff3b1451269f12f518274b6518a}{}\label{structcoco__observer__s_ae9302ff3b1451269f12f518274b6518a}
+
+\begin{DoxyCompactList}\small\item\em Whether the observer is active (the logger will log some output). \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__observer__s_ad81d41d5dffd35827bfe4a25be10f828}{observer\+\_\+name}\hypertarget{structcoco__observer__s_ad81d41d5dffd35827bfe4a25be10f828}{}\label{structcoco__observer__s_ad81d41d5dffd35827bfe4a25be10f828}
+
+\begin{DoxyCompactList}\small\item\em Name of the observer for identification purposes. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__observer__s_a1f8e69cf33b686f440d43adf0e5b662e}{result\+\_\+folder}\hypertarget{structcoco__observer__s_a1f8e69cf33b686f440d43adf0e5b662e}{}\label{structcoco__observer__s_a1f8e69cf33b686f440d43adf0e5b662e}
+
+\begin{DoxyCompactList}\small\item\em Name of the result folder. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__observer__s_a6edf2748c41a680d2daf80912797f4f6}{algorithm\+\_\+name}\hypertarget{structcoco__observer__s_a6edf2748c41a680d2daf80912797f4f6}{}\label{structcoco__observer__s_a6edf2748c41a680d2daf80912797f4f6}
+
+\begin{DoxyCompactList}\small\item\em Name of the algorithm to be used in logger output. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__observer__s_a5e358745502f90247c05f0768fc6232d}{algorithm\+\_\+info}\hypertarget{structcoco__observer__s_a5e358745502f90247c05f0768fc6232d}{}\label{structcoco__observer__s_a5e358745502f90247c05f0768fc6232d}
+
+\begin{DoxyCompactList}\small\item\em Additional information on the algorithm to be used in logger output. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__s_aef03bbe3ca381a03ed1eff789c03ab66}{number\+\_\+target\+\_\+triggers}\hypertarget{structcoco__observer__s_aef03bbe3ca381a03ed1eff789c03ab66}{}\label{structcoco__observer__s_aef03bbe3ca381a03ed1eff789c03ab66}
+
+\begin{DoxyCompactList}\small\item\em The number of targets between each 10$\ast$$\ast$i and 10$\ast$$\ast$(i+1). \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{structcoco__observer__s_a48b8efaa68fc67c5b4c81b9a5de9d026}{target\+\_\+precision}\hypertarget{structcoco__observer__s_a48b8efaa68fc67c5b4c81b9a5de9d026}{}\label{structcoco__observer__s_a48b8efaa68fc67c5b4c81b9a5de9d026}
+
+\begin{DoxyCompactList}\small\item\em The minimal precision used for targets. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__s_a82e30870dc411c480b44b21e37b2d570}{number\+\_\+evaluation\+\_\+triggers}\hypertarget{structcoco__observer__s_a82e30870dc411c480b44b21e37b2d570}{}\label{structcoco__observer__s_a82e30870dc411c480b44b21e37b2d570}
+
+\begin{DoxyCompactList}\small\item\em The number of triggers between each 10$\ast$$\ast$i and 10$\ast$$\ast$(i+1) evaluation number. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{structcoco__observer__s_aa8638b0982f9deae37953709e2881e9e}{base\+\_\+evaluation\+\_\+triggers}\hypertarget{structcoco__observer__s_aa8638b0982f9deae37953709e2881e9e}{}\label{structcoco__observer__s_aa8638b0982f9deae37953709e2881e9e}
+
+\begin{DoxyCompactList}\small\item\em The \char`\"{}base evaluations\char`\"{} used to evaluations that trigger logging. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structcoco__observer__s_a66cdd7cba2b73afed919ee5d9bcda69c}{precision\+\_\+x}\hypertarget{structcoco__observer__s_a66cdd7cba2b73afed919ee5d9bcda69c}{}\label{structcoco__observer__s_a66cdd7cba2b73afed919ee5d9bcda69c}
+
+\begin{DoxyCompactList}\small\item\em Output precision for decision variables. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structcoco__observer__s_aef495e1b258763becca0f0c04891794d}{precision\+\_\+f}\hypertarget{structcoco__observer__s_aef495e1b258763becca0f0c04891794d}{}\label{structcoco__observer__s_aef495e1b258763becca0f0c04891794d}
+
+\begin{DoxyCompactList}\small\item\em Output precision for function values. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{structcoco__observer__s_abfde98722c29946c6f72bc829e40d40c}{data}\hypertarget{structcoco__observer__s_abfde98722c29946c6f72bc829e40d40c}{}\label{structcoco__observer__s_abfde98722c29946c6f72bc829e40d40c}
+
+\begin{DoxyCompactList}\small\item\em Void pointer that can be used to point to data specific to an observer. \end{DoxyCompactList}\item 
+coco\+\_\+data\+\_\+free\+\_\+function\+\_\+t \hyperlink{structcoco__observer__s_ad33683a6c8fe06a63e0e88ce8daa28f0}{data\+\_\+free\+\_\+function}\hypertarget{structcoco__observer__s_ad33683a6c8fe06a63e0e88ce8daa28f0}{}\label{structcoco__observer__s_ad33683a6c8fe06a63e0e88ce8daa28f0}
+
+\begin{DoxyCompactList}\small\item\em The function for freeing this observer. \end{DoxyCompactList}\item 
+coco\+\_\+logger\+\_\+allocate\+\_\+function\+\_\+t \hyperlink{structcoco__observer__s_a86157bafa769bddfd0fbb5e75aaf7097}{logger\+\_\+allocate\+\_\+function}\hypertarget{structcoco__observer__s_a86157bafa769bddfd0fbb5e75aaf7097}{}\label{structcoco__observer__s_a86157bafa769bddfd0fbb5e75aaf7097}
+
+\begin{DoxyCompactList}\small\item\em The function for allocating the logger. \end{DoxyCompactList}\item 
+coco\+\_\+logger\+\_\+free\+\_\+function\+\_\+t \hyperlink{structcoco__observer__s_a764bfd52c19283162f4975d5acc23c89}{logger\+\_\+free\+\_\+function}\hypertarget{structcoco__observer__s_a764bfd52c19283162f4975d5acc23c89}{}\label{structcoco__observer__s_a764bfd52c19283162f4975d5acc23c89}
+
+\begin{DoxyCompactList}\small\item\em The function for freeing the logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The C\+O\+CO observer structure. 
+
+An observer observes the whole benchmark process. It is independent of suites and problems. Each time a new problem of the suite is being observed, the observer initializes a new logger (wraps the observed problem with the corresponding logger). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+c\end{DoxyCompactItemize}

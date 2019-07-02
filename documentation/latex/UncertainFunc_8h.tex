@@ -1,0 +1,64 @@
+\hypertarget{UncertainFunc_8h}{}\section{Uncertain\+Func.\+h File Reference}
+\label{UncertainFunc_8h}\index{Uncertain\+Func.\+h@{Uncertain\+Func.\+h}}
+{\ttfamily \#include \char`\"{}../utils/\+Kriging.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../\+C\+O\+C\+Ointerface/\+C\+O\+C\+Ofunc.\+h\char`\"{}}\\*
+Include dependency graph for Uncertain\+Func.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{UncertainFunc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{UncertainFunc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classUncertainFunc}{Uncertain\+Func$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Wrapper for functions computed from C\+O\+C\+Ofunc$<$\+T$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981c}{Uncertain\+Mode} \{ \\*
+\hyperlink{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981cab8037c675dad16b9139e24e000143c78}{M\+E\+AN} = 0, 
+\hyperlink{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981caa3580af18e60570a9beb903ec4b82a1b}{PoI} = 1, 
+\hyperlink{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981ca3f7a95681f40adf4870cfbdce84c662b}{ExI} = 2, 
+\hyperlink{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981caec61e49978c3f59c943a3c0dc00ce94c}{LB} = 3, 
+\\*
+\hyperlink{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981ca4fa1c3d4f956ff7d27150a473f1bb0bd}{C\+E\+R\+T\+A\+IN} = 4
+ \}\begin{DoxyCompactList}\small\item\em Function types. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Uncertain\+Func.\+h@{Uncertain\+Func.\+h}!Uncertain\+Mode@{Uncertain\+Mode}}
+\index{Uncertain\+Mode@{Uncertain\+Mode}!Uncertain\+Func.\+h@{Uncertain\+Func.\+h}}
+\subsubsection[{\texorpdfstring{Uncertain\+Mode}{UncertainMode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Uncertain\+Mode}}\hypertarget{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981c}{}\label{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981c}
+
+
+Function types. 
+
+Types of functions that can be computed based on the output of \hyperlink{classCOCOfunc_af59cef4f0a78c07c4910bf015363c3f5}{C\+O\+C\+Ofunc$<$\+T$>$\+::eval}
+
+Formulas for computation of PoI, ExI, LB taken from prescreening Emmerich paper (T\+O\+DO) \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+E\+AN@{M\+E\+AN}!Uncertain\+Func.\+h@{Uncertain\+Func.\+h}}\index{Uncertain\+Func.\+h@{Uncertain\+Func.\+h}!M\+E\+AN@{M\+E\+AN}}\item[{\em 
+M\+E\+AN\hypertarget{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981cab8037c675dad16b9139e24e000143c78}{}\label{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981cab8037c675dad16b9139e24e000143c78}
+}]\hyperlink{classKriging}{Kriging} prediction. \index{PoI@{PoI}!Uncertain\+Func.\+h@{Uncertain\+Func.\+h}}\index{Uncertain\+Func.\+h@{Uncertain\+Func.\+h}!PoI@{PoI}}\item[{\em 
+PoI\hypertarget{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981caa3580af18e60570a9beb903ec4b82a1b}{}\label{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981caa3580af18e60570a9beb903ec4b82a1b}
+}]Probability of Improvement. \index{ExI@{ExI}!Uncertain\+Func.\+h@{Uncertain\+Func.\+h}}\index{Uncertain\+Func.\+h@{Uncertain\+Func.\+h}!ExI@{ExI}}\item[{\em 
+ExI\hypertarget{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981ca3f7a95681f40adf4870cfbdce84c662b}{}\label{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981ca3f7a95681f40adf4870cfbdce84c662b}
+}]Expected Improvement. \index{LB@{LB}!Uncertain\+Func.\+h@{Uncertain\+Func.\+h}}\index{Uncertain\+Func.\+h@{Uncertain\+Func.\+h}!LB@{LB}}\item[{\em 
+LB\hypertarget{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981caec61e49978c3f59c943a3c0dc00ce94c}{}\label{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981caec61e49978c3f59c943a3c0dc00ce94c}
+}]Lower bound. \index{C\+E\+R\+T\+A\+IN@{C\+E\+R\+T\+A\+IN}!Uncertain\+Func.\+h@{Uncertain\+Func.\+h}}\index{Uncertain\+Func.\+h@{Uncertain\+Func.\+h}!C\+E\+R\+T\+A\+IN@{C\+E\+R\+T\+A\+IN}}\item[{\em 
+C\+E\+R\+T\+A\+IN\hypertarget{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981ca4fa1c3d4f956ff7d27150a473f1bb0bd}{}\label{UncertainFunc_8h_a473fab27d40fbbd9bc2bed4f18fe981ca4fa1c3d4f956ff7d27150a473f1bb0bd}
+}]\hyperlink{classCOCOfunc_af59cef4f0a78c07c4910bf015363c3f5}{C\+O\+C\+Ofunc$<$\+T$>$\+::eval} original value. \end{description}
+\end{Desc}

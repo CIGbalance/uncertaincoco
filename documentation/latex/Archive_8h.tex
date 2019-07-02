@@ -1,0 +1,81 @@
+\hypertarget{Archive_8h}{}\section{Archive.\+h File Reference}
+\label{Archive_8h}\index{Archive.\+h@{Archive.\+h}}
+{\ttfamily \#include \char`\"{}../uncertainty/\+Uncertain\+Individual.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$shark/\+Algorithms/\+Nearest\+Neighbors/\+Simple\+Nearest\+Neighbors.\+h$>$}\\*
+{\ttfamily \#include $<$shark/\+Models/\+Kernels/\+Linear\+Kernel.\+h$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$shark/\+Data/\+Dataset.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+Include dependency graph for Archive.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Archive_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Archive_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSubArchive}{Sub\+Archive}
+\item 
+class \hyperlink{classArchive}{Archive}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Labeled\+Data$<$ Real\+Vector, Real\+Vector $>$ \hyperlink{Archive_8h_a6fe95e53318396ff511e3b12da1f0767}{Archive\+Data}
+\item 
+typedef Labeled\+Data$<$ Real\+Vector, std\+::vector$<$ \hyperlink{classdouble}{double} $>$ $>$ \hyperlink{Archive_8h_a2261412613b9582151687b19c46aeeeb}{N\+Nmodel\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{Archive_8h_a5779724d66cdc9ace8c6d535fbade329}{Sample\+Mode} \{ \\*
+\hyperlink{Archive_8h_a5779724d66cdc9ace8c6d535fbade329acbc53dc5e2103ec019d3b45ac0276d78}{F\+IT} = 0, 
+\hyperlink{Archive_8h_a5779724d66cdc9ace8c6d535fbade329a254ecd5b552138b53fa8cf1a5ac0be07}{R\+E\+C\+E\+NT} = 1, 
+\hyperlink{Archive_8h_a5779724d66cdc9ace8c6d535fbade329a685f73194ad125cbc784c3210cdb3449}{C\+L\+O\+SE} = 2, 
+\hyperlink{Archive_8h_a5779724d66cdc9ace8c6d535fbade329aa2b65445a3a16f164c5e811064d75726}{R\+A\+N\+D\+OM} = 3, 
+\\*
+\hyperlink{Archive_8h_a5779724d66cdc9ace8c6d535fbade329ab1d5eac4b1dca480c8056eaea7663b7a}{A\+LL} = 4
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{Archive.\+h@{Archive.\+h}!Archive\+Data@{Archive\+Data}}
+\index{Archive\+Data@{Archive\+Data}!Archive.\+h@{Archive.\+h}}
+\subsubsection[{\texorpdfstring{Archive\+Data}{ArchiveData}}]{\setlength{\rightskip}{0pt plus 5cm}typedef Labeled\+Data$<$Real\+Vector, Real\+Vector$>$ {\bf Archive\+Data}}\hypertarget{Archive_8h_a6fe95e53318396ff511e3b12da1f0767}{}\label{Archive_8h_a6fe95e53318396ff511e3b12da1f0767}
+\index{Archive.\+h@{Archive.\+h}!N\+Nmodel\+Data@{N\+Nmodel\+Data}}
+\index{N\+Nmodel\+Data@{N\+Nmodel\+Data}!Archive.\+h@{Archive.\+h}}
+\subsubsection[{\texorpdfstring{N\+Nmodel\+Data}{NNmodelData}}]{\setlength{\rightskip}{0pt plus 5cm}typedef Labeled\+Data$<$Real\+Vector, std\+::vector$<${\bf double}$>$ $>$ {\bf N\+Nmodel\+Data}}\hypertarget{Archive_8h_a2261412613b9582151687b19c46aeeeb}{}\label{Archive_8h_a2261412613b9582151687b19c46aeeeb}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Archive.\+h@{Archive.\+h}!Sample\+Mode@{Sample\+Mode}}
+\index{Sample\+Mode@{Sample\+Mode}!Archive.\+h@{Archive.\+h}}
+\subsubsection[{\texorpdfstring{Sample\+Mode}{SampleMode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Sample\+Mode}}\hypertarget{Archive_8h_a5779724d66cdc9ace8c6d535fbade329}{}\label{Archive_8h_a5779724d66cdc9ace8c6d535fbade329}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{F\+IT@{F\+IT}!Archive.\+h@{Archive.\+h}}\index{Archive.\+h@{Archive.\+h}!F\+IT@{F\+IT}}\item[{\em 
+F\+IT\hypertarget{Archive_8h_a5779724d66cdc9ace8c6d535fbade329acbc53dc5e2103ec019d3b45ac0276d78}{}\label{Archive_8h_a5779724d66cdc9ace8c6d535fbade329acbc53dc5e2103ec019d3b45ac0276d78}
+}]\index{R\+E\+C\+E\+NT@{R\+E\+C\+E\+NT}!Archive.\+h@{Archive.\+h}}\index{Archive.\+h@{Archive.\+h}!R\+E\+C\+E\+NT@{R\+E\+C\+E\+NT}}\item[{\em 
+R\+E\+C\+E\+NT\hypertarget{Archive_8h_a5779724d66cdc9ace8c6d535fbade329a254ecd5b552138b53fa8cf1a5ac0be07}{}\label{Archive_8h_a5779724d66cdc9ace8c6d535fbade329a254ecd5b552138b53fa8cf1a5ac0be07}
+}]\index{C\+L\+O\+SE@{C\+L\+O\+SE}!Archive.\+h@{Archive.\+h}}\index{Archive.\+h@{Archive.\+h}!C\+L\+O\+SE@{C\+L\+O\+SE}}\item[{\em 
+C\+L\+O\+SE\hypertarget{Archive_8h_a5779724d66cdc9ace8c6d535fbade329a685f73194ad125cbc784c3210cdb3449}{}\label{Archive_8h_a5779724d66cdc9ace8c6d535fbade329a685f73194ad125cbc784c3210cdb3449}
+}]\index{R\+A\+N\+D\+OM@{R\+A\+N\+D\+OM}!Archive.\+h@{Archive.\+h}}\index{Archive.\+h@{Archive.\+h}!R\+A\+N\+D\+OM@{R\+A\+N\+D\+OM}}\item[{\em 
+R\+A\+N\+D\+OM\hypertarget{Archive_8h_a5779724d66cdc9ace8c6d535fbade329aa2b65445a3a16f164c5e811064d75726}{}\label{Archive_8h_a5779724d66cdc9ace8c6d535fbade329aa2b65445a3a16f164c5e811064d75726}
+}]\index{A\+LL@{A\+LL}!Archive.\+h@{Archive.\+h}}\index{Archive.\+h@{Archive.\+h}!A\+LL@{A\+LL}}\item[{\em 
+A\+LL\hypertarget{Archive_8h_a5779724d66cdc9ace8c6d535fbade329ab1d5eac4b1dca480c8056eaea7663b7a}{}\label{Archive_8h_a5779724d66cdc9ace8c6d535fbade329ab1d5eac4b1dca480c8056eaea7663b7a}
+}]\end{description}
+\end{Desc}

@@ -1,0 +1,35 @@
+\hypertarget{classKriging}{}\section{Kriging Class Reference}
+\label{classKriging}\index{Kriging@{Kriging}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Kriging} (Archive\+Data data, \hyperlink{classint}{int} n, \hyperlink{classint}{int} m, \hyperlink{classint}{int} hold\+Out=-\/1)\hypertarget{classKriging_a6a0bc3d6373a764628b51c0dfa91b8a9}{}\label{classKriging_a6a0bc3d6373a764628b51c0dfa91b8a9}
+
+\item 
+void {\bfseries init} (Archive\+Data data, \hyperlink{classint}{int} n, \hyperlink{classint}{int} m, \hyperlink{classint}{int} hold\+Out)\hypertarget{classKriging_ac25152d40758371e402465b589f8edf8}{}\label{classKriging_ac25152d40758371e402465b589f8edf8}
+
+\item 
+std\+::vector$<$ std\+::pair$<$ \hyperlink{classdouble}{double}, \hyperlink{classdouble}{double} $>$ $>$ {\bfseries predict} (const Real\+Vector point)\hypertarget{classKriging_a0c3b249f1bd6ed10ad5ea10657a85707}{}\label{classKriging_a0c3b249f1bd6ed10ad5ea10657a85707}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries expected\+Improvement} (Real\+Vector point)\hypertarget{classKriging_afeec3ae7a35c0a383d5f3e929c6b6014}{}\label{classKriging_afeec3ae7a35c0a383d5f3e929c6b6014}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries prob\+Improvement} (Real\+Vector point)\hypertarget{classKriging_aa1fb37c213d971172fca9e0dba55509e}{}\label{classKriging_aa1fb37c213d971172fca9e0dba55509e}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries lower\+Bound} (Real\+Vector point)\hypertarget{classKriging_aed720d0493bdf1cb80b911682ddb827b}{}\label{classKriging_aed720d0493bdf1cb80b911682ddb827b}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries get\+History} (Real\+Vector point, \hyperlink{classint}{int} h, \hyperlink{classint}{int} k, \hyperlink{classArchive}{Archive} arch, \hyperlink{classint}{int} n\+Obj, Sample\+Mode mode)\hypertarget{classKriging_afe24b14d0fce5989eb84755278f4ea37}{}\label{classKriging_afe24b14d0fce5989eb84755278f4ea37}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Kriging.\+h\item 
+Kriging.\+cpp\end{DoxyCompactItemize}

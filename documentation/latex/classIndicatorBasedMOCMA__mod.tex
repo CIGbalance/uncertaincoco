@@ -1,0 +1,70 @@
+\hypertarget{classIndicatorBasedMOCMA__mod}{}\section{Indicator\+Based\+M\+O\+C\+M\+A\+\_\+mod$<$ Indicator $>$ Class Template Reference}
+\label{classIndicatorBasedMOCMA__mod}\index{Indicator\+Based\+M\+O\+C\+M\+A\+\_\+mod$<$ Indicator $>$@{Indicator\+Based\+M\+O\+C\+M\+A\+\_\+mod$<$ Indicator $>$}}
+
+
+Inheritance diagram for Indicator\+Based\+M\+O\+C\+M\+A\+\_\+mod$<$ Indicator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classIndicatorBasedMOCMA__mod__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Indicator\+Based\+M\+O\+C\+M\+A\+\_\+mod$<$ Indicator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classIndicatorBasedMOCMA__mod__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classAbstractMultiObjectiveOptimizer}{Abstract\+Multi\+Objective\+Optimizer}$<$ Real\+Vector $>$\+::Search\+Point\+Type {\bfseries Search\+Point\+Type}\hypertarget{classIndicatorBasedMOCMA__mod_a4bdfc46e94600d8114508e9de42b7d35}{}\label{classIndicatorBasedMOCMA__mod_a4bdfc46e94600d8114508e9de42b7d35}
+
+\item 
+typedef C\+M\+A\+Individual$<$ Real\+Vector $>$ {\bfseries Individual\+Type}\hypertarget{classIndicatorBasedMOCMA__mod_a9e7d5ad11afb8ee68723069e1e5a3699}{}\label{classIndicatorBasedMOCMA__mod_a9e7d5ad11afb8ee68723069e1e5a3699}
+
+\item 
+typedef \hyperlink{classAbstractMultiObjectiveOptimizer}{Abstract\+Multi\+Objective\+Optimizer}$<$ Real\+Vector $>$\+::Objective\+Function\+Type {\bfseries Objective\+Function\+Type}\hypertarget{classIndicatorBasedMOCMA__mod_a1606f3fc8f495ef9729493be7dbc41f9}{}\label{classIndicatorBasedMOCMA__mod_a1606f3fc8f495ef9729493be7dbc41f9}
+
+\item 
+typedef \hyperlink{classAbstractOptimizer}{Abstract\+Optimizer}$<$ Real\+Vector, Real\+Vector, Result\+Set$<$ Real\+Vector, Real\+Vector $>$ $>$ {\bfseries base\+\_\+type}\hypertarget{classAbstractPreselecter_a9d56c27fc2428c60a99dea0504717794}{}\label{classAbstractPreselecter_a9d56c27fc2428c60a99dea0504717794}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Indicator\+Based\+M\+O\+C\+M\+A\+\_\+mod} (Default\+Rng\+Type \&rng=Rng\+::global\+Rng)\hypertarget{classIndicatorBasedMOCMA__mod_a913c0d1a35754d7b2cb36dbeb24196b0}{}\label{classIndicatorBasedMOCMA__mod_a913c0d1a35754d7b2cb36dbeb24196b0}
+
+\item 
+std\+::string {\bfseries name} () const \hypertarget{classIndicatorBasedMOCMA__mod_a63553133a29a03a42652f5f96518155b}{}\label{classIndicatorBasedMOCMA__mod_a63553133a29a03a42652f5f96518155b}
+
+\item 
+std\+::size\+\_\+t {\bfseries mu\+\_\+ps} () const \hypertarget{classIndicatorBasedMOCMA__mod_ab1ce8157eaa462b10bad60937ac5d5fd}{}\label{classIndicatorBasedMOCMA__mod_ab1ce8157eaa462b10bad60937ac5d5fd}
+
+\item 
+std\+::size\+\_\+t \& {\bfseries mu\+\_\+ps} ()\hypertarget{classIndicatorBasedMOCMA__mod_a692a7d4406ec8863b4c91b013d244c04}{}\label{classIndicatorBasedMOCMA__mod_a692a7d4406ec8863b4c91b013d244c04}
+
+\item 
+virtual void {\bfseries init} (Objective\+Function\+Type \&function)\hypertarget{classIndicatorBasedMOCMA__mod_a70675a66ba764b5eb7b1f8a1255759a8}{}\label{classIndicatorBasedMOCMA__mod_a70675a66ba764b5eb7b1f8a1255759a8}
+
+\item 
+void {\bfseries init} (Objective\+Function\+Type \&function, std\+::vector$<$ Search\+Point\+Type $>$ const \&initial\+Search\+Points)\hypertarget{classIndicatorBasedMOCMA__mod_a3441aaaa8762dfbf9de5cfeea0a305f6}{}\label{classIndicatorBasedMOCMA__mod_a3441aaaa8762dfbf9de5cfeea0a305f6}
+
+\item 
+void {\bfseries step\+\_\+presel} (Objective\+Function\+Type const \&function, Objective\+Function\+Type const \&function\+\_\+pred)\hypertarget{classIndicatorBasedMOCMA__mod_a7907b1eeb7920b1021ee5328d489e761}{}\label{classIndicatorBasedMOCMA__mod_a7907b1eeb7920b1021ee5328d489e761}
+
+\item 
+virtual void {\bfseries step\+\_\+presel} (Objective\+Function\+Type const \&function, Objective\+Function\+Type const \&function\+\_\+pred)=0\hypertarget{classAbstractPreselecter_ac7bd0dac8d7eaf85319524ee6d80f52d}{}\label{classAbstractPreselecter_ac7bd0dac8d7eaf85319524ee6d80f52d}
+
+\item 
+virtual void {\bfseries init} (Objective\+Function\+Type \&function)=0\hypertarget{classAbstractPreselecter_ac9283e597dc5d633b1f7ce959881dbb8}{}\label{classAbstractPreselecter_ac9283e597dc5d633b1f7ce959881dbb8}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+M\+O\+C\+M\+A\+\_\+mod.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classSAPEOmocma}{}\section{S\+A\+P\+E\+Omocma$<$ Indicator $>$ Class Template Reference}
+\label{classSAPEOmocma}\index{S\+A\+P\+E\+Omocma$<$ Indicator $>$@{S\+A\+P\+E\+Omocma$<$ Indicator $>$}}
+
+
+Inheritance diagram for S\+A\+P\+E\+Omocma$<$ Indicator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classSAPEOmocma__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+A\+P\+E\+Omocma$<$ Indicator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classSAPEOmocma__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classUncertainCMAIndividual}{Uncertain\+C\+M\+A\+Individual}$<$ Real\+Vector $>$ {\bfseries Individual\+Type}\hypertarget{classSAPEOmocma_af487b3a27544ae4bc73d1b7ed22308ae}{}\label{classSAPEOmocma_af487b3a27544ae4bc73d1b7ed22308ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+A\+P\+E\+Omocma} (Default\+Rng\+Type \&rng=Rng\+::global\+Rng)\hypertarget{classSAPEOmocma_a34a1f1b7cc1095c04083956fef334a76}{}\label{classSAPEOmocma_a34a1f1b7cc1095c04083956fef334a76}
+
+\item 
+std\+::size\+\_\+t {\bfseries mu} () const \hypertarget{classSAPEOmocma_a92989cd62fb5f5c8f25934fea86ed531}{}\label{classSAPEOmocma_a92989cd62fb5f5c8f25934fea86ed531}
+
+\item 
+std\+::size\+\_\+t \& {\bfseries mu} ()\hypertarget{classSAPEOmocma_a5c1b63233adf2034a52ccb93753b71f9}{}\label{classSAPEOmocma_a5c1b63233adf2034a52ccb93753b71f9}
+
+\item 
+\hyperlink{classdouble}{double} {\bfseries initial\+Sigma} () const \hypertarget{classSAPEOmocma_ab205921b7c121c0b260a2938df64adfd}{}\label{classSAPEOmocma_ab205921b7c121c0b260a2938df64adfd}
+
+\item 
+\hyperlink{classdouble}{double} \& {\bfseries initial\+Sigma} ()\hypertarget{classSAPEOmocma_ac0c4de753cd6583ce5c00f6af38ec364}{}\label{classSAPEOmocma_ac0c4de753cd6583ce5c00f6af38ec364}
+
+\item 
+void {\bfseries init} (\hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} \&function, std\+::string folder, Selection\+Strategy strat, \hyperlink{classdouble}{double} alpha=-\/1)\hypertarget{classSAPEOmocma_ae9b2d6fb35846f34e6bee03165d86869}{}\label{classSAPEOmocma_ae9b2d6fb35846f34e6bee03165d86869}
+
+\item 
+void {\bfseries step} (\hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} const \&function)\hypertarget{classSAPEOmocma_ab37544f2de0dcd163307b978b01b5c40}{}\label{classSAPEOmocma_ab37544f2de0dcd163307b978b01b5c40}
+
+\item 
+void {\bfseries step} (Objective\+Function\+Type const \&function)\hypertarget{classSAPEOmocma_adbd17849f95f84cfde1e201a56235667}{}\label{classSAPEOmocma_adbd17849f95f84cfde1e201a56235667}
+
+\item 
+void {\bfseries init} (Objective\+Function\+Type \&function, std\+::vector$<$ Search\+Point\+Type $>$ const \&initial\+Search\+Points)\hypertarget{classSAPEOmocma_a676d1b6a2ac4db3ede8d16dd1a1a8f46}{}\label{classSAPEOmocma_a676d1b6a2ac4db3ede8d16dd1a1a8f46}
+
+\item 
+void {\bfseries last\+Step} (\hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} const \&function)\hypertarget{classSAPEOmocma_a82f994fd4be8d7f17a33c79a4d218af3}{}\label{classSAPEOmocma_a82f994fd4be8d7f17a33c79a4d218af3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries do\+Init} (std\+::size\+\_\+t mu, \hyperlink{classdouble}{double} initial\+Sigma, \hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} \&function)\hypertarget{classSAPEOmocma_a60c84b4dcfb5c87075e3bd9fc610e764}{}\label{classSAPEOmocma_a60c84b4dcfb5c87075e3bd9fc610e764}
+
+\item 
+std\+::vector$<$ \hyperlink{classUncertainCMAIndividual}{Individual\+Type} $>$ {\bfseries generate\+Offspring} () const \hypertarget{classSAPEOmocma_a3324e4610cdf79b693d581570ca58375}{}\label{classSAPEOmocma_a3324e4610cdf79b693d581570ca58375}
+
+\item 
+void {\bfseries update\+Population} (std\+::vector$<$ \hyperlink{classUncertainCMAIndividual}{Individual\+Type} $>$ \&offspring, \hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} const \&function)\hypertarget{classSAPEOmocma_a4f6acb94d9ef7616957c5c2060a788bc}{}\label{classSAPEOmocma_a4f6acb94d9ef7616957c5c2060a788bc}
+
+\item 
+std\+::string {\bfseries name} () const \hypertarget{classSAPEOmocma_ad1c0004a496e05d3c846c283322bf545}{}\label{classSAPEOmocma_ad1c0004a496e05d3c846c283322bf545}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+A\+P\+E\+O\+M\+O\+C\+M\+A.\+h\end{DoxyCompactItemize}

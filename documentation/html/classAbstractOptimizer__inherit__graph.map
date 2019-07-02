@@ -1,0 +1,8 @@
+<map id="AbstractOptimizer" name="AbstractOptimizer">
+<area shape="rect" id="node2" href="$classCocoOptimiser.html" title="CocoOptimiser\&lt; RealVector,\l RealVector, RealVector \&gt;" alt="" coords="139,80,330,121"/>
+<area shape="rect" id="node3" href="$classEGO.html" title="EGO" alt="" coords="5,169,56,196"/>
+<area shape="rect" id="node4" href="$classpreselect.html" title="preselect" alt="" coords="80,169,155,196"/>
+<area shape="rect" id="node5" href="$classRandomSearch.html" title="RandomSearch" alt="" coords="179,169,291,196"/>
+<area shape="rect" id="node6" href="$classSAPEO.html" title="SAPEO" alt="" coords="314,169,382,196"/>
+<area shape="rect" id="node7" href="$classSAPEOreader.html" title="SAPEOreader" alt="" coords="407,169,511,196"/>
+</map>

@@ -1,0 +1,61 @@
+\hypertarget{SafeComparator_8h}{}\section{Safe\+Comparator.\+h File Reference}
+\label{SafeComparator_8h}\index{Safe\+Comparator.\+h@{Safe\+Comparator.\+h}}
+{\ttfamily \#include \char`\"{}Uncertain\+Individual.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Uncertain\+C\+M\+A\+Individual.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$shark/\+Algorithms/\+Direct\+Search/\+Pareto\+Dominance\+Comparator.\+h$>$}\\*
+{\ttfamily \#include $<$boost/math/distributions/normal.\+hpp$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+Include dependency graph for Safe\+Comparator.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SafeComparator_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SafeComparator_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSafeComparator}{Safe\+Comparator$<$ Extractor, Fitness\+Type, Chromosome $>$}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412}{Selection\+Strategy} \{ \\*
+\hyperlink{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ac157bdf0b85a40d2619cbc8bc1ae5fe2}{N\+O\+NE} = -\/1, 
+\hyperlink{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412acbabd270834a33aa00504b2994ae1daf}{N\+O\+\_\+\+U\+N\+C\+E\+R\+T\+A\+I\+N\+TY} = 1, 
+\hyperlink{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ab66cf1a4b121bcbd5274a796480c2e9a}{N\+O\+\_\+\+O\+V\+E\+R\+L\+AP} = 2, 
+\hyperlink{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ae9eb1376c32ef537148d10034e45d8a0}{P\+R\+E\+D\+I\+C\+T\+I\+ON} = 3, 
+\\*
+\hyperlink{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412aa5de298885d52a94f5e57c1aa4c5c409}{MO} =4
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{Safe\+Comparator.\+h@{Safe\+Comparator.\+h}!Selection\+Strategy@{Selection\+Strategy}}
+\index{Selection\+Strategy@{Selection\+Strategy}!Safe\+Comparator.\+h@{Safe\+Comparator.\+h}}
+\subsubsection[{\texorpdfstring{Selection\+Strategy}{SelectionStrategy}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Selection\+Strategy}}\hypertarget{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412}{}\label{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+NE@{N\+O\+NE}!Safe\+Comparator.\+h@{Safe\+Comparator.\+h}}\index{Safe\+Comparator.\+h@{Safe\+Comparator.\+h}!N\+O\+NE@{N\+O\+NE}}\item[{\em 
+N\+O\+NE\hypertarget{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ac157bdf0b85a40d2619cbc8bc1ae5fe2}{}\label{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ac157bdf0b85a40d2619cbc8bc1ae5fe2}
+}]\index{N\+O\+\_\+\+U\+N\+C\+E\+R\+T\+A\+I\+N\+TY@{N\+O\+\_\+\+U\+N\+C\+E\+R\+T\+A\+I\+N\+TY}!Safe\+Comparator.\+h@{Safe\+Comparator.\+h}}\index{Safe\+Comparator.\+h@{Safe\+Comparator.\+h}!N\+O\+\_\+\+U\+N\+C\+E\+R\+T\+A\+I\+N\+TY@{N\+O\+\_\+\+U\+N\+C\+E\+R\+T\+A\+I\+N\+TY}}\item[{\em 
+N\+O\+\_\+\+U\+N\+C\+E\+R\+T\+A\+I\+N\+TY\hypertarget{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412acbabd270834a33aa00504b2994ae1daf}{}\label{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412acbabd270834a33aa00504b2994ae1daf}
+}]\index{N\+O\+\_\+\+O\+V\+E\+R\+L\+AP@{N\+O\+\_\+\+O\+V\+E\+R\+L\+AP}!Safe\+Comparator.\+h@{Safe\+Comparator.\+h}}\index{Safe\+Comparator.\+h@{Safe\+Comparator.\+h}!N\+O\+\_\+\+O\+V\+E\+R\+L\+AP@{N\+O\+\_\+\+O\+V\+E\+R\+L\+AP}}\item[{\em 
+N\+O\+\_\+\+O\+V\+E\+R\+L\+AP\hypertarget{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ab66cf1a4b121bcbd5274a796480c2e9a}{}\label{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ab66cf1a4b121bcbd5274a796480c2e9a}
+}]\index{P\+R\+E\+D\+I\+C\+T\+I\+ON@{P\+R\+E\+D\+I\+C\+T\+I\+ON}!Safe\+Comparator.\+h@{Safe\+Comparator.\+h}}\index{Safe\+Comparator.\+h@{Safe\+Comparator.\+h}!P\+R\+E\+D\+I\+C\+T\+I\+ON@{P\+R\+E\+D\+I\+C\+T\+I\+ON}}\item[{\em 
+P\+R\+E\+D\+I\+C\+T\+I\+ON\hypertarget{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ae9eb1376c32ef537148d10034e45d8a0}{}\label{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412ae9eb1376c32ef537148d10034e45d8a0}
+}]\index{MO@{MO}!Safe\+Comparator.\+h@{Safe\+Comparator.\+h}}\index{Safe\+Comparator.\+h@{Safe\+Comparator.\+h}!MO@{MO}}\item[{\em 
+MO\hypertarget{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412aa5de298885d52a94f5e57c1aa4c5c409}{}\label{SafeComparator_8h_a2dfd2cd6262758c2b0c642a87d724412aa5de298885d52a94f5e57c1aa4c5c409}
+}]\end{description}
+\end{Desc}

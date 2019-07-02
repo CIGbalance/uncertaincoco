@@ -1,0 +1,6 @@
+<map id="Kriging_pred_s" name="Kriging_pred_s">
+<area shape="rect" id="node3" href="$classCOCOfunc.html" title="{COCOfunc\&lt; SingleObjective\lFunction \&gt;\n|# m_numberOfVariables\l# m_numberOfObjectives\l|+ init()\l+ name()\l+ numberOfVariables()\l+ getLowerBounds()\l+ getUpperBounds()\l+ getEvaluations()\l+ getEvaluationConstraints()\l+ finalTargetHit()\l+ getNumberOfConstraints()\l+ numberOfObjectives()\land 16 more...\l}" alt="" coords="163,433,354,687"/>
+<area shape="rect" id="node4" href="$classCOCOfunc.html" title="Wrapper for functions in COCO. " alt="" coords="193,132,381,371"/>
+<area shape="rect" id="node6" href="$classUncertainFunc.html" title="{UncertainFunc\&lt; SingleObjective\lFunction \&gt;\n||+ UncertainFunc()\l+ init()\l+ setUncertaintyThreshold()\l+ setHistoryThreshold()\l+ uncertainEval()\l+ certainEval()\l+ certainEval()\l+ cheaterEval()\l+ cheaterEval()\l+ eval()\land 6 more...\l}" alt="" coords="385,441,596,679"/>
+<area shape="rect" id="node7" href="$classUncertainFunc.html" title="{UncertainFunc\&lt; T \&gt;\n||+ UncertainFunc()\l+ init()\l+ setUncertaintyThreshold()\l+ setHistoryThreshold()\l+ uncertainEval()\l+ certainEval()\l+ cheaterEval()\l+ eval()\l+ getEvaluations()\l+ getRealEvaluations()\land 6 more...\l}" alt="" coords="405,139,589,363"/>
+</map>

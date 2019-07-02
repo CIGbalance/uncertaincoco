@@ -1,0 +1,8 @@
+<map id="logger_biobj_data_t" name="logger_biobj_data_t">
+<area shape="rect" id="node2" href="$structlogger__biobj__indicator__t.html" title="The indicator type. " alt="" coords="540,414,698,441"/>
+<area shape="rect" id="node3" href="$classdouble.html" title="double" alt="" coords="365,5,425,32"/>
+<area shape="rect" id="node8" href="$structcoco__observer__targets__t.html" title="The type for triggers based on target values. " alt="" coords="471,235,636,262"/>
+<area shape="rect" id="node5" href="$structcoco__observer__evaluations__t.html" title="The type for triggers based on numbers of evaluations. " alt="" coords="90,235,281,262"/>
+<area shape="rect" id="node7" href="$classint.html" title="int" alt="" coords="777,5,816,32"/>
+<area shape="rect" id="node9" href="$structavl__tree.html" title="avl_tree" alt="" coords="1030,333,1098,359"/>
+</map>

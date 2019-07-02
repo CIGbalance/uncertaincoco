@@ -1,0 +1,136 @@
+\hypertarget{classUncertainCMAIndividual}{}\section{Uncertain\+C\+M\+A\+Individual$<$ Fitness\+TypeT $>$ Class Template Reference}
+\label{classUncertainCMAIndividual}\index{Uncertain\+C\+M\+A\+Individual$<$ Fitness\+Type\+T $>$@{Uncertain\+C\+M\+A\+Individual$<$ Fitness\+Type\+T $>$}}
+
+
+Inheritance diagram for Uncertain\+C\+M\+A\+Individual$<$ Fitness\+TypeT $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUncertainCMAIndividual__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Uncertain\+C\+M\+A\+Individual$<$ Fitness\+TypeT $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUncertainCMAIndividual__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Fitness\+TypeT {\bfseries Fitness\+Type}\hypertarget{classUncertainCMAIndividual_a71c60c81a92aeb97a5f4bace24d6901a}{}\label{classUncertainCMAIndividual_a71c60c81a92aeb97a5f4bace24d6901a}
+
+\item 
+typedef shark\+::\+Individual$<$ Real\+Vector, Fitness\+TypeT, C\+M\+A\+Chromosome $>$ {\bfseries Individual\+Type}\hypertarget{classUncertainIndividual_a12fd86b7482c1ea80ae0498388342e42}{}\label{classUncertainIndividual_a12fd86b7482c1ea80ae0498388342e42}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Uncertain\+C\+M\+A\+Individual} (std\+::size\+\_\+t search\+Space\+Dimension, \hyperlink{classdouble}{double} success\+Threshold=0.\+44, \hyperlink{classdouble}{double} initial\+Step\+Size=1.\+0)\hypertarget{classUncertainCMAIndividual_abf338f5078bc8573fa792d8b835fc392}{}\label{classUncertainCMAIndividual_abf338f5078bc8573fa792d8b835fc392}
+
+\item 
+void {\bfseries update\+As\+Parent} (C\+M\+A\+Chromosome\+::\+Individual\+Success offspring\+Success)\hypertarget{classUncertainCMAIndividual_a006cffa2c76af07125e0cabd63c2fe97}{}\label{classUncertainCMAIndividual_a006cffa2c76af07125e0cabd63c2fe97}
+
+\item 
+void {\bfseries update\+As\+Offspring} ()\hypertarget{classUncertainCMAIndividual_a1037685ff79c0a9ca0e68094b2cbc5d2}{}\label{classUncertainCMAIndividual_a1037685ff79c0a9ca0e68094b2cbc5d2}
+
+\item 
+{\footnotesize template$<$class Rng\+Type $>$ }\\void {\bfseries mutate} (Rng\+Type \&rng)\hypertarget{classUncertainCMAIndividual_a35abeb318365c142c071df96cc2b7f61}{}\label{classUncertainCMAIndividual_a35abeb318365c142c071df96cc2b7f61}
+
+\item 
+\hyperlink{classdouble}{double} \& {\bfseries no\+Successful\+Offspring} ()\hypertarget{classUncertainCMAIndividual_aa30a61d73c1bcef208483284748f79f0}{}\label{classUncertainCMAIndividual_aa30a61d73c1bcef208483284748f79f0}
+
+\item 
+\hyperlink{classdouble}{double} {\bfseries no\+Successful\+Offspring} () const \hypertarget{classUncertainCMAIndividual_a21f0b5ac2d49c560fa07c43379fb6c3b}{}\label{classUncertainCMAIndividual_a21f0b5ac2d49c560fa07c43379fb6c3b}
+
+\item 
+std\+::size\+\_\+t {\bfseries parent} () const \hypertarget{classUncertainCMAIndividual_aa82e76b06c6c2b6c93baa1d132b240c8}{}\label{classUncertainCMAIndividual_aa82e76b06c6c2b6c93baa1d132b240c8}
+
+\item 
+std\+::size\+\_\+t \& {\bfseries parent} ()\hypertarget{classUncertainCMAIndividual_ab83f2353bef6499c2ec5cc190c6deb7f}{}\label{classUncertainCMAIndividual_ab83f2353bef6499c2ec5cc190c6deb7f}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries uncertainty} () const\hypertarget{classUncertainIndividual_a0e20155ab98c59245a6690dd7547af6d}{}\label{classUncertainIndividual_a0e20155ab98c59245a6690dd7547af6d}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ \& {\bfseries uncertainty} ()\hypertarget{classUncertainIndividual_a22397a043ec2aecd60187607bd18fc0e}{}\label{classUncertainIndividual_a22397a043ec2aecd60187607bd18fc0e}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries hist} () const\hypertarget{classUncertainIndividual_a585493af656ea988700dd07aed8fd2a5}{}\label{classUncertainIndividual_a585493af656ea988700dd07aed8fd2a5}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ \& {\bfseries hist} ()\hypertarget{classUncertainIndividual_abcf3e0216bb531bac45ffc9120bd70ad}{}\label{classUncertainIndividual_abcf3e0216bb531bac45ffc9120bd70ad}
+
+\item 
+Fitness\+TypeT {\bfseries true\+Fitness} () const\hypertarget{classUncertainIndividual_aa74b8567f6920c1435a329890c539972}{}\label{classUncertainIndividual_aa74b8567f6920c1435a329890c539972}
+
+\item 
+Fitness\+TypeT \& {\bfseries true\+Fitness} ()\hypertarget{classUncertainIndividual_a346121fc997f19cadf99604193b72618}{}\label{classUncertainIndividual_a346121fc997f19cadf99604193b72618}
+
+\item 
+unsigned \hyperlink{classint}{int} {\bfseries true\+Rank} () const\hypertarget{classUncertainIndividual_aa21215093458d93025f6a93106404565}{}\label{classUncertainIndividual_aa21215093458d93025f6a93106404565}
+
+\item 
+unsigned \hyperlink{classint}{int} \& {\bfseries true\+Rank} ()\hypertarget{classUncertainIndividual_a0c6ac0bf70668a7af3af9dfff6e3dc13}{}\label{classUncertainIndividual_a0c6ac0bf70668a7af3af9dfff6e3dc13}
+
+\item 
+\hyperlink{classbool}{bool} {\bfseries true\+Selected} () const\hypertarget{classUncertainIndividual_a0e7b9cc97b8dcf2a2faebd0d37dea88d}{}\label{classUncertainIndividual_a0e7b9cc97b8dcf2a2faebd0d37dea88d}
+
+\item 
+\hyperlink{classbool}{bool} \& {\bfseries true\+Selected} ()\hypertarget{classUncertainIndividual_a55e74d5fbf09229029c4bfc915b5e9b1}{}\label{classUncertainIndividual_a55e74d5fbf09229029c4bfc915b5e9b1}
+
+\item 
+void {\bfseries copy\+To} (Individual\+Type \&ind)\hypertarget{classUncertainIndividual_a58cfe6b00123cadc46448aed5ecb0b52}{}\label{classUncertainIndividual_a58cfe6b00123cadc46448aed5ecb0b52}
+
+\item 
+void {\bfseries create\+From} (Individual\+Type \&ind)\hypertarget{classUncertainIndividual_a1713dfd074252149419fd0dd4164da51}{}\label{classUncertainIndividual_a1713dfd074252149419fd0dd4164da51}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classbool}{bool} {\bfseries Is\+Uncertain} (\hyperlink{classUncertainIndividual}{Uncertain\+Individual} const \&individual)\hypertarget{classUncertainIndividual_abd89cab2c5639c817015f87e9cac83ee}{}\label{classUncertainIndividual_abd89cab2c5639c817015f87e9cac83ee}
+
+\item 
+static \hyperlink{classbool}{bool} {\bfseries previously\+Evaluated} (\hyperlink{classUncertainIndividual}{Uncertain\+Individual} const \&individual)\hypertarget{classUncertainIndividual_a3d7cec28603aa907af94f523662326ad}{}\label{classUncertainIndividual_a3d7cec28603aa907af94f523662326ad}
+
+\item 
+static \hyperlink{classbool}{bool} {\bfseries previously\+Ranked} (\hyperlink{classUncertainIndividual}{Uncertain\+Individual} const \&individual)\hypertarget{classUncertainIndividual_a9116510caf6a82a5e8dc6c68f5c7b6d5}{}\label{classUncertainIndividual_a9116510caf6a82a5e8dc6c68f5c7b6d5}
+
+\item 
+static \hyperlink{classbool}{bool} {\bfseries True\+Selected} (\hyperlink{classUncertainIndividual}{Uncertain\+Individual} const \&individual)\hypertarget{classUncertainIndividual_a2618a82188eb184991c0152a2815b328}{}\label{classUncertainIndividual_a2618a82188eb184991c0152a2815b328}
+
+\item 
+static std\+::string {\bfseries to\+String} (\hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ \hyperlink{classdouble}{double}, C\+M\+A\+Chromosome $>$ const \&individual)\hypertarget{classUncertainIndividual_a23f6906e347c6ad0d74e7e871fd51584}{}\label{classUncertainIndividual_a23f6906e347c6ad0d74e7e871fd51584}
+
+\item 
+static std\+::string {\bfseries to\+String} (\hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ Real\+Vector, C\+M\+A\+Chromosome $>$ const \&individual)\hypertarget{classUncertainIndividual_a7a3832e99216ccfa25b2431bd0594073}{}\label{classUncertainIndividual_a7a3832e99216ccfa25b2431bd0594073}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries m\+\_\+uncertainty}\hypertarget{classUncertainIndividual_ac5f30637f666f2388930b70d7bd58f25}{}\label{classUncertainIndividual_ac5f30637f666f2388930b70d7bd58f25}
+
+\item 
+std\+::vector$<$ \hyperlink{classdouble}{double} $>$ {\bfseries m\+\_\+hist}\hypertarget{classUncertainIndividual_ab8679af59a7ec3926c5dc7f06335416d}{}\label{classUncertainIndividual_ab8679af59a7ec3926c5dc7f06335416d}
+
+\item 
+Fitness\+TypeT {\bfseries m\+\_\+true\+Fitness}\hypertarget{classUncertainIndividual_a1e4300ea3c248c8b04667f655690dfc1}{}\label{classUncertainIndividual_a1e4300ea3c248c8b04667f655690dfc1}
+
+\item 
+unsigned \hyperlink{classint}{int} {\bfseries m\+\_\+true\+Rank}\hypertarget{classUncertainIndividual_a30a285084e80349ee29b0de0437ee8f8}{}\label{classUncertainIndividual_a30a285084e80349ee29b0de0437ee8f8}
+
+\item 
+\hyperlink{classbool}{bool} {\bfseries m\+\_\+true\+Selected}\hypertarget{classUncertainIndividual_a8b61c869d0d7280fb726c5d9b2eaa600}{}\label{classUncertainIndividual_a8b61c869d0d7280fb726c5d9b2eaa600}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Uncertain\+C\+M\+A\+Individual.\+h\end{DoxyCompactItemize}

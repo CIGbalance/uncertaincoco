@@ -1,0 +1,41 @@
+\hypertarget{structcoco__observer__targets__t}{}\section{coco\+\_\+observer\+\_\+targets\+\_\+t Struct Reference}
+\label{structcoco__observer__targets__t}\index{coco\+\_\+observer\+\_\+targets\+\_\+t@{coco\+\_\+observer\+\_\+targets\+\_\+t}}
+
+
+The type for triggers based on target values.  
+
+
+
+
+Collaboration diagram for coco\+\_\+observer\+\_\+targets\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{structcoco__observer__targets__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classint}{int} \hyperlink{structcoco__observer__targets__t_aea1e41b609df4f116b2911f220d59438}{exponent}\hypertarget{structcoco__observer__targets__t_aea1e41b609df4f116b2911f220d59438}{}\label{structcoco__observer__targets__t_aea1e41b609df4f116b2911f220d59438}
+
+\begin{DoxyCompactList}\small\item\em Value used to compare with the previously hit target. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{structcoco__observer__targets__t_a60066d5bd28d41b286b7174d3a6c6acc}{value}\hypertarget{structcoco__observer__targets__t_a60066d5bd28d41b286b7174d3a6c6acc}{}\label{structcoco__observer__targets__t_a60066d5bd28d41b286b7174d3a6c6acc}
+
+\begin{DoxyCompactList}\small\item\em Value of the currently hit target. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__observer__targets__t_a3dc06bff5853917f61373cfb87ba7178}{number\+\_\+of\+\_\+triggers}\hypertarget{structcoco__observer__targets__t_a3dc06bff5853917f61373cfb87ba7178}{}\label{structcoco__observer__targets__t_a3dc06bff5853917f61373cfb87ba7178}
+
+\begin{DoxyCompactList}\small\item\em Number of target triggers between 10$\ast$$\ast$i and 10$\ast$$\ast$(i+1) for any i. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{structcoco__observer__targets__t_ad8ba9f972cc8b06e78996e4ed1d1214c}{precision}\hypertarget{structcoco__observer__targets__t_ad8ba9f972cc8b06e78996e4ed1d1214c}{}\label{structcoco__observer__targets__t_ad8ba9f972cc8b06e78996e4ed1d1214c}
+
+\begin{DoxyCompactList}\small\item\em Minimal precision of interest. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The type for triggers based on target values. 
+
+The target values that trigger logging are at every 10$\ast$$\ast$(exponent/number\+\_\+of\+\_\+triggers) from positive infinity down to precision, at 0, and from -\/precision on with step -\/10$\ast$$\ast$(exponent/number\+\_\+of\+\_\+triggers) until negative infinity. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+c\end{DoxyCompactItemize}

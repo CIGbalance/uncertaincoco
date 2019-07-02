@@ -1,0 +1,63 @@
+\hypertarget{COCOfunc_8h}{}\section{C\+O\+C\+Ofunc.\+h File Reference}
+\label{COCOfunc_8h}\index{C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$shark/\+Objective\+Functions/\+Abstract\+Objective\+Function.\+h$>$}\\*
+{\ttfamily \#include $<$shark/\+Objective\+Functions/\+Box\+Constraint\+Handler.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}../utils/\+Archive.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../utils/ihs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}coco.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+Include dependency graph for C\+O\+C\+Ofunc.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{COCOfunc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{COCOfunc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classCOCOfunc}{C\+O\+C\+Ofunc$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Wrapper for functions in C\+O\+CO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836}{Transform} \{ \hyperlink{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836a0d077f5b932ce05e5b9f30c6087a2f31}{NO} = 0, 
+\hyperlink{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836acd7ffe737ad5fb21fbd7499886934910}{L\+OG} = 1, 
+\hyperlink{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836ab1fefaf679ae9b0e48fea10cb3615c74}{I\+N\+V\+E\+R\+SE} = 2
+ \}\begin{DoxyCompactList}\small\item\em Function transformation options. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\index{C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}!Transform@{Transform}}
+\index{Transform@{Transform}!C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}}
+\subsubsection[{\texorpdfstring{Transform}{Transform}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Transform}}\hypertarget{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836}{}\label{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836}
+
+
+Function transformation options. 
+
+Can be used to transform the function values of the referenced function.
+
+Passed to class in \hyperlink{classCOCOfunc_aef35b3b037b11a843bb77fd269f5447f}{C\+O\+C\+Ofunc$<$\+T$>$\+::init}. Used in \hyperlink{classCOCOfunc_af59cef4f0a78c07c4910bf015363c3f5}{C\+O\+C\+Ofunc$<$\+T$>$\+::eval} and \hyperlink{classCOCOfunc_aaf37b734aed084757a8ccf5ad4d66705}{C\+O\+C\+Ofunc$<$\+T$>$\+::cheater\+\_\+eval} \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{NO@{NO}!C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}}\index{C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}!NO@{NO}}\item[{\em 
+NO\hypertarget{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836a0d077f5b932ce05e5b9f30c6087a2f31}{}\label{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836a0d077f5b932ce05e5b9f30c6087a2f31}
+}]No transformation. \index{L\+OG@{L\+OG}!C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}}\index{C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}!L\+OG@{L\+OG}}\item[{\em 
+L\+OG\hypertarget{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836acd7ffe737ad5fb21fbd7499886934910}{}\label{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836acd7ffe737ad5fb21fbd7499886934910}
+}]ln(y). Will interrupt run for negative y \index{I\+N\+V\+E\+R\+SE@{I\+N\+V\+E\+R\+SE}!C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}}\index{C\+O\+C\+Ofunc.\+h@{C\+O\+C\+Ofunc.\+h}!I\+N\+V\+E\+R\+SE@{I\+N\+V\+E\+R\+SE}}\item[{\em 
+I\+N\+V\+E\+R\+SE\hypertarget{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836ab1fefaf679ae9b0e48fea10cb3615c74}{}\label{COCOfunc_8h_aa1cc1190aa1b958d686d46e0860bc836ab1fefaf679ae9b0e48fea10cb3615c74}
+}]-\/1 /y \end{description}
+\end{Desc}

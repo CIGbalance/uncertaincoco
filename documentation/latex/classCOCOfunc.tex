@@ -1,0 +1,295 @@
+\hypertarget{classCOCOfunc}{}\section{C\+O\+C\+Ofunc$<$ T $>$ Class Template Reference}
+\label{classCOCOfunc}\index{C\+O\+C\+Ofunc$<$ T $>$@{C\+O\+C\+Ofunc$<$ T $>$}}
+
+
+Wrapper for functions in C\+O\+CO.  
+
+
+
+
+{\ttfamily \#include $<$C\+O\+C\+Ofunc.\+h$>$}
+
+
+
+Inheritance diagram for C\+O\+C\+Ofunc$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCOCOfunc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+O\+C\+Ofunc$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classCOCOfunc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCOCOfunc_aef35b3b037b11a843bb77fd269f5447f}{init} (coco\+\_\+problem\+\_\+t $\ast$problem, coco\+\_\+problem\+\_\+t $\ast$cheater\+\_\+problem, \hyperlink{classint}{int} time\+Window, \hyperlink{classbool}{bool} m\+\_\+is\+Noisy, \hyperlink{classdouble}{double} penalty, Transform trans)
+\begin{DoxyCompactList}\small\item\em Initialises Function properties. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{classCOCOfunc_af59cef4f0a78c07c4910bf015363c3f5}{eval} (Real\+Vector point) const 
+\begin{DoxyCompactList}\small\item\em Evaluates Function (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ {\bfseries eval} (Real\+Vector point, Real\+Vector krig\+Point) const \hypertarget{classCOCOfunc_a5212e78af436dfe41259bf21217cb80b}{}\label{classCOCOfunc_a5212e78af436dfe41259bf21217cb80b}
+
+\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{classCOCOfunc_aaf37b734aed084757a8ccf5ad4d66705}{cheater\+\_\+eval} (Real\+Vector point) const 
+\begin{DoxyCompactList}\small\item\em Evaluates Cheater Function (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+Real\+Vector \hyperlink{classCOCOfunc_a2a5d8bccb6235159b8f28be24c989d07}{propose\+Starting\+Point} () const \hypertarget{classCOCOfunc_a2a5d8bccb6235159b8f28be24c989d07}{}\label{classCOCOfunc_a2a5d8bccb6235159b8f28be24c989d07}
+
+\begin{DoxyCompactList}\small\item\em Suggests a search point within the region of interest. \end{DoxyCompactList}\item 
+Archive\+Data \hyperlink{classCOCOfunc_a58a3396eaf1270cbafa023237e44266d}{lhs} (\hyperlink{classint}{int} point\+\_\+num, \hyperlink{classint}{int} seed, \hyperlink{classint}{int} duplication=5) const 
+\begin{DoxyCompactList}\small\item\em L\+HC sample with evaluation. \end{DoxyCompactList}\item 
+std\+::vector$<$ Real\+Vector $>$ \hyperlink{classCOCOfunc_ab45f933b1b59a3d0be4ce9fa83bc307e}{lhs\+Sample} (\hyperlink{classint}{int} point\+\_\+num, \hyperlink{classint}{int} seed, \hyperlink{classint}{int} duplication=5) const 
+\begin{DoxyCompactList}\small\item\em L\+HC sample without evaluation. \end{DoxyCompactList}\item 
+coco\+\_\+problem\+\_\+t $\ast$ \hyperlink{classCOCOfunc_a8af39fc2cc018f4ff0343c613d8132c3}{get\+Problem} () const \hypertarget{classCOCOfunc_a8af39fc2cc018f4ff0343c613d8132c3}{}\label{classCOCOfunc_a8af39fc2cc018f4ff0343c613d8132c3}
+
+\begin{DoxyCompactList}\small\item\em Returns reference to C\+O\+CO problem. \end{DoxyCompactList}\item 
+coco\+\_\+problem\+\_\+t $\ast$ \hyperlink{classCOCOfunc_aaed270701e406fe2c3bc8e86ac69d3b3}{get\+Cheater\+Problem} () const \hypertarget{classCOCOfunc_aaed270701e406fe2c3bc8e86ac69d3b3}{}\label{classCOCOfunc_aaed270701e406fe2c3bc8e86ac69d3b3}
+
+\begin{DoxyCompactList}\small\item\em Returns reference to cheater C\+O\+CO problem. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCOCOfunc_ac62752306f9fd69cc0b50b38673ee16f}{name} () const \hypertarget{classCOCOfunc_ac62752306f9fd69cc0b50b38673ee16f}{}\label{classCOCOfunc_ac62752306f9fd69cc0b50b38673ee16f}
+
+\begin{DoxyCompactList}\small\item\em Name of the function (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+virtual std\+::size\+\_\+t \hyperlink{classCOCOfunc_a8690a176427c8d17fe12b183dfa205fd}{number\+Of\+Variables} () const \hypertarget{classCOCOfunc_a8690a176427c8d17fe12b183dfa205fd}{}\label{classCOCOfunc_a8690a176427c8d17fe12b183dfa205fd}
+
+\begin{DoxyCompactList}\small\item\em Dimension of search space (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classCOCOfunc_a0d46ada22e366ec1b13a69049d44677b}{number\+Of\+Objectives} () const \hypertarget{classCOCOfunc_a0d46ada22e366ec1b13a69049d44677b}{}\label{classCOCOfunc_a0d46ada22e366ec1b13a69049d44677b}
+
+\begin{DoxyCompactList}\small\item\em Dimension of objective spaces (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+virtual \hyperlink{classint}{int} \hyperlink{classCOCOfunc_ac8770bd1d86e5c945b68a79998725d3b}{get\+Evaluations} () const \hypertarget{classCOCOfunc_ac8770bd1d86e5c945b68a79998725d3b}{}\label{classCOCOfunc_ac8770bd1d86e5c945b68a79998725d3b}
+
+\begin{DoxyCompactList}\small\item\em Number of evaluations (Passed from C\+O\+CO)) \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{classCOCOfunc_a0cd816c1e89961720d2aa66e69b19634}{final\+Target\+Hit} () const \hypertarget{classCOCOfunc_a0cd816c1e89961720d2aa66e69b19634}{}\label{classCOCOfunc_a0cd816c1e89961720d2aa66e69b19634}
+
+\begin{DoxyCompactList}\small\item\em Final target hit? (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{classCOCOfunc_a9b419be16b230e408030c5e57218a52d}{get\+Evaluation\+Constraints} () const \hypertarget{classCOCOfunc_a9b419be16b230e408030c5e57218a52d}{}\label{classCOCOfunc_a9b419be16b230e408030c5e57218a52d}
+
+\begin{DoxyCompactList}\small\item\em Check feasibility (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{classCOCOfunc_ab7a3f2bc6dcf4cc749af04043e74badc}{get\+Number\+Of\+Constraints} () const \hypertarget{classCOCOfunc_ab7a3f2bc6dcf4cc749af04043e74badc}{}\label{classCOCOfunc_ab7a3f2bc6dcf4cc749af04043e74badc}
+
+\begin{DoxyCompactList}\small\item\em Number of constraints (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+\hyperlink{classbool}{bool} \hyperlink{classCOCOfunc_ad6aa968a96ec542ff3696de2e982ea5d}{in\+Region\+Of\+Interest} (Real\+Vector const \&input) const 
+\begin{DoxyCompactList}\small\item\em Check if point is in region of interest. \end{DoxyCompactList}\item 
+const \hyperlink{classdouble}{double} $\ast$ \hyperlink{classCOCOfunc_a36c4660ffc4626348b94c0ddd6e79391}{get\+Lower\+Bounds} () const \hypertarget{classCOCOfunc_a36c4660ffc4626348b94c0ddd6e79391}{}\label{classCOCOfunc_a36c4660ffc4626348b94c0ddd6e79391}
+
+\begin{DoxyCompactList}\small\item\em Lower bound for region of interest (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+const \hyperlink{classdouble}{double} $\ast$ \hyperlink{classCOCOfunc_a04a3839722b0bd6ef34b7391d1c63101}{get\+Upper\+Bounds} () const \hypertarget{classCOCOfunc_a04a3839722b0bd6ef34b7391d1c63101}{}\label{classCOCOfunc_a04a3839722b0bd6ef34b7391d1c63101}
+
+\begin{DoxyCompactList}\small\item\em Upper bound for region of interest (Passed from C\+O\+CO) \end{DoxyCompactList}\item 
+\hyperlink{classbool}{bool} \hyperlink{classCOCOfunc_a81ffc0c8318e3f2163237f6329dfd621}{is\+Feasible} (Real\+Vector const \&input) const 
+\item 
+\hyperlink{classArchive}{Archive} \hyperlink{classCOCOfunc_aa0ed7f73c9689c5beceb67452494842e}{get\+Archive} () const \hypertarget{classCOCOfunc_aa0ed7f73c9689c5beceb67452494842e}{}\label{classCOCOfunc_aa0ed7f73c9689c5beceb67452494842e}
+
+\begin{DoxyCompactList}\small\item\em Returns \hyperlink{classArchive}{Archive} that stores all evaluations. \end{DoxyCompactList}\item 
+\hyperlink{classbool}{bool} \hyperlink{classCOCOfunc_a439fbb980cddaa9ffa900177f14c90e3}{converged} () const \hypertarget{classCOCOfunc_a439fbb980cddaa9ffa900177f14c90e3}{}\label{classCOCOfunc_a439fbb980cddaa9ffa900177f14c90e3}
+
+\begin{DoxyCompactList}\small\item\em Returns true if archive converged. \end{DoxyCompactList}\item 
+void \hyperlink{classCOCOfunc_aa05f6328202055ad1775bfc702138d57}{signal\+Archive\+Reset} ()\hypertarget{classCOCOfunc_aa05f6328202055ad1775bfc702138d57}{}\label{classCOCOfunc_aa05f6328202055ad1775bfc702138d57}
+
+\begin{DoxyCompactList}\small\item\em Signals algorithm restart to \hyperlink{classArchive}{Archive}. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{classCOCOfunc_a564ba29a6578acbf448b6d4637dba5e6}{get\+Time\+Window} () const \hypertarget{classCOCOfunc_a564ba29a6578acbf448b6d4637dba5e6}{}\label{classCOCOfunc_a564ba29a6578acbf448b6d4637dba5e6}
+
+\begin{DoxyCompactList}\small\item\em Time window for convergence detection. \end{DoxyCompactList}\item 
+\hyperlink{classbool}{bool} \hyperlink{classCOCOfunc_aebf2679b94c68a5dd00bfbe2e65ae03c}{is\+Noisy} () const \hypertarget{classCOCOfunc_aebf2679b94c68a5dd00bfbe2e65ae03c}{}\label{classCOCOfunc_aebf2679b94c68a5dd00bfbe2e65ae03c}
+
+\begin{DoxyCompactList}\small\item\em Function noisy? \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{classCOCOfunc_a1bca22ed36ffb8b1e1a3c3ba6d28474a}{get\+Penalty} () const \hypertarget{classCOCOfunc_a1bca22ed36ffb8b1e1a3c3ba6d28474a}{}\label{classCOCOfunc_a1bca22ed36ffb8b1e1a3c3ba6d28474a}
+
+\begin{DoxyCompactList}\small\item\em Penalty set for points outside region of interest. \end{DoxyCompactList}\item 
+Transform \hyperlink{classCOCOfunc_a45ba191b9c22159ef160c56b7bb84e47}{get\+Transform} () const \hypertarget{classCOCOfunc_a45ba191b9c22159ef160c56b7bb84e47}{}\label{classCOCOfunc_a45ba191b9c22159ef160c56b7bb84e47}
+
+\begin{DoxyCompactList}\small\item\em Returns transformation option used. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} {\bfseries get\+Ind} () const \hypertarget{classCOCOfunc_adcc87a3ee718a74a2fbb715501a2592e}{}\label{classCOCOfunc_adcc87a3ee718a74a2fbb715501a2592e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::size\+\_\+t \hyperlink{classCOCOfunc_a7853670ae89b8a69629c91dea2e97b94}{m\+\_\+number\+Of\+Variables}\hypertarget{classCOCOfunc_a7853670ae89b8a69629c91dea2e97b94}{}\label{classCOCOfunc_a7853670ae89b8a69629c91dea2e97b94}
+
+\begin{DoxyCompactList}\small\item\em Search space dimension. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \hyperlink{classCOCOfunc_a73fcef890a91b71bd3dacc34487551c7}{m\+\_\+number\+Of\+Objectives}\hypertarget{classCOCOfunc_a73fcef890a91b71bd3dacc34487551c7}{}\label{classCOCOfunc_a73fcef890a91b71bd3dacc34487551c7}
+
+\begin{DoxyCompactList}\small\item\em Objective space dimension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class C\+O\+C\+Ofunc$<$ T $>$}
+
+Wrapper for functions in C\+O\+CO. 
+
+This class provides a convenient interface to a function in the C\+O\+CO framework. It allows access to various of the original functionalities and adds features such as logging and cheater evaluations.
+
+Cheater evaluations are evaluations of the C\+O\+CO function that are not counted through the C\+O\+CO framework. They are never accessible to the optimisation algorithms and are solely logged along with predicted values in order to be able to compute errors. 
+
+\subsection{Member Function Documentation}
+\index{C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}!cheater\+\_\+eval@{cheater\+\_\+eval}}
+\index{cheater\+\_\+eval@{cheater\+\_\+eval}!C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}}
+\subsubsection[{\texorpdfstring{cheater\+\_\+eval(\+Real\+Vector point) const }{cheater_eval(RealVector point) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf double}$\ast$ {\bf C\+O\+C\+Ofunc}$<$ {\bf T} $>$\+::cheater\+\_\+eval (
+\begin{DoxyParamCaption}
+\item[{Real\+Vector}]{point}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCOCOfunc_aaf37b734aed084757a8ccf5ad4d66705}{}\label{classCOCOfunc_aaf37b734aed084757a8ccf5ad4d66705}
+
+
+Evaluates Cheater Function (Passed from C\+O\+CO) 
+
+Evaluates the C\+O\+CO function duplicate. Transformation (\+::\+Transform) added as initialised in \hyperlink{classCOCOfunc_aef35b3b037b11a843bb77fd269f5447f}{C\+O\+C\+Ofunc$<$\+T$>$\+::init}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & in search space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+function value 
+\end{DoxyReturn}
+\index{C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}!eval@{eval}}
+\index{eval@{eval}!C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}}
+\subsubsection[{\texorpdfstring{eval(\+Real\+Vector point) const }{eval(RealVector point) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf double}$\ast$ {\bf C\+O\+C\+Ofunc}$<$ {\bf T} $>$\+::eval (
+\begin{DoxyParamCaption}
+\item[{Real\+Vector}]{point}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCOCOfunc_af59cef4f0a78c07c4910bf015363c3f5}{}\label{classCOCOfunc_af59cef4f0a78c07c4910bf015363c3f5}
+
+
+Evaluates Function (Passed from C\+O\+CO) 
+
+Evaluates the C\+O\+CO function. Transformation (\+::\+Transform) added as initialised in \hyperlink{classCOCOfunc_aef35b3b037b11a843bb77fd269f5447f}{C\+O\+C\+Ofunc$<$\+T$>$\+::init}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & in search space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+function value 
+\end{DoxyReturn}
+\index{C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}!init@{init}}
+\index{init@{init}!C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}}
+\subsubsection[{\texorpdfstring{init(coco\+\_\+problem\+\_\+t $\ast$problem, coco\+\_\+problem\+\_\+t $\ast$cheater\+\_\+problem, int time\+Window, bool m\+\_\+is\+Noisy, double penalty, Transform trans)}{init(coco_problem_t *problem, coco_problem_t *cheater_problem, int timeWindow, bool m_isNoisy, double penalty, Transform trans)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf C\+O\+C\+Ofunc}$<$ {\bf T} $>$\+::init (
+\begin{DoxyParamCaption}
+\item[{coco\+\_\+problem\+\_\+t $\ast$}]{problem, }
+\item[{coco\+\_\+problem\+\_\+t $\ast$}]{cheater\+\_\+problem, }
+\item[{{\bf int}}]{time\+Window, }
+\item[{{\bf bool}}]{m\+\_\+is\+Noisy, }
+\item[{{\bf double}}]{penalty, }
+\item[{Transform}]{trans}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCOCOfunc_aef35b3b037b11a843bb77fd269f5447f}{}\label{classCOCOfunc_aef35b3b037b11a843bb77fd269f5447f}
+
+
+Initialises Function properties. 
+
+Saves basic parameters and sets up functionality 
+\begin{DoxyParams}{Parameters}
+{\em problem} & Reference to the original C\+O\+CO function \\
+\hline
+{\em cheater\+\_\+problem} & Reference to separate instance of same C\+O\+CO function \\
+\hline
+{\em time\+Window} & Time window for convergence detection (in number of function evaluations) \\
+\hline
+{\em m\+\_\+is\+Noisy} & Function noisy? \\
+\hline
+{\em penalty} & Penalty added to function values if outside region of interest \\
+\hline
+{\em trans} & Transformation option (\+::\+Transform) for function values \\
+\hline
+\end{DoxyParams}
+\index{C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}!in\+Region\+Of\+Interest@{in\+Region\+Of\+Interest}}
+\index{in\+Region\+Of\+Interest@{in\+Region\+Of\+Interest}!C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}}
+\subsubsection[{\texorpdfstring{in\+Region\+Of\+Interest(\+Real\+Vector const \&input) const }{inRegionOfInterest(RealVector const &input) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf bool} {\bf C\+O\+C\+Ofunc}$<$ {\bf T} $>$\+::in\+Region\+Of\+Interest (
+\begin{DoxyParamCaption}
+\item[{Real\+Vector const \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCOCOfunc_ad6aa968a96ec542ff3696de2e982ea5d}{}\label{classCOCOfunc_ad6aa968a96ec542ff3696de2e982ea5d}
+
+
+Check if point is in region of interest. 
+
+In C\+O\+CO, all functions have a specified region of interest where the optimum is located 
+\begin{DoxyParams}{Parameters}
+{\em input} & Point in search space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if in region of interest, else false 
+\end{DoxyReturn}
+\index{C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}!is\+Feasible@{is\+Feasible}}
+\index{is\+Feasible@{is\+Feasible}!C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}}
+\subsubsection[{\texorpdfstring{is\+Feasible(\+Real\+Vector const \&input) const }{isFeasible(RealVector const &input) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf bool} {\bf C\+O\+C\+Ofunc}$<$ {\bf T} $>$\+::is\+Feasible (
+\begin{DoxyParamCaption}
+\item[{Real\+Vector const \&}]{input}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCOCOfunc_a81ffc0c8318e3f2163237f6329dfd621}{}\label{classCOCOfunc_a81ffc0c8318e3f2163237f6329dfd621}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]Check if point is feasible (Untested, currently no constraints in C\+O\+CO \end{DoxyRefDesc}
+Check if constraints defined in C\+O\+CO are fulfilled 
+\begin{DoxyParams}{Parameters}
+{\em input} & Point in search space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if feasible, else false 
+\end{DoxyReturn}
+\index{C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}!lhs@{lhs}}
+\index{lhs@{lhs}!C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}}
+\subsubsection[{\texorpdfstring{lhs(int point\+\_\+num, int seed, int duplication=5) const }{lhs(int point_num, int seed, int duplication=5) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Archive\+Data {\bf C\+O\+C\+Ofunc}$<$ {\bf T} $>$\+::lhs (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{point\+\_\+num, }
+\item[{{\bf int}}]{seed, }
+\item[{{\bf int}}]{duplication = {\ttfamily 5}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCOCOfunc_a58a3396eaf1270cbafa023237e44266d}{}\label{classCOCOfunc_a58a3396eaf1270cbafa023237e44266d}
+
+
+L\+HC sample with evaluation. 
+
+Uses Improved Distributed Hypercube Sampling \href{https://people.sc.fsu.edu/~jburkardt/cpp_src/ihs/ihs.hpp}{\tt https\+://people.\+sc.\+fsu.\+edu/$\sim$jburkardt/cpp\+\_\+src/ihs/ihs.\+hpp} 
+\begin{DoxyParams}{Parameters}
+{\em point\+\_\+num} & Number of points to generated \\
+\hline
+{\em seed} & Random seed \\
+\hline
+{\em duplication} & Restarts of lhs algorithm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Archive\+Data sample result 
+\end{DoxyReturn}
+\index{C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}!lhs\+Sample@{lhs\+Sample}}
+\index{lhs\+Sample@{lhs\+Sample}!C\+O\+C\+Ofunc@{C\+O\+C\+Ofunc}}
+\subsubsection[{\texorpdfstring{lhs\+Sample(int point\+\_\+num, int seed, int duplication=5) const }{lhsSample(int point_num, int seed, int duplication=5) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\+::vector$<$Real\+Vector$>$ {\bf C\+O\+C\+Ofunc}$<$ {\bf T} $>$\+::lhs\+Sample (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{point\+\_\+num, }
+\item[{{\bf int}}]{seed, }
+\item[{{\bf int}}]{duplication = {\ttfamily 5}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCOCOfunc_ab45f933b1b59a3d0be4ce9fa83bc307e}{}\label{classCOCOfunc_ab45f933b1b59a3d0be4ce9fa83bc307e}
+
+
+L\+HC sample without evaluation. 
+
+Uses Improved Distributed Hypercube Sampling \href{https://people.sc.fsu.edu/~jburkardt/cpp_src/ihs/ihs.hpp}{\tt https\+://people.\+sc.\+fsu.\+edu/$\sim$jburkardt/cpp\+\_\+src/ihs/ihs.\+hpp} 
+\begin{DoxyParams}{Parameters}
+{\em point\+\_\+num} & Number of points to generated \\
+\hline
+{\em seed} & Random seed \\
+\hline
+{\em duplication} & Restarts of lhs algorithm \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sample points in search space 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+O\+C\+Ofunc.\+h\end{DoxyCompactItemize}

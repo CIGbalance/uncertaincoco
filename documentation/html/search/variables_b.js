@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['nadir',['nadir',['../structcoco__archive__s.html#adf39c53ebcf1e50928b42fa713802ee2',1,'coco_archive_s']]],
+  ['nadir_5fvalue',['nadir_value',['../structcoco__problem__s.html#aa6800aa8240a8baf6faba199505a1ae3',1,'coco_problem_s']]],
+  ['name',['name',['../structlogger__biobj__indicator__t.html#ae2c7761dd98f7cb8ef79f889bd5868ed',1,'logger_biobj_indicator_t']]],
+  ['new_5finstances',['new_instances',['../structsuite__biobj__t.html#a40406a4adac56b2a217170b2129df1eb',1,'suite_biobj_t::new_instances()'],['../structsuite__biobj__ext__t.html#abfc510683f063b4c91a3646167b0d46c',1,'suite_biobj_ext_t::new_instances()']]],
+  ['normalized_5fy',['normalized_y',['../structlogger__biobj__avl__item__t.html#a91038761c0ace28a8f6a0b0c8938676b',1,'logger_biobj_avl_item_t::normalized_y()'],['../structcoco__archive__avl__item__t.html#a5bb944a448cd147ee22867f03239441d',1,'coco_archive_avl_item_t::normalized_y()']]],
+  ['number_5fevaluation_5ftriggers',['number_evaluation_triggers',['../structcoco__observer__s.html#a82e30870dc411c480b44b21e37b2d570',1,'coco_observer_s']]],
+  ['number_5fof_5fconstraints',['number_of_constraints',['../structcoco__problem__s.html#a767f2c6157c07cd28a0bad0bb6cf6915',1,'coco_problem_s']]],
+  ['number_5fof_5fdimensions',['number_of_dimensions',['../structcoco__suite__s.html#aa3ace62df46f007cd5f61521b0e536d1',1,'coco_suite_s']]],
+  ['number_5fof_5fevaluations',['number_of_evaluations',['../structlogger__biobj__data__t.html#a32a17eebfdedb7273fb42145ab84e2cd',1,'logger_biobj_data_t::number_of_evaluations()'],['../structlogger__toy__data__t.html#a452dacc5a5a54c0c43bda4c72c690cbe',1,'logger_toy_data_t::number_of_evaluations()']]],
+  ['number_5fof_5ffunctions',['number_of_functions',['../structcoco__suite__s.html#a552bfa9971ee92347632a87d7e93cde9',1,'coco_suite_s']]],
+  ['number_5fof_5finstances',['number_of_instances',['../structcoco__suite__s.html#a93e1a975a7ccd9dd874c03969032ecce',1,'coco_suite_s']]],
+  ['number_5fof_5fobjectives',['number_of_objectives',['../structcoco__problem__s.html#a11621884788492371d54798fc432508b',1,'coco_problem_s::number_of_objectives()'],['../structlogger__biobj__data__t.html#a3f8a12e56f3f243ba3aee552a39b6d7e',1,'logger_biobj_data_t::number_of_objectives()'],['../structcoco__archive__s.html#a1e435a9dbc6d980564394f7eebffc78f',1,'coco_archive_s::number_of_objectives()']]],
+  ['number_5fof_5fsolutions',['number_of_solutions',['../structcoco__archive__s.html#a3682d2e60ddaa1f4a7d804c67f543bb5',1,'coco_archive_s']]],
+  ['number_5fof_5ftriggers',['number_of_triggers',['../structcoco__observer__targets__t.html#a3dc06bff5853917f61373cfb87ba7178',1,'coco_observer_targets_t::number_of_triggers()'],['../structcoco__observer__evaluations__t.html#a9f58c511563d2f2f802e6a09b3de8161',1,'coco_observer_evaluations_t::number_of_triggers()']]],
+  ['number_5fof_5fvariables',['number_of_variables',['../structcoco__problem__s.html#afe459ff0b085d91aa3508a01a2093aca',1,'coco_problem_s::number_of_variables()'],['../structlogger__biobj__data__t.html#a93e98a7e4bd2dfb1ffb31a3c75ee8a2d',1,'logger_biobj_data_t::number_of_variables()']]],
+  ['number_5ftarget_5ftriggers',['number_target_triggers',['../structcoco__observer__s.html#aef03bbe3ca381a03ed1eff789c03ab66',1,'coco_observer_s']]]
+];

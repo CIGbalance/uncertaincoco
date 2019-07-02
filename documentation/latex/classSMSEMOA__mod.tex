@@ -1,0 +1,64 @@
+\hypertarget{classSMSEMOA__mod}{}\section{S\+M\+S\+E\+M\+O\+A\+\_\+mod Class Reference}
+\label{classSMSEMOA__mod}\index{S\+M\+S\+E\+M\+O\+A\+\_\+mod@{S\+M\+S\+E\+M\+O\+A\+\_\+mod}}
+
+
+Inheritance diagram for S\+M\+S\+E\+M\+O\+A\+\_\+mod\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classSMSEMOA__mod__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+M\+S\+E\+M\+O\+A\+\_\+mod\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classSMSEMOA__mod__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classAbstractOptimizer}{Abstract\+Optimizer}$<$ Real\+Vector, Real\+Vector, Result\+Set$<$ Real\+Vector, Real\+Vector $>$ $>$ {\bfseries base\+\_\+type}\hypertarget{classAbstractPreselecter_a9d56c27fc2428c60a99dea0504717794}{}\label{classAbstractPreselecter_a9d56c27fc2428c60a99dea0504717794}
+
+\item 
+typedef base\+\_\+type\+::\+Objective\+Function\+Type {\bfseries Objective\+Function\+Type}\hypertarget{classAbstractPreselecter_ae3b0b31dee2296bb9ab385b80ac6a27e}{}\label{classAbstractPreselecter_ae3b0b31dee2296bb9ab385b80ac6a27e}
+
+\item 
+typedef base\+\_\+type\+::\+Search\+Point\+Type {\bfseries Search\+Point\+Type}\hypertarget{classAbstractPreselecter_a0b3b8c0fcb55a3f75337939d1cae182e}{}\label{classAbstractPreselecter_a0b3b8c0fcb55a3f75337939d1cae182e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries S\+M\+S\+E\+M\+O\+A\+\_\+mod} (Default\+Rng\+Type \&rng=Rng\+::global\+Rng)\hypertarget{classSMSEMOA__mod_a4d4cb767befc1e07b905fcdb36edc9e3}{}\label{classSMSEMOA__mod_a4d4cb767befc1e07b905fcdb36edc9e3}
+
+\item 
+unsigned \hyperlink{classint}{int} {\bfseries mu\+\_\+ps} () const \hypertarget{classSMSEMOA__mod_ade9f68d3312ba25e8df40c1e9fad8974}{}\label{classSMSEMOA__mod_ade9f68d3312ba25e8df40c1e9fad8974}
+
+\item 
+unsigned \hyperlink{classint}{int} \& {\bfseries mu\+\_\+ps} ()\hypertarget{classSMSEMOA__mod_ab55e4b964e10ba6f9ab1158aebb91ef1}{}\label{classSMSEMOA__mod_ab55e4b964e10ba6f9ab1158aebb91ef1}
+
+\item 
+virtual void {\bfseries init} (S\+M\+S\+E\+M\+O\+A\+::\+Objective\+Function\+Type \&function)\hypertarget{classSMSEMOA__mod_a87a07a42405d98d3e78cdc08f679019e}{}\label{classSMSEMOA__mod_a87a07a42405d98d3e78cdc08f679019e}
+
+\item 
+virtual void {\bfseries init} (S\+M\+S\+E\+M\+O\+A\+::\+Objective\+Function\+Type \&function, std\+::vector$<$ S\+M\+S\+E\+M\+O\+A\+::\+Search\+Point\+Type $>$ const \&initial\+Search\+Points)\hypertarget{classSMSEMOA__mod_ab6aacb03dbf1f323ea002519bd3d4782}{}\label{classSMSEMOA__mod_ab6aacb03dbf1f323ea002519bd3d4782}
+
+\item 
+void {\bfseries step\+\_\+presel} (S\+M\+S\+E\+M\+O\+A\+::\+Objective\+Function\+Type const \&function, S\+M\+S\+E\+M\+O\+A\+::\+Objective\+Function\+Type const \&function\+\_\+pred)\hypertarget{classSMSEMOA__mod_a3b879ff8c0afed9144bca929d3bbc809}{}\label{classSMSEMOA__mod_a3b879ff8c0afed9144bca929d3bbc809}
+
+\item 
+virtual void {\bfseries step\+\_\+presel} (Objective\+Function\+Type const \&function, Objective\+Function\+Type const \&function\+\_\+pred)=0\hypertarget{classAbstractPreselecter_ac7bd0dac8d7eaf85319524ee6d80f52d}{}\label{classAbstractPreselecter_ac7bd0dac8d7eaf85319524ee6d80f52d}
+
+\item 
+virtual void {\bfseries init} (Objective\+Function\+Type \&function)=0\hypertarget{classAbstractPreselecter_ac9283e597dc5d633b1f7ce959881dbb8}{}\label{classAbstractPreselecter_ac9283e597dc5d633b1f7ce959881dbb8}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+M\+S-\/\+E\+M\+O\+A\+\_\+mod.\+h\end{DoxyCompactItemize}

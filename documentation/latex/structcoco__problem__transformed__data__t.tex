@@ -1,0 +1,45 @@
+\hypertarget{structcoco__problem__transformed__data__t}{}\section{coco\+\_\+problem\+\_\+transformed\+\_\+data\+\_\+t Struct Reference}
+\label{structcoco__problem__transformed__data__t}\index{coco\+\_\+problem\+\_\+transformed\+\_\+data\+\_\+t@{coco\+\_\+problem\+\_\+transformed\+\_\+data\+\_\+t}}
+
+
+The transformed C\+O\+CO problem data type.  
+
+
+
+
+Collaboration diagram for coco\+\_\+problem\+\_\+transformed\+\_\+data\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcoco__problem__transformed__data__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structcoco__problem__s}{coco\+\_\+problem\+\_\+t} $\ast$ \hyperlink{structcoco__problem__transformed__data__t_ae857b926cab924dd7bf4cd909105dfce}{inner\+\_\+problem}\hypertarget{structcoco__problem__transformed__data__t_ae857b926cab924dd7bf4cd909105dfce}{}\label{structcoco__problem__transformed__data__t_ae857b926cab924dd7bf4cd909105dfce}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the inner problem. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{structcoco__problem__transformed__data__t_a217318c83ec7450ded138c45dd0c8eff}{data}\hypertarget{structcoco__problem__transformed__data__t_a217318c83ec7450ded138c45dd0c8eff}{}\label{structcoco__problem__transformed__data__t_a217318c83ec7450ded138c45dd0c8eff}
+
+\begin{DoxyCompactList}\small\item\em Pointer to data, which enables further wrapping of the problem. \end{DoxyCompactList}\item 
+coco\+\_\+data\+\_\+free\+\_\+function\+\_\+t \hyperlink{structcoco__problem__transformed__data__t_ac848c6b4ba534992a979130485db34ca}{data\+\_\+free\+\_\+function}\hypertarget{structcoco__problem__transformed__data__t_ac848c6b4ba534992a979130485db34ca}{}\label{structcoco__problem__transformed__data__t_ac848c6b4ba534992a979130485db34ca}
+
+\begin{DoxyCompactList}\small\item\em Function to free the contents of data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The transformed C\+O\+CO problem data type. 
+
+This is a type of a generic structure for a transformed (\char`\"{}outer\char`\"{}) coco\+\_\+problem. It makes possible the wrapping of problems as layers of an onion. Initialized in the coco\+\_\+problem\+\_\+transformed\+\_\+allocate function, it makes the current (\char`\"{}outer\char`\"{}) transformed problem a \char`\"{}derived problem class\char`\"{}, which inherits from the \char`\"{}inner\char`\"{} problem, the \char`\"{}base class\char`\"{}.
+
+From the perspective of the inner problem\+:
+\begin{DoxyItemize}
+\item data holds the meta-\/information to administer the inheritance
+\item data-\/$>$data holds the additional fields of the derived class (the outer problem)
+\item data-\/$>$inner\+\_\+problem points to the inner problem (now we have a linked list) 
+\end{DoxyItemize}
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+c\end{DoxyCompactItemize}

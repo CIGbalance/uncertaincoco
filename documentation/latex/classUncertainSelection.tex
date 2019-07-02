@@ -1,0 +1,70 @@
+\hypertarget{classUncertainSelection}{}\section{Uncertain\+Selection$<$ Indicator, Fitness\+Type, Chromosome $>$ Class Template Reference}
+\label{classUncertainSelection}\index{Uncertain\+Selection$<$ Indicator, Fitness\+Type, Chromosome $>$@{Uncertain\+Selection$<$ Indicator, Fitness\+Type, Chromosome $>$}}
+
+
+Inheritance diagram for Uncertain\+Selection$<$ Indicator, Fitness\+Type, Chromosome $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUncertainSelection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Uncertain\+Selection$<$ Indicator, Fitness\+Type, Chromosome $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classUncertainSelection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ Fitness\+Type, Chromosome $>$ $\ast$ $>$ {\bfseries Pop}\hypertarget{classUncertainSelection_a0520542236adabbd15036921601b2116}{}\label{classUncertainSelection_a0520542236adabbd15036921601b2116}
+
+\item 
+typedef Abstract\+Objective\+Function$<$ Real\+Vector, Fitness\+Type $>$ {\bfseries Function}\hypertarget{classUncertainSelection_af18b3ce54c2dfeb33513b2aa411a1050}{}\label{classUncertainSelection_af18b3ce54c2dfeb33513b2aa411a1050}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries operator()} (std\+::vector$<$ \hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ \hyperlink{classdouble}{double} $>$$>$ \&population, \hyperlink{classUncertainFunc__s}{Uncertain\+Func\+\_\+s} const \&f, std\+::size\+\_\+t mu, Selection\+Strategy strat, \hyperlink{classdouble}{double} alpha=-\/1)\hypertarget{classUncertainSelection_a817c2095dbd2d59897e5412a86ab6ffe}{}\label{classUncertainSelection_a817c2095dbd2d59897e5412a86ab6ffe}
+
+\item 
+{\footnotesize template$<$class Individual $>$ }\\void {\bfseries operator()} (std\+::vector$<$ Individual $>$ \&population, \hyperlink{classUncertainFunc__m}{Uncertain\+Func\+\_\+m} const \&f, std\+::size\+\_\+t mu, Selection\+Strategy strat, \hyperlink{classdouble}{double} alpha=-\/1)\hypertarget{classUncertainSelection_a8a76bfed7c8184d9e4eeb5a1352e2b94}{}\label{classUncertainSelection_a8a76bfed7c8184d9e4eeb5a1352e2b94}
+
+\item 
+void {\bfseries true\+Select} (std\+::vector$<$ \hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ \hyperlink{classdouble}{double} $>$$>$ \&population, std\+::size\+\_\+t mu)\hypertarget{classUncertainSelection_a4d239f710aa2347779b9ab3f531a8918}{}\label{classUncertainSelection_a4d239f710aa2347779b9ab3f531a8918}
+
+\item 
+{\footnotesize template$<$class Individual $>$ }\\void {\bfseries true\+Select} (std\+::vector$<$ Individual $>$ \&population, std\+::size\+\_\+t mu)\hypertarget{classUncertainSelection_a3d5b16c3dbaaa1d441ee83a156906735}{}\label{classUncertainSelection_a3d5b16c3dbaaa1d441ee83a156906735}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Individual $>$ }\\std\+::pair$<$ unsigned \hyperlink{classint}{int}, std\+::size\+\_\+t $>$ {\bfseries selection\+Step} (std\+::vector$<$ Individual $>$ \&population, std\+::size\+\_\+t mu)\hypertarget{classUncertainSelection_a2d68dd6873aa0780dd73f4e4b0aea62e}{}\label{classUncertainSelection_a2d68dd6873aa0780dd73f4e4b0aea62e}
+
+\item 
+{\footnotesize template$<$class Individual $>$ }\\std\+::pair$<$ unsigned \hyperlink{classint}{int}, std\+::size\+\_\+t $>$ {\bfseries true\+Selection\+Step} (std\+::vector$<$ Individual $>$ \&population, std\+::size\+\_\+t mu)\hypertarget{classUncertainSelection_aa361423770aca0897984c3a397cf7461}{}\label{classUncertainSelection_aa361423770aca0897984c3a397cf7461}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classbool}{bool} {\bfseries std\+\_\+comp} (const \hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ \hyperlink{classdouble}{double} $>$ \&A, const \hyperlink{classUncertainIndividual}{Uncertain\+Individual}$<$ \hyperlink{classdouble}{double} $>$ \&B)\hypertarget{classUncertainSelection_ac1111f4abd8f1dc0a5ecb795b9c24ece}{}\label{classUncertainSelection_ac1111f4abd8f1dc0a5ecb795b9c24ece}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Indicator {\bfseries m\+\_\+indicator}\hypertarget{classUncertainSelection_ab71c199589c4bbb9239bac04823edc1c}{}\label{classUncertainSelection_ab71c199589c4bbb9239bac04823edc1c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Uncertain\+Select.\+h\end{DoxyCompactItemize}

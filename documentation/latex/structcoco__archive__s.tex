@@ -1,0 +1,62 @@
+\hypertarget{structcoco__archive__s}{}\section{coco\+\_\+archive\+\_\+s Struct Reference}
+\label{structcoco__archive__s}\index{coco\+\_\+archive\+\_\+s@{coco\+\_\+archive\+\_\+s}}
+
+
+The C\+O\+CO archive structure.  
+
+
+
+
+Collaboration diagram for coco\+\_\+archive\+\_\+s\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structcoco__archive__s__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structavl__tree}{avl\+\_\+tree\+\_\+t} $\ast$ \hyperlink{structcoco__archive__s_a97b3c2075f8e042c086c6f3e6157d896}{tree}\hypertarget{structcoco__archive__s_a97b3c2075f8e042c086c6f3e6157d896}{}\label{structcoco__archive__s_a97b3c2075f8e042c086c6f3e6157d896}
+
+\begin{DoxyCompactList}\small\item\em The A\+VL tree with non-\/dominated solutions. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__archive__s_a60f86bee6a96a2461b648e73cd7af7aa}{ideal}\hypertarget{structcoco__archive__s_a60f86bee6a96a2461b648e73cd7af7aa}{}\label{structcoco__archive__s_a60f86bee6a96a2461b648e73cd7af7aa}
+
+\begin{DoxyCompactList}\small\item\em The ideal point. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} $\ast$ \hyperlink{structcoco__archive__s_adf39c53ebcf1e50928b42fa713802ee2}{nadir}\hypertarget{structcoco__archive__s_adf39c53ebcf1e50928b42fa713802ee2}{}\label{structcoco__archive__s_adf39c53ebcf1e50928b42fa713802ee2}
+
+\begin{DoxyCompactList}\small\item\em The nadir point. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__archive__s_a1e435a9dbc6d980564394f7eebffc78f}{number\+\_\+of\+\_\+objectives}\hypertarget{structcoco__archive__s_a1e435a9dbc6d980564394f7eebffc78f}{}\label{structcoco__archive__s_a1e435a9dbc6d980564394f7eebffc78f}
+
+\begin{DoxyCompactList}\small\item\em Number of objectives (clearly equal to 2). \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structcoco__archive__s_aee0e2f14067a2e1e7ab6f9b510334d85}{is\+\_\+up\+\_\+to\+\_\+date}\hypertarget{structcoco__archive__s_aee0e2f14067a2e1e7ab6f9b510334d85}{}\label{structcoco__archive__s_aee0e2f14067a2e1e7ab6f9b510334d85}
+
+\begin{DoxyCompactList}\small\item\em Whether archive fields have been updated since last addition. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structcoco__archive__s_a3682d2e60ddaa1f4a7d804c67f543bb5}{number\+\_\+of\+\_\+solutions}\hypertarget{structcoco__archive__s_a3682d2e60ddaa1f4a7d804c67f543bb5}{}\label{structcoco__archive__s_a3682d2e60ddaa1f4a7d804c67f543bb5}
+
+\begin{DoxyCompactList}\small\item\em Number of solutions in the archive. \end{DoxyCompactList}\item 
+\hyperlink{classdouble}{double} \hyperlink{structcoco__archive__s_ace3dd702484b57757f5a5f2f7cb48505}{hypervolume}\hypertarget{structcoco__archive__s_ace3dd702484b57757f5a5f2f7cb48505}{}\label{structcoco__archive__s_ace3dd702484b57757f5a5f2f7cb48505}
+
+\begin{DoxyCompactList}\small\item\em Hypervolume of the solutions in the archive. \end{DoxyCompactList}\item 
+\hyperlink{structavl__node}{avl\+\_\+node\+\_\+t} $\ast$ \hyperlink{structcoco__archive__s_a9a3326bbab3a075a5df81c2fd97af6d9}{current\+\_\+solution}\hypertarget{structcoco__archive__s_a9a3326bbab3a075a5df81c2fd97af6d9}{}\label{structcoco__archive__s_a9a3326bbab3a075a5df81c2fd97af6d9}
+
+\begin{DoxyCompactList}\small\item\em Current solution (to return). \end{DoxyCompactList}\item 
+\hyperlink{structavl__node}{avl\+\_\+node\+\_\+t} $\ast$ \hyperlink{structcoco__archive__s_ae0ae041af7f7effa505ce4ee60b58296}{extreme1}\hypertarget{structcoco__archive__s_ae0ae041af7f7effa505ce4ee60b58296}{}\label{structcoco__archive__s_ae0ae041af7f7effa505ce4ee60b58296}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the first extreme solution. \end{DoxyCompactList}\item 
+\hyperlink{structavl__node}{avl\+\_\+node\+\_\+t} $\ast$ \hyperlink{structcoco__archive__s_a73562a59deb97f6a307cad4e362622d4}{extreme2}\hypertarget{structcoco__archive__s_a73562a59deb97f6a307cad4e362622d4}{}\label{structcoco__archive__s_a73562a59deb97f6a307cad4e362622d4}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the second extreme solution. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structcoco__archive__s_a6a64aa18920abb788daef2d93817a656}{extremes\+\_\+already\+\_\+returned}\hypertarget{structcoco__archive__s_a6a64aa18920abb788daef2d93817a656}{}\label{structcoco__archive__s_a6a64aa18920abb788daef2d93817a656}
+
+\begin{DoxyCompactList}\small\item\em Whether the extreme solutions have already been returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The C\+O\+CO archive structure. 
+
+The archive structure is used for pre-\/processing archives of non-\/dominated solutions. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+c\end{DoxyCompactItemize}

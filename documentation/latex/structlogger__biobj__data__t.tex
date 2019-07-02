@@ -1,0 +1,74 @@
+\hypertarget{structlogger__biobj__data__t}{}\section{logger\+\_\+biobj\+\_\+data\+\_\+t Struct Reference}
+\label{structlogger__biobj__data__t}\index{logger\+\_\+biobj\+\_\+data\+\_\+t@{logger\+\_\+biobj\+\_\+data\+\_\+t}}
+
+
+The bi-\/objective logger data type.  
+
+
+
+
+Collaboration diagram for logger\+\_\+biobj\+\_\+data\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structlogger__biobj__data__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+observer\+\_\+biobj\+\_\+log\+\_\+nondom\+\_\+e \hyperlink{structlogger__biobj__data__t_ad582ac426d2a494a48fc4cfcb0362a90}{log\+\_\+nondom\+\_\+mode}\hypertarget{structlogger__biobj__data__t_ad582ac426d2a494a48fc4cfcb0362a90}{}\label{structlogger__biobj__data__t_ad582ac426d2a494a48fc4cfcb0362a90}
+
+\begin{DoxyCompactList}\small\item\em Mode for archiving nondominated solutions. \end{DoxyCompactList}\item 
+F\+I\+LE $\ast$ \hyperlink{structlogger__biobj__data__t_aa63d80fc2cc05d46824e284519945c66}{adat\+\_\+file}\hypertarget{structlogger__biobj__data__t_aa63d80fc2cc05d46824e284519945c66}{}\label{structlogger__biobj__data__t_aa63d80fc2cc05d46824e284519945c66}
+
+\begin{DoxyCompactList}\small\item\em File for archiving nondominated solutions (all or final). \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structlogger__biobj__data__t_a545f9444fa68ac2ecc09ebd8e6544914}{log\+\_\+vars}\hypertarget{structlogger__biobj__data__t_a545f9444fa68ac2ecc09ebd8e6544914}{}\label{structlogger__biobj__data__t_a545f9444fa68ac2ecc09ebd8e6544914}
+
+\begin{DoxyCompactList}\small\item\em Whether to log the decision values. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structlogger__biobj__data__t_a0d632e5abb4d4bc498c3615c646f1783}{precision\+\_\+x}\hypertarget{structlogger__biobj__data__t_a0d632e5abb4d4bc498c3615c646f1783}{}\label{structlogger__biobj__data__t_a0d632e5abb4d4bc498c3615c646f1783}
+
+\begin{DoxyCompactList}\small\item\em Precision for outputting decision values. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structlogger__biobj__data__t_ac536147688d622ce3cd2eeba6505c154}{precision\+\_\+f}\hypertarget{structlogger__biobj__data__t_ac536147688d622ce3cd2eeba6505c154}{}\label{structlogger__biobj__data__t_ac536147688d622ce3cd2eeba6505c154}
+
+\begin{DoxyCompactList}\small\item\em Precision for outputting objective values. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structlogger__biobj__data__t_a32a17eebfdedb7273fb42145ab84e2cd}{number\+\_\+of\+\_\+evaluations}\hypertarget{structlogger__biobj__data__t_a32a17eebfdedb7273fb42145ab84e2cd}{}\label{structlogger__biobj__data__t_a32a17eebfdedb7273fb42145ab84e2cd}
+
+\begin{DoxyCompactList}\small\item\em The number of evaluations performed so far. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structlogger__biobj__data__t_a93e98a7e4bd2dfb1ffb31a3c75ee8a2d}{number\+\_\+of\+\_\+variables}\hypertarget{structlogger__biobj__data__t_a93e98a7e4bd2dfb1ffb31a3c75ee8a2d}{}\label{structlogger__biobj__data__t_a93e98a7e4bd2dfb1ffb31a3c75ee8a2d}
+
+\begin{DoxyCompactList}\small\item\em Dimension of the problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structlogger__biobj__data__t_a3f8a12e56f3f243ba3aee552a39b6d7e}{number\+\_\+of\+\_\+objectives}\hypertarget{structlogger__biobj__data__t_a3f8a12e56f3f243ba3aee552a39b6d7e}{}\label{structlogger__biobj__data__t_a3f8a12e56f3f243ba3aee552a39b6d7e}
+
+\begin{DoxyCompactList}\small\item\em Number of objectives (clearly equal to 2). \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structlogger__biobj__data__t_aac9851392502aa3c5f3e7104c11ac711}{suite\+\_\+dep\+\_\+instance}\hypertarget{structlogger__biobj__data__t_aac9851392502aa3c5f3e7104c11ac711}{}\label{structlogger__biobj__data__t_aac9851392502aa3c5f3e7104c11ac711}
+
+\begin{DoxyCompactList}\small\item\em Suite-\/dependent instance number of the observed problem. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structlogger__biobj__data__t_a002f1f1b605182509c7ab70128f2f242}{previous\+\_\+evaluations}\hypertarget{structlogger__biobj__data__t_a002f1f1b605182509c7ab70128f2f242}{}\label{structlogger__biobj__data__t_a002f1f1b605182509c7ab70128f2f242}
+
+\begin{DoxyCompactList}\small\item\em The number of evaluations from the previous call to the logger. \end{DoxyCompactList}\item 
+\hyperlink{structavl__tree}{avl\+\_\+tree\+\_\+t} $\ast$ \hyperlink{structlogger__biobj__data__t_acf84e7dffa35ed64a7ccf5a854257282}{archive\+\_\+tree}\hypertarget{structlogger__biobj__data__t_acf84e7dffa35ed64a7ccf5a854257282}{}\label{structlogger__biobj__data__t_acf84e7dffa35ed64a7ccf5a854257282}
+
+\begin{DoxyCompactList}\small\item\em The tree keeping currently non-\/dominated solutions. \end{DoxyCompactList}\item 
+\hyperlink{structavl__tree}{avl\+\_\+tree\+\_\+t} $\ast$ \hyperlink{structlogger__biobj__data__t_a51afea5bfa7e197a0b72300cd5fb1978}{buffer\+\_\+tree}\hypertarget{structlogger__biobj__data__t_a51afea5bfa7e197a0b72300cd5fb1978}{}\label{structlogger__biobj__data__t_a51afea5bfa7e197a0b72300cd5fb1978}
+
+\begin{DoxyCompactList}\small\item\em The tree with pointers to nondominated solutions that haven\textquotesingle{}t been logged yet. \end{DoxyCompactList}\item 
+\hyperlink{classint}{int} \hyperlink{structlogger__biobj__data__t_abf2bed9e4c37869b69ed1335fd3355fd}{compute\+\_\+indicators}\hypertarget{structlogger__biobj__data__t_abf2bed9e4c37869b69ed1335fd3355fd}{}\label{structlogger__biobj__data__t_abf2bed9e4c37869b69ed1335fd3355fd}
+
+\begin{DoxyCompactList}\small\item\em Whether to compute the indicators. \end{DoxyCompactList}\item 
+\hyperlink{structlogger__biobj__indicator__t}{logger\+\_\+biobj\+\_\+indicator\+\_\+t} $\ast$ \hyperlink{structlogger__biobj__data__t_a348f6a5221d7a0796607c44bb8a55731}{indicators} \mbox{[}L\+O\+G\+G\+E\+R\+\_\+\+B\+I\+O\+B\+J\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+I\+N\+D\+I\+C\+A\+T\+O\+RS\mbox{]}\hypertarget{structlogger__biobj__data__t_a348f6a5221d7a0796607c44bb8a55731}{}\label{structlogger__biobj__data__t_a348f6a5221d7a0796607c44bb8a55731}
+
+\begin{DoxyCompactList}\small\item\em The implemented indicators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The bi-\/objective logger data type. 
+
+\begin{DoxyNote}{Note}
+Some fields from the observers (coco\+\_\+observer as well as observer\+\_\+biobj) need to be copied here because the observers can be deleted before the logger is finalized and we need these fields for finalization. 
+\end{DoxyNote}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/thehedgeify/\+Data/svn/final/src/shark\+\_\+version/src/\+C\+O\+C\+Ointerface/coco.\+c\end{DoxyCompactItemize}
