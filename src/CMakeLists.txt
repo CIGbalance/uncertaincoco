@@ -5,7 +5,7 @@ project(ExampleProject)
 cmake_policy(SET CMP0015 OLD)
 
 set ( Shark_DIR "../Shark-3.1.0/build" )
-set ( libgp_DIR "../libgp-master" )
+set ( libgp_DIR "../libgp" )
 set ( eigen_DIR "../eigen-eigen-5a0156e40feb" )
 set ( gbea "../../gbea" )
 
