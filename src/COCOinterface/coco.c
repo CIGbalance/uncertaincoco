@@ -1,1 +1,1 @@
-../../../../../gbea/code-experiments/build/c/coco.c
+../../../gbea/code-experiments/build/c/coco.c
